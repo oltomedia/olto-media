@@ -2,7 +2,7 @@
 """Rendu des visuels Olto (charte du QG) en PNG/JPG 1080 px.
 Usage :
   python3 render.py story <livrable.json> <dossier_sortie>   -> top5.jpg, mot.jpg (si mot)
-  python3 render.py post  <post.json>     <dossier_sortie>   -> 01.jpg, 02.jpg, ... (1080x1350) + tiktok/01.jpg... (1080x1920)
+  python3 render.py post  <post.json>     <dossier_sortie>   -> 01.jpg... (1080x1350) + tiktok/01.jpg... (1080x1920 natif) + controle.txt (marges)
   python3 render.py reel  <post.json> <voix.mp3|-> <sortie.mp4>  -> Reel 1080x1920 30 fps, voix AAC
 Le JSON est le document du QG (livrable avec champ story, ou post avec slides)."""
 import asyncio, json, os, sys, pathlib
@@ -46,39 +46,29 @@ async def main(kind, src, out):
         pg = await b.new_page(viewport={'width':1080,'height':1920})
         await pg.goto((HERE/'page.html').as_uri()); await pg.wait_for_function('window.READY===1', timeout=60000)
         jobs = []
+        Z45 = {'x0':60,'x1':1020,'y0':50,'y1':1300}
+        ZTK = {'x0':40,'x1':900,'y0':200,'y1':1460}      # TikTok photo : barre de recherche, boutons, légende
+        ZST = {'x0':60,'x1':1020,'y0':240,'y1':1580}     # story Instagram
         if kind == 'story':
             st = data.get('story', data)
-            jobs.append(('top5', st, 0, 'top5.jpg'))
-            if (st.get('mot') or {}).get('terme'): jobs.append(('mot', st, 0, 'mot.jpg'))
+            jobs.append(('top5', st, 0, None, 'top5.jpg', ZST))
+            if (st.get('mot') or {}).get('terme'): jobs.append(('mot', st, 0, None, 'mot.jpg', ZST))
         else:
-            for i in range(len(data.get('slides', []))): jobs.append(('slide', data, i, f'{i+1:02d}.jpg'))
-        for k, d, i, name in jobs:
-            await pg.evaluate('([k,d,i])=>show(k,d,i)', [k, d, i]); await pg.wait_for_timeout(250)
+            os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
+            for i, sl in enumerate(data.get('slides', [])):
+                if sl.get('type') == 'reel': jobs.append(('slide', data, i, None, f'{i+1:02d}.jpg', None)); continue
+                jobs.append(('slide', data, i, None, f'{i+1:02d}.jpg', Z45))
+                jobs.append(('slide', data, i, 'tiktok', f'tiktok/{i+1:02d}.jpg', ZTK))
+        report = []
+        for k, d, i, fmt, name, zone in jobs:
+            await pg.evaluate('([k,d,i,f])=>show(k,d,i,f)', [k, d, i, fmt]); await pg.wait_for_timeout(250)
             await pg.locator('#out svg').screenshot(path=os.path.join(out, name), type='jpeg', quality=94)
+            if zone:
+                for pb in await pg.evaluate('(z)=>check(z)', zone): report.append(f'{name} : {pb}')
             print(os.path.join(out, name))
+        with open(os.path.join(out, 'controle.txt'), 'w') as f: f.write('\n'.join(report) or 'OK')
+        print('CONTROLE ' + ('OK' if not report else f'{len(report)} problème(s) :\n' + '\n'.join(report)))
         await b.close()
-    if kind == 'post': tiktok(out, len(jobs))
-def tiktok(out, n):
-    """Version 9:16 pour TikTok : la slide 4:5 réduite et placée dans la zone visible
-    (sous la barre de recherche, à gauche de la colonne de boutons, au-dessus de la légende)."""
-    from PIL import Image
-    d = os.path.join(out, 'tiktok'); os.makedirs(d, exist_ok=True)
-    for i in range(1, n+1):
-        im = Image.open(os.path.join(out, f'{i:02d}.jpg')).convert('RGB')
-        bg = im.getpixel((6, im.height-6))
-        c = Image.new('RGB', (1080, 1920), bg)
-        sm = im.resize((864, 1080), Image.LANCZOS)
-        # bords fondus pour éviter une coupure nette du halo
-        from PIL import ImageDraw, ImageFilter
-        mk = Image.new('L', sm.size, 255); dr = ImageDraw.Draw(mk)
-        for k in range(60): dr.line([(sm.width-1-k, 0), (sm.width-1-k, sm.height)], fill=int(255*k/60))
-        for k in range(40):
-            for y in (k, sm.height-1-k): dr.line([(0, y), (sm.width, y)], fill=min(int(255*k/40), 255))
-        mk = Image.composite(mk, Image.new('L', sm.size, 0), mk)
-        base = c.crop((44, 330, 44+sm.width, 330+sm.height))
-        c.paste(Image.composite(sm, base, mk), (44, 330))
-        c.save(os.path.join(d, f'{i:02d}.jpg'), quality=94)
-        print(os.path.join(d, f'{i:02d}.jpg'))
 if __name__ == '__main__':
     if sys.argv[1] == 'reel': asyncio.run(reel(sys.argv[2], sys.argv[3], sys.argv[4]))
     else: asyncio.run(main(sys.argv[1], sys.argv[2], sys.argv[3]))

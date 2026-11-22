@@ -2,6 +2,7 @@
 (function(){
 const C={iv:'#EEF3F4',pn:'#0F1E1B',in:'#0A0F14',mu:'#5A6870',pm:'#9DBFB4',ln:'#D3DDE0',pl:'#2A4A42',ja:'#3FD3A4',jd:'#0A7A5A',am:'#F2B05A',ad:'#9A5B0E',at:'#F6E7CF',sig:'#FF5C4D'};
 const RUB={'argent':[C.ja,C.jd],'les bases':[C.ja,C.jd],'habitudes':[C.am,C.ad],'défi 66 jours':[C.am,C.ad],'le média':[C.ja,C.jd],'récap':[C.ja,C.jd],'actu':[C.sig,C.sig],'sources':[C.ja,C.jd],'débat':[C.am,C.ad]};
+const TK={x:-14,y:205,s:.9};// zone visible TikTok (photo) : x 40-900, y 200-1460
 const OBJ=['coins','ring','bars','cup','calendar','coin','hourglass','phone','card'];
 const LOGO=(fill,dot)=>`<path d="M47 15A38 38 0 0 0 47 91" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M53 9A38 38 0 0 1 53 85" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="132" y1="-30" x2="132" y2="88" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M184 -6V70Q184 88 212 88" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="162" y1="14" x2="214" y2="14" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><circle cx="276" cy="50" r="38" fill="none" stroke="${fill}" stroke-width="24"/><circle cx="348" cy="80.8" r="19.2" fill="${dot}"/>`;
 const X=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -9,13 +10,14 @@ const cv=document.createElement('canvas').getContext('2d');
 const F={b:'800 {s}px PJ',m:'500 {s}px PJ',s:'italic 400 {s}px IS',mono:'400 {s}px PM'};
 function mw(t,f,s){cv.font=F[f].replace('{s}',s);return cv.measureText(t).width}
 // texte avec *mot* en serif italique ; renvoie lignes de runs
-function nb(s){return String(s||'').replace(/«\s+/g,'«\u00a0').replace(/\s+(»|:|;|\?|!|%|€)/g,'\u00a0$1')}
+function nb(s){return String(s||'').replace(/(\d)\s+(?=(millions?|milliards?|M|Md|k|mois|ans?|jours?|semaines?|heures?|h|min|s|°|€|\$|%)(?![\wÀ-ÿ]))/g,'$1\u00a0').replace(/«\s+/g,'«\u00a0').replace(/\s+(»|:|;|\?|!|%|€)/g,'\u00a0$1')}
 function runs(text){const out=[];let sp=true;nb(text).split(/(\*[^*]+\*)/).forEach(p=>{if(!p)return;const em=/^\*.*\*$/.test(p);(em?p.slice(1,-1):p).split(/([ \t\n\r]+)/).forEach(w=>{if(w==='')return;if(/^[ \t\n\r]+$/.test(w)){sp=true;return}out.push({t:w,em,sp});sp=false})});return out}
 function layout(text,size,maxW,font='b'){const toks=runs(text);const lines=[[]];let w=0;const sp=mw(' ',font,size);
  for(const t of toks){const tw=t.em?mw(t.t,'s',size*1.12):mw(t.t,font,size);const cur=lines[lines.length-1];const add=(cur.length&&t.sp?sp:0)+tw;
   if(cur.length&&t.sp&&w+add>maxW){lines.push([t]);w=tw}else{cur.push(t);w+=add}}
  return lines}
-function fit(text,maxW,maxLines,start,min,font='b'){let s=start;while(s>min){if(layout(text,s,maxW,font).length<=maxLines)break;s-=4}return s}
+function lineW(ln,size,font){let w=0;const sp=mw(' ',font,size);ln.forEach((t,j)=>{w+=(j&&t.sp?sp:0)+(t.em?mw(t.t,'s',size*1.12):mw(t.t,font,size))});return w}
+function fit(text,maxW,maxLines,start,min,font='b'){let s=start;while(s>min){const L=layout(text,s,maxW,font);if(L.length<=maxLines&&Math.max(...L.map(l=>lineW(l,s,font)*(font==='b'?0.97:1)))<=maxW)break;s-=4}return s}
 function textBlock(text,x,y,size,maxW,color,emColor,font='b',lh=1.04,anchor='start'){const L=layout(text,size,maxW,font);let o='';
  L.forEach((ln,i)=>{const yy=y+i*size*lh;let parts='';ln.forEach((t,j)=>{const sep=j&&t.sp?' ':'';parts+=t.em?`<tspan font-family="IS" font-style="italic" font-weight="400" font-size="${size*1.12}" fill="${emColor}">${X(sep+t.t)}</tspan>`:`<tspan>${X(sep+t.t)}</tspan>`});
   o+=`<text x="${x}" y="${yy}" text-anchor="${anchor}" font-family="PJ" font-weight="${font==='b'?800:500}" font-size="${size}" letter-spacing="${font==='b'?-size*0.03:0}" fill="${color}" xml:space="preserve">${parts}</text>`});
@@ -23,12 +25,15 @@ function textBlock(text,x,y,size,maxW,color,emColor,font='b',lh=1.04,anchor='sta
 function chip(label,dark,acc,x=72,y=72){const t=String(label||'').toUpperCase();const w=mw(t,'mono',22)+t.length*2+84;
  return `<g transform="translate(${x},${y})"><rect width="${w}" height="56" rx="28" fill="${dark?'rgba(238,243,244,.08)':'#fff'}" stroke="${dark?C.pl:C.ln}" stroke-width="2"/><circle cx="30" cy="28" r="8" fill="${acc}"/><text x="50" y="36" font-family="PM" font-size="22" letter-spacing="2" fill="${dark?C.iv:C.in}">${X(t)}</text></g>`}
 function foot(dark,src,right){const fg=dark?C.iv:C.in;let o=`<g transform="translate(72,1236) scale(.24)">${LOGO(fg,C.ja)}</g>`;
- if(src)o+=`<text x="1008" y="1272" text-anchor="end" font-family="PM" font-size="20" fill="${dark?C.pm:C.mu}">${X(src).slice(0,70)}</text>`;
+ if(src){let t=String(src);while(t.length>4&&mw(t,'mono',20)+t.length*0.5>720)t=t.slice(0,-2);if(t!==String(src))t=t.replace(/[ ,;·]+$/,'')+'…';o+=`<text x="1008" y="1272" text-anchor="end" font-family="PM" font-size="20" fill="${dark?C.pm:C.mu}">${X(t)}</text>`}
  else if(right)o+=`<text x="1008" y="1272" text-anchor="end" font-family="PJ" font-weight="700" font-size="24" fill="${dark?C.pm:C.mu}">${X(right)}</text>`;
  return o}
-function bg(dark,h=1350){return `<rect width="1080" height="${h}" fill="${dark?C.pn:C.iv}"/>`+(dark?`<circle cx="980" cy="120" r="420" fill="${C.ja}" opacity=".07"/>`:`<circle cx="1000" cy="1250" r="420" fill="${C.ja}" opacity=".08"/>`)}
+function bg(dark,h=1350){return `<rect width="1080" height="${h}" fill="${dark?C.pn:C.iv}"/>`+(dark?`<circle cx="980" cy="${h>1400?420:120}" r="420" fill="${C.ja}" opacity=".07"/>`:`<circle cx="1000" cy="${h>1400?1500:1250}" r="420" fill="${C.ja}" opacity=".08"/>`)}
 function img(name,x,y,w,h,imgs){const src=imgs&&imgs[name];if(!src)return '';return `<image href="${src}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`}
-function slideSVG(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
+function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const v=slideSVG(p,s,i,n,imgs);const dk=/<rect width="1080" height="1350" fill="#0F1E1B"/.test(v);
+  const body=v.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'').replace(/^<rect width="1080" height="1350"[^>]*\/>(<circle[^>]*\/>)?/,'');
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(dk,1920)}<g transform="translate(${TK.x},${TK.y}) scale(${TK.s})">${body}</g></svg>`}
+ const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
  const dark=s.theme?s.theme==='sombre':(s.type==='cover'||s.type==='cta'||s.type==='duel'||s.type==='reel')?(i%2===0):false;const fg=dark?C.iv:C.in,mut=dark?C.pm:C.mu,emc=dark?acc:accD;
  const H=s.type==='reel'?1920:1350;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(dark,H)}`;
  const last=i===n-1,swipe=p.format==='carrousel'&&!last?'Glisse →':'';
@@ -45,14 +50,14 @@ function slideSVG(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [
   o+=`<text x="72" y="${420+cs*.3}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${dark?acc:accD}">${X(s.chiffre)}</text>`;
   o+=textBlock(s.label,72,560+cs*.3,fit(s.label,936,4,60,40,'b'),936,fg,emc).svg;o+=foot(dark,s.source||'',swipe)}
  else if(s.type==='duel'){o+=chip('Débat · '+(p.rubrique||''),dark,C.am);
-  const card=(y,d,col)=>{const cs=fit(d.chiffre,800,1,170,90);return `<rect x="72" y="${y}" width="936" height="300" rx="36" fill="${dark?'rgba(238,243,244,.06)':'#fff'}" stroke="${dark?C.pl:C.ln}" stroke-width="2"/><text x="120" y="${y+60+cs*.75}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${col}">${X(d.chiffre)}</text>`+textBlock(d.label,120,y+250,34,840,mut,emc,'m',1.2).svg};
+  const card=(y,d,col)=>{const cs=fit(d.chiffre,800,1,150,84);return `<rect x="72" y="${y}" width="936" height="300" rx="36" fill="${dark?'rgba(238,243,244,.06)':'#fff'}" stroke="${dark?C.pl:C.ln}" stroke-width="2"/><text x="120" y="${y+36+cs*.78}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${col}">${X(d.chiffre)}</text>`+(()=>{const ls=fit(d.label||'',840,2,34,26,'m');const L=layout(d.label||'',ls,840,'m').length;return textBlock(d.label,120,y+300-36-(L-1)*ls*1.2,ls,840,mut,emc,'m',1.2).svg})()};
   o+=card(190,s.a||{},dark?C.ja:C.jd)+`<text x="540" y="555" text-anchor="middle" font-family="IS" font-style="italic" font-size="64" fill="${mut}">contre</text>`+card(600,s.b||{},C.sig);
   o+=textBlock(s.question,72,1010,fit(s.question,936,2,64,44),936,fg,emc).svg;o+=foot(dark,s.source||'','')}
  else if(s.type==='recap'){o+=chip('Récap · la semaine',dark,acc);o+=textBlock(s.titre||'La semaine en *3 chiffres*.',72,250,84,936,fg,emc).svg;
   (s.items||[]).slice(0,3).forEach((it,k)=>{const y=420+k*260;const cs=fit(it.chiffre,420,1,120,70);o+=`<rect x="72" y="${y}" width="936" height="220" rx="32" fill="${dark?'rgba(238,243,244,.06)':'#fff'}" stroke="${dark?C.pl:C.ln}" stroke-width="2"/><text x="112" y="${y+80+cs*.4}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${k===1?(dark?C.am:C.ad):(dark?C.ja:C.jd)}">${X(it.chiffre)}</text>`+textBlock(it.label,560,y+90,32,410,fg,emc,'m',1.25).svg});
   o+=foot(dark,s.source||'','')}
  else if(s.type==='cta'){o+=chip('Olto',dark,acc);o+=textBlock(s.titre||'Suis *@olto.media* pour la suite.',72,420,fit(s.titre||'Suis *@olto.media* pour la suite.',936,4,104,64),936,fg,emc).svg;
-  o+=textBlock(s.texte||'La lettre du dimanche : la semaine en 3 chiffres, lien en bio.',72,860,40,900,mut,emc,'m',1.35).svg;o+=img(s.objet||'coins',640,940,380,260,imgs);o+=foot(dark,'','')}
+  o+=textBlock(s.texte||'La lettre du dimanche : la semaine en 3 chiffres, lien en bio.',72,860,40,900,mut,emc,'m',1.35).svg;o+=img(s.objet||'coins',600,940,380,260,imgs);o+=foot(dark,'','')}
  return o+'</svg>'}
 // ---- export ----
 let FONTCSS=null,IMGS=null;const b64=buf=>{let s='';const a=new Uint8Array(buf);for(let i=0;i<a.length;i+=0x8000)s+=String.fromCharCode.apply(null,a.subarray(i,i+0x8000));return btoa(s)};
@@ -113,5 +118,5 @@ function motSVG(st,imgs){st=st||{};const m=st.mot||{};const H=1920;const fg=C.in
  o+=`<g transform="translate(72,1702) scale(.24)">${LOGO(fg,C.ja)}</g>`;
  o+=`<text x="1008" y="1738" text-anchor="end" font-family="PM" font-size="19" fill="${mut}">Pas un conseil en investissement.</text>`;
  return o+'</svg>'}
-window.OltoStudio={slideSVG,storySVG,motSVG,toPNG,zip,images,ready,OBJ,C};
+window.OltoStudio={TK,slideSVG,storySVG,motSVG,toPNG,zip,images,ready,OBJ,C};
 })();

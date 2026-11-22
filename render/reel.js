@@ -6,7 +6,7 @@ const ease=t=>t<0?0:t>1?1:1-Math.pow(1-t,3);
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const IMG={};function loadImgs(){return Promise.all(['coins','ring','bars','cup','calendar','coin','hourglass','phone','card'].map(n=>IMG[n]?1:new Promise(ok=>{const i=new Image();i.onload=()=>{IMG[n]=i;ok()};i.onerror=ok;i.src='img/obj-'+n+'.png'})))}
 function font(kind,s){return kind==='em'?`italic 400 ${s*1.12}px IS`:kind==='m'?`500 ${s}px PJ`:kind==='mono'?`400 ${s}px PM`:`800 ${s}px PJ`}
-function nb(s){return String(s||'').replace(/«\s+/g,'«\u00a0').replace(/\s+(»|:|;|\?|!|%|€)/g,'\u00a0$1')}
+function nb(s){return String(s||'').replace(/(\d)\s+(?=(millions?|milliards?|M|Md|k|mois|ans?|jours?|semaines?|heures?|h|min|s|°|€|\$|%)(?![\wÀ-ÿ]))/g,'$1\u00a0').replace(/«\s+/g,'«\u00a0').replace(/\s+(»|:|;|\?|!|%|€)/g,'\u00a0$1')}
 function toks(text){const out=[];let sp=true;nb(text).split(/(\*[^*]+\*)/).forEach(p=>{if(!p)return;const em=/^\*.*\*$/.test(p);(em?p.slice(1,-1):p).split(/([ \t\n\r]+)/).forEach(w=>{if(w==='')return;if(/^[ \t\n\r]+$/.test(w)){sp=true;return}out.push({t:w,em,sp});sp=false})});return out}
 function lay(ctx,text,size,maxW,kind='b'){const T=toks(text),lines=[[]];let w=0;ctx.font=font(kind,size);const spw=ctx.measureText(' ').width;
  for(const t of T){ctx.font=t.em?font('em',size):font(kind,size);t.w=ctx.measureText(t.t).width;const cur=lines[lines.length-1];const add=(cur.length&&t.sp?spw:0)+t.w;
@@ -31,14 +31,12 @@ function frame(ctx,p,t){const R=p.reel||{scenes:[]};const dark=(R.fond||'sombre'
  // halo qui respire
  const gx=W*.78+Math.sin(t*.5)*90,gy=H*.24+Math.cos(t*.4)*120;const g=ctx.createRadialGradient(gx,gy,0,gx,gy,620);g.addColorStop(0,dark?'rgba(63,211,164,.16)':'rgba(63,211,164,.14)');g.addColorStop(1,'rgba(63,211,164,0)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
  if(!R.scenes||!R.scenes.length)return;const tot=total(p);const {i,s,lt,d}=sceneAt(p,t);
- // barre de progression segmentée
- let ax=80;const bw=(820-(R.scenes.length-1)*10)/R.scenes.length;R.scenes.forEach((sc,k)=>{rr(ctx,ax,300,bw,6,3);ctx.fillStyle=dark?'rgba(238,243,244,.18)':'rgba(10,15,20,.12)';ctx.fill();const f=k<i?1:k>i?0:clamp(lt/d,0,1);if(f>0){rr(ctx,ax,300,Math.max(6,bw*f),6,3);ctx.fillStyle=acc;ctx.fill()}ax+=bw+10});
  // pastille rubrique
- ctx.font=font('mono',27);const lab=rub.toUpperCase();const cw=ctx.measureText(lab).width+lab.length*2.5+96;rr(ctx,80,330,cw,64,32);ctx.fillStyle=dark?'rgba(238,243,244,.08)':'#fff';ctx.fill();ctx.strokeStyle=dark?C.pl:C.ln;ctx.lineWidth=2;ctx.stroke();
- ctx.fillStyle=rub.toLowerCase().includes('habitude')?C.am:C.ja;ctx.beginPath();ctx.arc(116,362,9,0,7);ctx.fill();ctx.fillStyle=fg;ctx.letterSpacing='2px';ctx.fillText(lab,138,372);ctx.letterSpacing='0px';
+ ctx.font=font('mono',27);const lab=rub.toUpperCase();const cw=ctx.measureText(lab).width+lab.length*2.5+96;rr(ctx,80,320,cw,64,32);ctx.fillStyle=dark?'rgba(238,243,244,.08)':'#fff';ctx.fill();ctx.strokeStyle=dark?C.pl:C.ln;ctx.lineWidth=2;ctx.stroke();
+ ctx.fillStyle=rub.toLowerCase().includes('habitude')?C.am:C.ja;ctx.beginPath();ctx.arc(116,352,9,0,7);ctx.fill();ctx.fillStyle=fg;ctx.letterSpacing='2px';ctx.fillText(lab,138,362);ctx.letterSpacing='0px';
  // fondu de sortie
  const out=i<R.scenes.length-1?clamp((d-lt)/.25,0,1):1;ctx._fade=out;ctx.globalAlpha=out;
- const X0=80,MW=800,top=470;
+ const X0=80,MW=760,top=450;
  if(s.objet&&IMG[s.objet]&&s.type!=='cta'){const im=IMG[s.objet];const a=ease((lt-.3)/.6);const ow=400,oh=ow*im.height/im.width;ctx.globalAlpha=a*out;ctx.drawImage(im,880-ow,1010+Math.sin(t*1.6)*16+(1-a)*80,ow,oh);ctx.globalAlpha=out}
  if(s.type==='hook'){const sz=fitSize(ctx,s.titre,MW,5,136,80);words(ctx,s.titre,X0,top+sz,sz,MW,fg,acc,0,lt,'b',1.04,.09)}
  else if(s.type==='chiffre'){const np=numParts(s.chiffre);const k=ease(lt/1.1);const txt=np?fmtNum(np,np.val*k):s.chiffre;ctx.font=font('b',10);let cs=300;ctx.font=font('b',cs);while(cs>140&&ctx.measureText(s.chiffre).width>MW){cs-=10;ctx.font=font('b',cs)}
@@ -53,13 +51,14 @@ function frame(ctx,p,t){const R=p.reel||{scenes:[]};const dark=(R.fond||'sombre'
   if(s.texte)words(ctx,s.texte,480,860+L.length*sz*1.08+60,48,MW-80,mut,acc,.9,lt,'m',1.35,.02,'center')}
  // sous-titres dynamiques : 3-4 mots à la fois, mot prononcé en jade
  if(s.sous){const T=toks(String(s.sous).replace(/\*/g,''));const n=T.length;if(n){
-  const chunks=[];let cur=[],cl=0;T.forEach((tk,k)=>{cur.push(k);cl+=tk.t.length;const end=/[.,;:!?…]$/.test(tk.t);if(cur.length>=4||cl>18||end||k===n-1){chunks.push(cur);cur=[];cl=0}});
+  const chunks=[];let cur=[],cl=0;T.forEach((tk,k)=>{cur.push(k);cl+=tk.t.length;const end=/[.,;:!?…]$/.test(tk.t);const weak=/^(à|a|de|d'|du|des|le|la|les|l'|un|une|et|en|ton|ta|tes|son|sa|ses|ce|cet|cette|pour|par|sur|dans|au|aux|qui|que|ne|pas|plus)$/i.test(tk.t)&&k<n-1;if(!weak&&(cur.length>=4||cl>18||end)||k===n-1||cur.length>=6){chunks.push(cur);cur=[];cl=0}});
   const hasV=p._voice&&s.vs!=null&&s.ve>s.vs;const speak=hasV?Math.max(.4,s.ve-s.vs):Math.max(.6,d-(i<R.scenes.length-1?.45:1.2)),st0=hasV?s.vs:.08;const wl=T.map(t=>t.t.length+2),tw=wl.reduce((a,b)=>a+b,0);const tStart=[];let acc=0;const sg=hasV&&s._sg;const sgT=sg?sg.reduce((a,z)=>a+z[1]-z[0],0):0;
   const at=u=>{if(!sg)return st0+speak*u;let r=u*sgT;for(const z of sg){const L=z[1]-z[0];if(r<=L)return z[0]+r;r-=L}return sg[sg.length-1][1]};
   wl.forEach(w=>{tStart.push(at(acc/tw)+(hasV?.06:0));acc+=w});
   let wi=0;for(let k=0;k<n;k++)if(lt>=tStart[k])wi=k;const ch=chunks.find(c=>c.includes(wi))||chunks[0];
-  const sz=68;ctx.font=font('b',sz);const spw=ctx.measureText(' ').width;const ws=ch.map(k=>ctx.measureText(T[k].t).width);let tot=ws.reduce((a,b)=>a+b,0)+spw*(ch.length-1);
-  const lines=[];if(tot>760){const h=Math.ceil(ch.length/2);lines.push(ch.slice(0,h),ch.slice(h))}else lines.push(ch);
+  const SW=740;const lw_=(ln,z)=>{ctx.font=font('b',z);return ln.reduce((a,k)=>a+ctx.measureText(T[k].t).width,0)+ctx.measureText(' ').width*(ln.length-1)};
+  let lines=[ch];if(lw_(ch,64)>SW&&ch.length>1){let best=null;for(let c=1;c<ch.length;c++){const a=ch.slice(0,c),b=ch.slice(c);const m=Math.max(lw_(a,64),lw_(b,64));if(!best||m<best[0])best=[m,[a,b]]}lines=best[1]}
+  let sz=64;while(sz>40&&Math.max(...lines.map(l=>lw_(l,sz)))>SW)sz-=2;ctx.font=font('b',sz);const spw=ctx.measureText(' ').width;
   const ca=ease((lt-tStart[ch[0]]+.05)/.18);const cy=1370;
   lines.forEach((ln,li)=>{const lw=ln.reduce((a,k)=>a+ctx.measureText(T[k].t).width,0)+spw*(ln.length-1);let x=470-lw/2;const y=cy+li*sz*1.12-(lines.length-1)*sz*.56;
    ln.forEach(k=>{const w0=ctx.measureText(T[k].t).width;const active=k===wi&&lt>=tStart[k],said=k<wi;const pop=active?1+.08*(1-ease((lt-tStart[k])/.16)):1;
