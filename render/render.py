@@ -23,7 +23,7 @@ async def reel(src, voice, out):
         pg = await b.new_page(viewport={'width':1080,'height':1920})
         await pg.goto((HERE/'reel_page.html').as_uri()); await pg.wait_for_function('window.READY===1', timeout=60000)
         vurl = pathlib.Path(voice).resolve().as_uri() if voice and voice != '-' else None
-        T = await pg.evaluate('([p,v])=>setup(p,v)', [data, vurl])
+        T = await pg.evaluate('([p,v,a])=>setup(p,v,a)', [data, vurl, 'voix' not in data])
         n = int(T*30)
         ff = subprocess.Popen(['ffmpeg','-v','error','-y','-f','image2pipe','-framerate','30','-c:v','mjpeg','-i','-','-c:v','libx264','-preset','veryfast','-crf','18','-pix_fmt','yuv420p',str(tmp)], stdin=subprocess.PIPE)
         for i in range(n):
