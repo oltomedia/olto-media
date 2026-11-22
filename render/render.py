@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Rendu des visuels Olto (charte du QG) en PNG/JPG 1080 px.
 Usage :
-  python3 render.py story <livrable.json> <dossier_sortie>   -> top5.jpg, mot.jpg (si mot)
+  python3 render.py story <livrable.json> <dossier_sortie>   -> top5.jpg, mot.jpg (si mot) + tiktok/01-03.jpg (hausses, baisses, mot)
+  python3 render.py actu  <livrable.json>   <dossier_sortie>   -> actu.jpg + tiktok/actu.jpg (story L'actu argent)
   python3 render.py post  <post.json>     <dossier_sortie>   -> 01.jpg... (1080x1350) + tiktok/01.jpg... (1080x1920 natif) + controle.txt (marges)
   python3 render.py reel  <post.json> <voix.mp3|-> <sortie.mp4>  -> Reel 1080x1920 30 fps, voix AAC
 Le JSON est le document du QG (livrable avec champ story, ou post avec slides)."""
@@ -49,10 +50,20 @@ async def main(kind, src, out):
         Z45 = {'x0':60,'x1':1020,'y0':50,'y1':1300}
         ZTK = {'x0':40,'x1':900,'y0':200,'y1':1460}      # TikTok photo : barre de recherche, boutons, légende
         ZST = {'x0':60,'x1':1020,'y0':240,'y1':1760}     # story Instagram (barre de réponse sous l'image)
-        if kind == 'story':
+        if kind == 'actu':
+            os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
+            a = data.get('actu', data)
+            jobs.append(('actu', a, 0, None, 'actu.jpg', ZST))
+            jobs.append(('actu', a, 0, 'tiktok', 'tiktok/actu.jpg', ZTK))
+        elif kind == 'story':
             st = data.get('story', data)
+            os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
             jobs.append(('top5', st, 0, None, 'top5.jpg', ZST))
             if (st.get('mot') or {}).get('terme'): jobs.append(('mot', st, 0, None, 'mot.jpg', ZST))
+            # TikTok : post photo en 3 images (hausses, baisses, mot du jour), dans la zone visible
+            jobs.append(('top5', st, 0, 'tiktok-h', 'tiktok/01.jpg', ZTK))
+            jobs.append(('top5', st, 0, 'tiktok-b', 'tiktok/02.jpg', ZTK))
+            if (st.get('mot') or {}).get('terme'): jobs.append(('mot', st, 0, 'tiktok', 'tiktok/03.jpg', ZTK))
         else:
             os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
             for i, sl in enumerate(data.get('slides', [])):
