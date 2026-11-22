@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:PJ;src:url(fonts/pj-500.woff2);font-weight:500}@font-face{font-family:PJ;src:url(fonts/pj-700.woff2);font-weight:700}@font-face{font-family:PJ;src:url(fonts/pj-800.woff2);font-weight:800}@font-face{font-family:IS;src:url(fonts/is-italic.woff2);font-style:italic}@font-face{font-family:PM;src:url(fonts/plex-mono.woff2)}
+body{margin:0;background:#000}#out{width:1080px}#out svg{display:block}</style></head><body><div id="out"></div>
+<script src="studio.js"></script><script>
+(async()=>{await OltoStudio.ready();window.IMGS=await OltoStudio.images();
+window.show=(kind,data,i)=>{let svg;if(kind==='top5')svg=OltoStudio.storySVG(data);else if(kind==='mot')svg=OltoStudio.motSVG(data,IMGS);else svg=OltoStudio.slideSVG(data,data.slides[i],i,data.slides.length,IMGS);document.getElementById('out').innerHTML=svg;return true};
+window.READY=1})();
+</script></body></html>
