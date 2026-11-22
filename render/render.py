@@ -48,7 +48,7 @@ async def main(kind, src, out):
         jobs = []
         Z45 = {'x0':60,'x1':1020,'y0':50,'y1':1300}
         ZTK = {'x0':40,'x1':900,'y0':200,'y1':1460}      # TikTok photo : barre de recherche, boutons, légende
-        ZST = {'x0':60,'x1':1020,'y0':240,'y1':1580}     # story Instagram
+        ZST = {'x0':60,'x1':1020,'y0':240,'y1':1760}     # story Instagram (barre de réponse sous l'image)
         if kind == 'story':
             st = data.get('story', data)
             jobs.append(('top5', st, 0, None, 'top5.jpg', ZST))
