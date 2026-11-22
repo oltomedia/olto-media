@@ -2,7 +2,7 @@
 (function(){
 const C={iv:'#EEF3F4',pn:'#0F1E1B',in:'#0A0F14',mu:'#5A6870',pm:'#9DBFB4',ln:'#D3DDE0',pl:'#2A4A42',ja:'#3FD3A4',jd:'#0A7A5A',am:'#F2B05A',ad:'#9A5B0E',at:'#F6E7CF',sig:'#FF5C4D'};
 const RUB={'argent':[C.ja,C.jd],'les bases':[C.ja,C.jd],'habitudes':[C.am,C.ad],'défi 66 jours':[C.am,C.ad],'le média':[C.ja,C.jd],'récap':[C.ja,C.jd],'actu':[C.sig,C.sig],'sources':[C.ja,C.jd],'débat':[C.am,C.ad]};
-const TK={x:-14,y:205,s:.9};// zone visible TikTok (photo) : x 40-900, y 200-1460
+const TK={x:-20,y:300,s:.93};// zone visible TikTok (photo, mesurée sur iPhone) : x 40-920, y 310-1620
 const OBJ=['coins','ring','bars','cup','calendar','coin','hourglass','phone','card'];
 const LOGO=(fill,dot)=>`<path d="M47 15A38 38 0 0 0 47 91" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M53 9A38 38 0 0 1 53 85" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="132" y1="-30" x2="132" y2="88" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M184 -6V70Q184 88 212 88" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="162" y1="14" x2="214" y2="14" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><circle cx="276" cy="50" r="38" fill="none" stroke="${fill}" stroke-width="24"/><circle cx="348" cy="80.8" r="19.2" fill="${dot}"/>`;
 const X=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -104,7 +104,7 @@ function storySVG(st){st=st||{};const H=1920;let o=`<svg xmlns="http://www.w3.or
  return o+'</svg>'}
 
 // story « Le mot du jour » 1080x1920 (fond ivoire, contraste avec le Top 5 sombre)
-function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const fg=C.in,mut=C.mu;const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?820:936,T0=tk?215:250,FY=tk?1400:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(false,H)}`;
+function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const fg=C.in,mut=C.mu;const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?820:936,T0=tk?335:250,FY=tk?1500:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(false,H)}`;
  o+=chip('Le mot du jour',false,C.ja,X0,T0);
  const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?116:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,C.jd,'b',1.0);o+=tb.svg;
  let y=T0+130+ts*.9+(tb.lines-1)*ts+60;
@@ -119,17 +119,17 @@ function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const fg=
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${mut}">Pas un conseil en investissement.</text>`;
  return o+'</svg>'}
 
-// Top 5 pour TikTok (post photo 9:16) : 1 image hausses + 1 image baisses, tout dans la zone visible (x 60-890, y 200-1460)
+// Top 5 pour TikTok (post photo 9:16) : 1 image hausses + 1 image baisses, tout dans la zone visible (x 60-890, y 310-1620)
 function storyTK(st,side){st=st||{};const up=side!=='baisses';const H=1920;const col=up?C.ja:C.sig;const X0=60,R=890;
  let o=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}`;
- o+=chip('Le récap Bourse',true,C.ja,X0,215);
- o+=textBlock(up?'Top 5 *hausses*':'Top 5 *baisses*',X0,385,84,830,C.iv,col).svg;
+ o+=chip('Le récap Bourse',true,C.ja,X0,330);
+ o+=textBlock(up?'Top 5 *hausses*':'Top 5 *baisses*',X0,495,84,830,C.iv,col).svg;
  const ix=(st.indices||[]).slice(0,3);const iw=830/Math.max(1,ix.length);
  ix.forEach((x,k)=>{const neg=/^[-−]/.test(String(x.var||'').trim());const cx=X0+k*iw;
-  o+=`<rect x="${cx}" y="440" width="${iw-14}" height="96" rx="22" fill="rgba(238,243,244,.06)" stroke="${C.pl}" stroke-width="2"/>`;
-  o+=`<text x="${cx+24}" y="478" font-family="PM" font-size="20" letter-spacing="2" fill="${C.pm}">${X(String(x.nom||'').toUpperCase())}</text>`;
-  o+=`<text x="${cx+24}" y="518" font-family="PJ" font-weight="800" font-size="36" fill="${neg?C.sig:C.ja}">${X(x.var||'')}</text>`});
- (up?st.hausses:st.baisses||[]).slice(0,5).forEach((r,k)=>{const y=580+k*150;
+  o+=`<rect x="${cx}" y="550" width="${iw-14}" height="96" rx="22" fill="rgba(238,243,244,.06)" stroke="${C.pl}" stroke-width="2"/>`;
+  o+=`<text x="${cx+24}" y="588" font-family="PM" font-size="20" letter-spacing="2" fill="${C.pm}">${X(String(x.nom||'').toUpperCase())}</text>`;
+  o+=`<text x="${cx+24}" y="628" font-family="PJ" font-weight="800" font-size="36" fill="${neg?C.sig:C.ja}">${X(x.var||'')}</text>`});
+ (up?st.hausses:st.baisses||[]).slice(0,5).forEach((r,k)=>{const y=690+k*150;
   o+=`<line x1="${X0}" y1="${y}" x2="${R}" y2="${y}" stroke="${C.pl}" stroke-width="2"/>`;
   const vs=String(r.var||'');const vw=mw(vs,'b',54);const nmMax=R-X0-vw-40;let nm=String(r.nom||'');let ns=40;while(ns>28&&mw(nm,'b',ns)>nmMax-10)ns-=2;while(nm.length>4&&mw(nm,'b',ns)>nmMax)nm=nm.slice(0,-2);
   o+=`<text x="${X0}" y="${y+56}" font-family="PJ" font-weight="800" font-size="${ns}" fill="${C.iv}">${X(nm)}</text>`;
@@ -137,15 +137,15 @@ function storyTK(st,side){st=st||{};const up=side!=='baisses';const H=1920;const
   o+=`<g transform="translate(${X0},${y+76})"><rect width="${tw}" height="34" rx="17" fill="rgba(238,243,244,.08)" stroke="${C.pl}" stroke-width="1.5"/><text x="14" y="24" font-family="PM" font-size="18" letter-spacing="1.5" fill="${C.pm}">${X(tag)}</text></g>`;
   if(r.raison){let rs=String(r.raison);const rmax=R-X0-tw-24-vw-30;while(rs.length>4&&mw(rs,'m',24)>rmax)rs=rs.slice(0,-2);if(rs!==String(r.raison))rs=rs.replace(/[ ,;]+$/,'')+'…';o+=`<text x="${X0+tw+16}" y="${y+101}" font-family="PJ" font-weight="500" font-size="24" fill="${C.pm}">${X(rs)}</text>`}
   o+=`<text x="${R}" y="${y+84}" text-anchor="end" font-family="PJ" font-weight="800" font-size="54" letter-spacing="-1.5" fill="${col}">${X(vs)}</text>`});
- o+=`<line x1="${X0}" y1="1330" x2="${R}" y2="1330" stroke="${C.pl}" stroke-width="2"/>`;
- o+=`<g transform="translate(${X0},1372) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;
- o+=`<text x="${R}" y="1380" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(st.source||'').slice(0,52))}</text>`;
- o+=`<text x="${R}" y="1408" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Pas un conseil en investissement.</text>`;
+ o+=`<line x1="${X0}" y1="1440" x2="${R}" y2="1440" stroke="${C.pl}" stroke-width="2"/>`;
+ o+=`<g transform="translate(${X0},1482) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;
+ o+=`<text x="${R}" y="1490" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(st.source||'').slice(0,52))}</text>`;
+ o+=`<text x="${R}" y="1518" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Pas un conseil en investissement.</text>`;
  return o+'</svg>'}
 
 // Story « L'actu argent » : une info du jour qui touche le porte-monnaie (Instagram 1080x1920 ; TikTok : même image, zone visible respectée)
 // a = {titre, chiffre?, label?, texte, impact, source}
-function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?830:936,T0=tk?215:250,FY=tk?1372:1702;const H=1920;
+function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?830:936,T0=tk?335:250,FY=tk?1490:1702;const H=1920;
  let o=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}`;
  o+=chip("L'actu argent",true,C.sig,X0,T0);
  const ts=fit(a.titre||'',MW,4,tk?84:92,56);const tb=textBlock(a.titre||'',X0,T0+130+ts*.85,ts,MW,C.iv,C.ja);o+=tb.svg;let y=T0+130+ts*.85+(tb.lines-1)*ts*1.04+80;

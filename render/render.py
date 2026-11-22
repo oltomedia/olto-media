@@ -48,7 +48,7 @@ async def main(kind, src, out):
         await pg.goto((HERE/'page.html').as_uri()); await pg.wait_for_function('window.READY===1', timeout=60000)
         jobs = []
         Z45 = {'x0':60,'x1':1020,'y0':50,'y1':1300}
-        ZTK = {'x0':40,'x1':900,'y0':200,'y1':1460}      # TikTok photo : barre de recherche, boutons, légende
+        ZTK = {'x0':30,'x1':925,'y0':310,'y1':1620}      # TikTok photo (mesuré sur iPhone) : barre de recherche, boutons, légende
         ZST = {'x0':60,'x1':1020,'y0':240,'y1':1760}     # story Instagram (barre de réponse sous l'image)
         if kind == 'actu':
             os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
