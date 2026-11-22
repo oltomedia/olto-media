@@ -9,7 +9,7 @@ const cv=document.createElement('canvas').getContext('2d');
 const F={b:'800 {s}px PJ',m:'500 {s}px PJ',s:'italic 400 {s}px IS',mono:'400 {s}px PM'};
 function mw(t,f,s){cv.font=F[f].replace('{s}',s);return cv.measureText(t).width}
 // texte avec *mot* en serif italique ; renvoie lignes de runs
-function runs(text){const out=[];let sp=true;String(text||'').split(/(\*[^*]+\*)/).forEach(p=>{if(!p)return;const em=/^\*.*\*$/.test(p);(em?p.slice(1,-1):p).split(/(\s+)/).forEach(w=>{if(w==='')return;if(/^\s+$/.test(w)){sp=true;return}out.push({t:w,em,sp});sp=false})});return out}
+function runs(text){const out=[];let sp=true;String(text||'').split(/(\*[^*]+\*)/).forEach(p=>{if(!p)return;const em=/^\*.*\*$/.test(p);(em?p.slice(1,-1):p).split(/([ \t\n\r]+)/).forEach(w=>{if(w==='')return;if(/^[ \t\n\r]+$/.test(w)){sp=true;return}out.push({t:w,em,sp});sp=false})});return out}
 function layout(text,size,maxW,font='b'){const toks=runs(text);const lines=[[]];let w=0;const sp=mw(' ',font,size);
  for(const t of toks){const tw=t.em?mw(t.t,'s',size*1.12):mw(t.t,font,size);const cur=lines[lines.length-1];const add=(cur.length&&t.sp?sp:0)+tw;
   if(cur.length&&t.sp&&w+add>maxW){lines.push([t]);w=tw}else{cur.push(t);w+=add}}
