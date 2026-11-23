@@ -10,6 +10,17 @@ const TKFADE='';
 function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2);const m=svg.match(/<rect width="1080" height="1920" fill="([^"]+)"/);const col=m?m[1]:'#0F1E1B';
  const inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
+
+// TikTok : agrandit le contenu pour occuper TOUTE la zone visible (hors barre de recherche, boutons, légende), fond intact.
+const TKBOX={x0:50,x1:905,y0:330,y1:1600,max:1.6};
+function fitTK(svg,box){box=box||TKBOX;const host=document.createElement('div');host.style.cssText='position:absolute;left:-20000px;top:0;width:1080px;visibility:hidden';host.innerHTML=svg;document.body.appendChild(host);
+ try{const root=host.querySelector('svg');root.style.width='1080px';const o=root.getBoundingClientRect();const k=1080/o.width;
+  const g=document.createElementNS('http://www.w3.org/2000/svg','g');[...root.childNodes].forEach(n=>{if(n.nodeType===1&&(n.getAttribute('data-bg')||n.tagName==='defs'))return;g.appendChild(n)});root.appendChild(g);
+  g.querySelectorAll('[data-bg]').forEach(n=>n.remove());
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;g.querySelectorAll('text,image,rect,path,line,circle,ellipse,polygon,polyline').forEach(e=>{const b=e.getBoundingClientRect();if(!b.width&&!b.height)return;x0=Math.min(x0,(b.left-o.left)*k);y0=Math.min(y0,(b.top-o.top)*k);x1=Math.max(x1,(b.right-o.left)*k);y1=Math.max(y1,(b.bottom-o.top)*k)});
+  if(x1<=x0)return svg;const bw=x1-x0,bh=y1-y0,W=box.x1-box.x0,H=box.y1-box.y0;const s=Math.min(W/bw,H/bh,box.max);
+  const tx=box.x0+(W-bw*s)/2,ty=box.y0+(H-bh*s)/2;g.setAttribute('transform',`translate(${tx.toFixed(1)},${ty.toFixed(1)}) scale(${s.toFixed(4)}) translate(${(-x0).toFixed(1)},${(-y0).toFixed(1)})`);
+  return new XMLSerializer().serializeToString(root).replace(/ style="width: 1080px;"/,'')}finally{host.remove()}}
 const TK={x:-20,y:300,s:.93};// zone visible TikTok (photo, mesurée sur iPhone) : x 40-920, y 310-1620
 const OBJ=['coins','ring','bars','cup','calendar','coin','hourglass','phone','card'];
 const LOGO=(fill,dot)=>`<path d="M47 15A38 38 0 0 0 47 91" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M53 9A38 38 0 0 1 53 85" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="132" y1="-30" x2="132" y2="88" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M184 -6V70Q184 88 212 88" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="162" y1="14" x2="214" y2="14" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><circle cx="276" cy="50" r="38" fill="none" stroke="${fill}" stroke-width="24"/><circle cx="348" cy="80.8" r="19.2" fill="${dot}"/>`;
@@ -36,9 +47,42 @@ function foot(dark,src,right){const fg=dark?C.iv:C.in;let o=`<g transform="trans
  if(src){let t=String(src);while(t.length>4&&mw(t,'mono',20)+t.length*0.5>720)t=t.slice(0,-2);if(t!==String(src))t=t.replace(/[ ,;·]+$/,'')+'…';o+=`<text x="1008" y="1272" text-anchor="end" font-family="PM" font-size="20" fill="${dark?C.pm:C.mu}">${X(t)}</text>`}
  else if(right)o+=`<text x="1008" y="1272" text-anchor="end" font-family="PJ" font-weight="700" font-size="24" fill="${dark?C.pm:C.mu}">${X(right)}</text>`;
  return o}
-function bg(dark,h=1350){return `<rect width="1080" height="${h}" fill="${dark?C.pn:C.iv}"/>`+(dark?`<circle cx="980" cy="${h>1400?420:120}" r="420" fill="${C.ja}" opacity=".07"/>`:`<circle cx="1000" cy="${h>1400?1500:1250}" r="420" fill="${C.ja}" opacity=".08"/>`)}
+function bg(dark,h=1350){return `<rect width="1080" height="${h}" fill="${dark?C.pn:C.iv}" data-bg="1"/>`+(dark?`<circle cx="980" cy="${h>1400?420:120}" r="420" fill="${C.ja}" opacity=".07" data-bg="1"/>`:`<circle cx="1000" cy="${h>1400?1500:1250}" r="420" fill="${C.ja}" opacity=".08" data-bg="1"/>`)}
 function img(name,x,y,w,h,imgs){const src=imgs&&imgs[name];if(!src)return '';return `<image href="${src}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`}
-function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const v=slideSVG(p,s,i,n,imgs);const dk=/<rect width="1080" height="1350" fill="#0F1E1B"/.test(v);
+
+// TikTok : mise en page native (colonne étroite, gros textes), empilée de haut en bas ; fitTK l'agrandit ensuite pour remplir la zone visible.
+function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
+ const dark=s.theme?s.theme==='sombre':(s.type==='cover'||s.type==='cta'||s.type==='duel')?(i%2===0):false;const fg=dark?C.iv:C.in,mut=dark?C.pm:C.mu,emc=dark?acc:accD;
+ const W=760,HT=1130,X0=0;const card=dark?'rgba(238,243,244,.06)':'#fff',strk=dark?C.pl:C.ln;
+ const last=i===n-1,swipe=p.format==='carrousel'&&!last?'Glisse →':'';let head='',b='',y=0,src='';
+ const num=String(i).padStart(2,'0')+' / '+String(n-1).padStart(2,'0');
+ const T=(txt,sz,mx,col,f='b',lh)=>{const t=textBlock(txt,X0,y+sz*.8,sz,mx||W,col,emc,f,lh||(f==='b'?1.06:1.36));b+=t.svg;y+=t.h;return t};
+ if(s.type==='cover'){head=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':''),dark,acc,X0,0);
+  T(s.accroche,fit(s.accroche,W,6,128,70),W,fg);if(s.sous){y+=40;T(s.sous,44,W-20,mut,'m')}
+  if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-420,y,420,330,imgs);y+=330}}
+ else if(s.type==='texte'){head=chip(num,dark,acc,X0,0);T(s.titre,fit(s.titre,W,4,96,60),W,fg);y+=44;T(s.texte,50,W,mut,'m');
+  if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-360,y,360,280,imgs);y+=280}src=s.source||''}
+ else if(s.type==='chiffre'){head=chip(num,dark,acc,X0,0);const cs=fit(s.chiffre,W,1,260,110);
+  b+=`<text x="${X0}" y="${y+cs*.78}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${dark?acc:accD}">${X(s.chiffre)}</text>`;y+=cs*.9+40;
+  T(s.label,fit(s.label,W,5,66,44),W,fg);src=s.source||''}
+ else if(s.type==='duel'){head=chip('Débat · '+(p.rubrique||''),dark,C.am,X0,0);
+  const cd=(d,col)=>{d=d||{};const cs=fit(d.chiffre||'',W-80,1,150,80);const ls=fit(d.label||'',W-80,3,40,30,'m');const L=layout(d.label||'',ls,W-80,'m').length;const h=40+cs*.95+20+L*ls*1.3+30;
+   b+=`<rect x="${X0}" y="${y}" width="${W}" height="${h}" rx="36" fill="${card}" stroke="${strk}" stroke-width="2"/><text x="${X0+40}" y="${y+40+cs*.78}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${col}">${X(d.chiffre||'')}</text>`+textBlock(d.label||'',X0+40,y+40+cs*.95+20+ls*.8,ls,W-80,fg,emc,'m',1.3).svg;y+=h};
+  cd(s.a,dark?C.ja:C.jd);y+=24;b+=`<text x="${X0+W/2}" y="${y+56}" text-anchor="middle" font-family="IS" font-style="italic" font-size="64" fill="${mut}">contre</text>`;y+=90;cd(s.b,C.sig);y+=50;
+  T(s.question,fit(s.question,W,3,64,44),W,fg);src=s.source||''}
+ else if(s.type==='recap'){head=chip('Récap · la semaine',dark,acc,X0,0);const tt=s.titre||'La semaine en *3 chiffres*.';T(tt,fit(tt,W,3,88,60),W,fg);y+=40;
+  (s.items||[]).slice(0,3).forEach((it,k)=>{const cs=fit(it.chiffre||'',W-80,1,110,64);const ls=fit(it.label||'',W-80,2,36,28,'m');const L=layout(it.label||'',ls,W-80,'m').length;const h=36+cs*.95+16+L*ls*1.3+28;
+   b+=`<rect x="${X0}" y="${y}" width="${W}" height="${h}" rx="32" fill="${card}" stroke="${strk}" stroke-width="2"/><text x="${X0+40}" y="${y+36+cs*.78}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${k===1?(dark?C.am:C.ad):(dark?acc:accD)}">${X(it.chiffre||'')}</text>`+textBlock(it.label||'',X0+40,y+36+cs*.95+16+ls*.8,ls,W-80,fg,emc,'m',1.3).svg;y+=h+22});src=s.source||''}
+ else if(s.type==='cta'){head=chip('Olto',dark,acc,X0,0);const tt=s.titre||'Suis *@olto.media* pour la suite.';T(tt,fit(tt,W,4,112,64),W,fg);y+=44;
+  T(s.texte||'La lettre du dimanche : la semaine en 3 chiffres, lien en bio.',44,W,mut,'m');y+=40;b+=img(s.objet||'coins',W-400,y,400,300,imgs);y+=300}
+ else return null;
+ // chip en haut, pied en bas, contenu centré entre les deux
+ const top=56+70,fy=Math.max(HT,top+y+120);const off=top+Math.max(0,(fy-90-top-y)/2);
+ let f=`<g transform="translate(${X0},${fy-36}) scale(.24)">${LOGO(fg,C.ja)}</g>`;
+ if(src){let t=String(src);while(t.length>4&&mw(t,'mono',20)+t.length*0.5>W-200)t=t.slice(0,-2);if(t!==String(src))t=t.replace(/[ ,;·]+$/,'')+'…';f+=`<text x="${X0+W}" y="${fy}" text-anchor="end" font-family="PM" font-size="20" fill="${mut}">${X(t)}</text>`}
+ else if(swipe)f+=`<text x="${X0+W}" y="${fy}" text-anchor="end" font-family="PJ" font-weight="700" font-size="26" fill="${mut}">${X(swipe)}</text>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(dark,1920)}${head}<g transform="translate(0,${off.toFixed(1)})">${b}</g>${f}</svg>`}
+function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const nt=slideTK(p,s,i,n,imgs);if(nt)return nt;const v=slideSVG(p,s,i,n,imgs);const dk=/<rect width="1080" height="1350" fill="#0F1E1B"/.test(v);
   const body=v.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'').replace(/^<rect width="1080" height="1350"[^>]*\/>(<circle[^>]*\/>)?/,'');
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(dk,1920)}${TKFADE}<g transform="translate(${TK.x},${TK.y}) scale(${TK.s})">${body}</g></svg>`}
  const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
@@ -112,17 +156,17 @@ function storySVG(st){st=st||{};const H=1920;let o=`<svg xmlns="http://www.w3.or
  return o+'</svg>'}
 
 // story « Le mot du jour » 1080x1920 (fond ivoire, contraste avec le Top 5 sombre)
-function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=false;const fg=C.in,mut=C.mu;const X0=tk?60:72,MW=tk?845:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(false,H)}`;
+function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=false;const fg=C.in,mut=C.mu;const X0=tk?60:72,MW=tk?740:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(false,H)}`;
  o+=chip('Le mot du jour',false,C.ja,X0,T0);const head=o;o='';
- const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?116:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,C.jd,'b',1.0);o+=tb.svg;
+ const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?150:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,C.jd,'b',1.0);o+=tb.svg;
  let y=T0+130+ts*.9+(tb.lines-1)*ts+60;
  if(m.phon)o+=`<text x="${X0}" y="${y}" font-family="PM" font-size="26" fill="${mut}">${X(m.phon)}</text>`,y+=50;
  o+=`<rect x="${X0}" y="${y}" width="120" height="6" rx="3" fill="${C.ja}"/>`;y+=80;
- const d=textBlock(m.texte||'',X0,y,46,MW,fg,C.jd,'m',1.36);o+=d.svg;y+=d.h+50;
- if(m.cle){const kb=textBlock(m.cle,X0+48,y+118,40,MW-96,fg,C.jd,'b',1.25);const bh=kb.h+104;
+ const d=textBlock(m.texte||'',X0,y,tk?56:46,MW,fg,C.jd,'m',1.36);o+=d.svg;y+=d.h+50;
+ if(m.cle){const kb=textBlock(m.cle,X0+48,y+118,tk?52:40,MW-96,fg,C.jd,'b',1.25);const bh=kb.h+104;
   o+=`<rect x="${X0}" y="${y}" width="${MW}" height="${bh}" rx="28" fill="#fff" stroke="${C.ln}" stroke-width="2"/><rect x="${X0}" y="${y}" width="10" height="${bh}" rx="5" fill="${C.ja}"/>`;
   o+=`<text x="${X0+48}" y="${y+56}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.jd}">À RETENIR</text>`+kb.svg;y+=bh+40}
- if(m.lien){const lb=textBlock(m.lien,X0,y+40,30,MW,mut,C.jd,'m',1.35);o+=lb.svg;y+=40+lb.h}
+ if(m.lien){const lb=textBlock(m.lien,X0,y+40,tk?36:30,MW,mut,C.jd,'m',1.35);o+=lb.svg;y+=40+lb.h}
  o=head+`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`;
  o+=`<g transform="translate(${X0},${FY}) scale(.24)">${LOGO(fg,C.ja)}</g>`;
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${mut}">Pas un conseil en investissement.</text>`;
@@ -157,7 +201,7 @@ function storyTK(st,side){st=st||{};const up=side!=='baisses';const H=1920;const
 
 // Story « L'actu argent » : une info du jour qui touche le porte-monnaie (Instagram 1080x1920 ; TikTok : même image, zone visible respectée)
 // a = {titre, chiffre?, label?, texte, impact, source}
-function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?845:936,T0=tk?330:250,FY=tk?1570:1702;const H=1920;
+function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?740:936,T0=tk?330:250,FY=tk?1570:1702;const H=1920;
  let o=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}${tk?TKFADE:''}`;
  o+=chip("L'actu argent",true,C.sig,X0,T0);const head=o;o='';
  const ts=fit(a.titre||'',MW,4,tk?84:92,56);const tb=textBlock(a.titre||'',X0,T0+130+ts*.85,ts,MW,C.iv,C.ja);o+=tb.svg;let y=T0+130+ts*.85+(tb.lines-1)*ts*1.04+80;
@@ -172,5 +216,5 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?
  o+=`<text x="${X0+MW}" y="${FY+8}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(a.source||'').slice(0,52))}</text>`;
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Contenu pédagogique, pas un conseil.</text>`;
  return o+'</svg>'}
-window.OltoStudio={TK,tallTK,slideSVG,storySVG,storyTK,actuSVG,motSVG,toPNG,zip,images,ready,OBJ,C};
+window.OltoStudio={TK,TKBOX,fitTK,tallTK,slideSVG,storySVG,storyTK,actuSVG,motSVG,toPNG,zip,images,ready,OBJ,C};
 })();
