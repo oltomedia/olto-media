@@ -12,7 +12,7 @@ function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2)
  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
 
 // TikTok : agrandit le contenu pour occuper TOUTE la zone visible (hors barre de recherche, boutons, légende), fond intact.
-const TKBOX={x0:50,x1:905,y0:330,y1:1600,max:1.6};
+const TKBOX={x0:50,x1:905,y0:240,y1:1600,max:1.6};// mesuré sur iPhone (23/11) : sous la barre de recherche et le compteur 1/8, au-dessus des points et du nom
 function fitTK(svg,box){box=box||TKBOX;const host=document.createElement('div');host.style.cssText='position:absolute;left:-20000px;top:0;width:1080px;visibility:hidden';host.innerHTML=svg;document.body.appendChild(host);
  try{const root=host.querySelector('svg');root.style.width='1080px';const o=root.getBoundingClientRect();const k=1080/o.width;
   const g=document.createElementNS('http://www.w3.org/2000/svg','g');[...root.childNodes].forEach(n=>{if(n.nodeType===1&&(n.getAttribute('data-bg')||n.tagName==='defs'))return;g.appendChild(n)});root.appendChild(g);
