@@ -3,7 +3,13 @@
 const C={iv:'#EEF3F4',pn:'#0F1E1B',in:'#0A0F14',mu:'#5A6870',pm:'#9DBFB4',ln:'#D3DDE0',pl:'#2A4A42',ja:'#3FD3A4',jd:'#0A7A5A',am:'#F2B05A',ad:'#9A5B0E',at:'#F6E7CF',sig:'#FF5C4D'};
 const RUB={'argent':[C.ja,C.jd],'les bases':[C.ja,C.jd],'habitudes':[C.am,C.ad],'défi 66 jours':[C.am,C.ad],'le média':[C.ja,C.jd],'récap':[C.ja,C.jd],'actu':[C.sig,C.sig],'sources':[C.ja,C.jd],'débat':[C.am,C.ad]};
 // TikTok : l'image 9:16 est entourée de noir sur les téléphones récents (barre d'état, légende) ; on fond le haut et le bas vers le noir pour un raccord invisible
-const TKFADE=`<defs><linearGradient id="tkT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient><linearGradient id="tkB" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient></defs><rect width="1080" height="290" fill="url(#tkT)"/><rect y="1630" width="1080" height="290" fill="url(#tkB)"/>`;
+const TKFADE_OLD=`<defs><linearGradient id="tkT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient><linearGradient id="tkB" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient></defs><rect width="1080" height="290" fill="url(#tkT)"/><rect y="1630" width="1080" height="290" fill="url(#tkB)"/>`;
+const TKFADE='';
+// TikTok : image plus haute que 9:16 pour remplir les écrans allongés (iPhone) avec NOTRE fond, sans bande noire.
+// tallTK(svg,H) agrandit une image 1080x1920 à 1080xH en prolongeant le fond, contenu centré.
+function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2);const m=svg.match(/<rect width="1080" height="1920" fill="([^"]+)"/);const col=m?m[1]:'#0F1E1B';
+ const inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
+ return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
 const TK={x:-20,y:300,s:.93};// zone visible TikTok (photo, mesurée sur iPhone) : x 40-920, y 310-1620
 const OBJ=['coins','ring','bars','cup','calendar','coin','hourglass','phone','card'];
 const LOGO=(fill,dot)=>`<path d="M47 15A38 38 0 0 0 47 91" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M53 9A38 38 0 0 1 53 85" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="132" y1="-30" x2="132" y2="88" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><path d="M184 -6V70Q184 88 212 88" fill="none" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><line x1="162" y1="14" x2="214" y2="14" stroke="${fill}" stroke-width="24" stroke-linecap="round"/><circle cx="276" cy="50" r="38" fill="none" stroke="${fill}" stroke-width="24"/><circle cx="348" cy="80.8" r="19.2" fill="${dot}"/>`;
@@ -32,7 +38,7 @@ function foot(dark,src,right){const fg=dark?C.iv:C.in;let o=`<g transform="trans
  return o}
 function bg(dark,h=1350){return `<rect width="1080" height="${h}" fill="${dark?C.pn:C.iv}"/>`+(dark?`<circle cx="980" cy="${h>1400?420:120}" r="420" fill="${C.ja}" opacity=".07"/>`:`<circle cx="1000" cy="${h>1400?1500:1250}" r="420" fill="${C.ja}" opacity=".08"/>`)}
 function img(name,x,y,w,h,imgs){const src=imgs&&imgs[name];if(!src)return '';return `<image href="${src}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`}
-function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const v=slideSVG(p,Object.assign({},s,{theme:'sombre'}),i,n,imgs);const dk=true;
+function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const v=slideSVG(p,s,i,n,imgs);const dk=/<rect width="1080" height="1350" fill="#0F1E1B"/.test(v);
   const body=v.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'').replace(/^<rect width="1080" height="1350"[^>]*\/>(<circle[^>]*\/>)?/,'');
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(dk,1920)}${TKFADE}<g transform="translate(${TK.x},${TK.y}) scale(${TK.s})">${body}</g></svg>`}
  const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
@@ -106,17 +112,17 @@ function storySVG(st){st=st||{};const H=1920;let o=`<svg xmlns="http://www.w3.or
  return o+'</svg>'}
 
 // story « Le mot du jour » 1080x1920 (fond ivoire, contraste avec le Top 5 sombre)
-function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const fg=tk?C.iv:C.in,mut=tk?C.pm:C.mu;const X0=tk?60:72,MW=tk?845:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(tk,H)}${tk?TKFADE:''}`;
- o+=chip('Le mot du jour',tk,C.ja,X0,T0);const head=o;o='';
- const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?116:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,(tk?C.ja:C.jd),'b',1.0);o+=tb.svg;
+function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=false;const fg=C.in,mut=C.mu;const X0=tk?60:72,MW=tk?845:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(false,H)}`;
+ o+=chip('Le mot du jour',false,C.ja,X0,T0);const head=o;o='';
+ const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?116:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,C.jd,'b',1.0);o+=tb.svg;
  let y=T0+130+ts*.9+(tb.lines-1)*ts+60;
  if(m.phon)o+=`<text x="${X0}" y="${y}" font-family="PM" font-size="26" fill="${mut}">${X(m.phon)}</text>`,y+=50;
  o+=`<rect x="${X0}" y="${y}" width="120" height="6" rx="3" fill="${C.ja}"/>`;y+=80;
- const d=textBlock(m.texte||'',X0,y,46,MW,fg,(tk?C.ja:C.jd),'m',1.36);o+=d.svg;y+=d.h+50;
- if(m.cle){const kb=textBlock(m.cle,X0+48,y+118,40,MW-96,fg,(tk?C.ja:C.jd),'b',1.25);const bh=kb.h+104;
-  o+=`<rect x="${X0}" y="${y}" width="${MW}" height="${bh}" rx="28" fill="${tk?'rgba(238,243,244,.06)':'#fff'}" stroke="${tk?C.pl:C.ln}" stroke-width="2"/><rect x="${X0}" y="${y}" width="10" height="${bh}" rx="5" fill="${C.ja}"/>`;
-  o+=`<text x="${X0+48}" y="${y+56}" font-family="PM" font-size="22" letter-spacing="2" fill="${(tk?C.ja:C.jd)}">À RETENIR</text>`+kb.svg;y+=bh+40}
- if(m.lien){const lb=textBlock(m.lien,X0,y+40,30,MW,mut,(tk?C.ja:C.jd),'m',1.35);o+=lb.svg;y+=40+lb.h}
+ const d=textBlock(m.texte||'',X0,y,46,MW,fg,C.jd,'m',1.36);o+=d.svg;y+=d.h+50;
+ if(m.cle){const kb=textBlock(m.cle,X0+48,y+118,40,MW-96,fg,C.jd,'b',1.25);const bh=kb.h+104;
+  o+=`<rect x="${X0}" y="${y}" width="${MW}" height="${bh}" rx="28" fill="#fff" stroke="${C.ln}" stroke-width="2"/><rect x="${X0}" y="${y}" width="10" height="${bh}" rx="5" fill="${C.ja}"/>`;
+  o+=`<text x="${X0+48}" y="${y+56}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.jd}">À RETENIR</text>`+kb.svg;y+=bh+40}
+ if(m.lien){const lb=textBlock(m.lien,X0,y+40,30,MW,mut,C.jd,'m',1.35);o+=lb.svg;y+=40+lb.h}
  o=head+`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`;
  o+=`<g transform="translate(${X0},${FY}) scale(.24)">${LOGO(fg,C.ja)}</g>`;
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${mut}">Pas un conseil en investissement.</text>`;
@@ -166,5 +172,5 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?
  o+=`<text x="${X0+MW}" y="${FY+8}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(a.source||'').slice(0,52))}</text>`;
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Contenu pédagogique, pas un conseil.</text>`;
  return o+'</svg>'}
-window.OltoStudio={TK,slideSVG,storySVG,storyTK,actuSVG,motSVG,toPNG,zip,images,ready,OBJ,C};
+window.OltoStudio={TK,tallTK,slideSVG,storySVG,storyTK,actuSVG,motSVG,toPNG,zip,images,ready,OBJ,C};
 })();

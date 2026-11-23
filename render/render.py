@@ -48,7 +48,10 @@ async def main(kind, src, out):
         await pg.goto((HERE/'page.html').as_uri()); await pg.wait_for_function('window.READY===1', timeout=60000)
         jobs = []
         Z45 = {'x0':60,'x1':1020,'y0':50,'y1':1300}
-        ZTK = {'x0':30,'x1':925,'y0':310,'y1':1620}      # TikTok photo (mesuré sur iPhone) : barre de recherche, boutons, légende
+        TKH = int(os.environ.get('OLTO_TK_H', '1920'))   # hauteur des images TikTok (plus haute que 1920 = remplit les écrans allongés)
+        await pg.evaluate(f'window.TKH={TKH}')
+        _d = (TKH - 1920) // 2
+        ZTK = {'x0':30,'x1':925,'y0':310+_d,'y1':1620+_d}      # TikTok photo (mesuré sur iPhone) : barre de recherche, boutons, légende
         ZST = {'x0':60,'x1':1020,'y0':240,'y1':1760}     # story Instagram (barre de réponse sous l'image)
         if kind == 'actu':
             os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
