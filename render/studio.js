@@ -11,6 +11,11 @@ function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2)
  const inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
 
+
+// Photo presse (kit presse officiel, créditée) : carte arrondie, image recadrée, crédit en dessous.
+let PHN=0;
+function photoCard(ph,x,y,w,h,dark){if(!ph||!ph.src||h<120)return '';const id='ph'+(++PHN);const cr=ph.credit?`<text x="${x+w}" y="${y+h+28}" text-anchor="end" font-family="PM" font-size="18" fill="${dark?C.pm:C.mu}">${X(String(ph.credit).slice(0,60))}</text>`:'';
+ return `<defs><clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="32"/></clipPath></defs><image href="${X(ph.src)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${id})"/><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="32" fill="none" stroke="${dark?C.pl:C.ln}" stroke-width="2"/>`+cr}
 // TikTok : agrandit le contenu pour occuper TOUTE la zone visible (hors barre de recherche, boutons, légende), fond intact.
 const TKBOX={x0:50,x1:905,y0:240,y1:1600,max:1.6};// mesuré sur iPhone (23/11) : sous la barre de recherche et le compteur 1/8, au-dessus des points et du nom
 function fitTK(svg,box){box=box||TKBOX;const host=document.createElement('div');host.style.cssText='position:absolute;left:-20000px;top:0;width:1080px;visibility:hidden';host.innerHTML=svg;document.body.appendChild(host);
@@ -59,9 +64,9 @@ function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [a
  const T=(txt,sz,mx,col,f='b',lh)=>{const t=textBlock(txt,X0,y+sz*.8,sz,mx||W,col,emc,f,lh||(f==='b'?1.06:1.36));b+=t.svg;y+=t.h;return t};
  if(s.type==='cover'){head=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':''),dark,acc,X0,0);
   T(s.accroche,fit(s.accroche,W,6,128,70),W,fg);if(s.sous){y+=40;T(s.sous,44,W-20,mut,'m')}
-  if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-420,y,420,330,imgs);y+=330}}
+  if(s.photo){y+=44;b+=photoCard(s.photo,X0,y,W,440,dark);y+=480}else if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-420,y,420,330,imgs);y+=330}}
  else if(s.type==='texte'){head=chip(num,dark,acc,X0,0);T(s.titre,fit(s.titre,W,4,96,60),W,fg);y+=44;T(s.texte,50,W,mut,'m');
-  if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-360,y,360,280,imgs);y+=280}src=s.source||''}
+  if(s.photo){y+=44;b+=photoCard(s.photo,X0,y,W,400,dark);y+=440}else if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-360,y,360,280,imgs);y+=280}src=s.source||''}
  else if(s.type==='chiffre'){head=chip(num,dark,acc,X0,0);const cs=fit(s.chiffre,W,1,260,110);
   b+=`<text x="${X0}" y="${y+cs*.78}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${dark?acc:accD}">${X(s.chiffre)}</text>`;y+=cs*.9+40;
   T(s.label,fit(s.label,W,5,66,44),W,fg);src=s.source||''}
@@ -89,15 +94,16 @@ function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const nt
  const dark=s.theme?s.theme==='sombre':(s.type==='cover'||s.type==='cta'||s.type==='duel'||s.type==='reel')?(i%2===0):false;const fg=dark?C.iv:C.in,mut=dark?C.pm:C.mu,emc=dark?acc:accD;
  const H=s.type==='reel'?1920:1350;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(dark,H)}`;
  const last=i===n-1,swipe=p.format==='carrousel'&&!last?'Glisse →':'';
- if(s.type==='cover'||s.type==='reel'){const big=s.type==='reel';const maxW=936;const size=fit(s.accroche,maxW,big?6:5,big?132:118,64);const tb=textBlock(s.accroche,72,0,size,maxW,fg,emc);
-  const ty=big?560:300+size;o+=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':big?' · vidéo':''),dark,acc);
+ if(s.type==='cover'||s.type==='reel'){const big=s.type==='reel';const maxW=936;const wp=!big&&s.photo&&s.photo.src;const size=wp?fit(s.accroche,maxW,4,104,60):fit(s.accroche,maxW,big?6:5,big?132:118,64);const tb=textBlock(s.accroche,72,0,size,maxW,fg,emc);
+  const ty=big?560:wp?660+size*.8:300+size;if(wp)o+=photoCard(s.photo,72,150,936,440,dark);o+=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':big?' · vidéo':''),dark,acc);
   o+=`<g transform="translate(0,${ty})">${tb.svg}</g>`;
   if(s.sous)o+=textBlock(s.sous,72,ty+tb.h+30,40,800,mut,emc,'m',1.3).svg;
-  if(s.objet&&OBJ.includes(s.objet)){const oy=big?1250:Math.max(ty+tb.h+40,760);const oh=(big?1700:1200)-oy;if(oh>180)o+=img(s.objet,540,oy,460,oh,imgs)}
+  if(wp){}
+  else if(s.objet&&OBJ.includes(s.objet)){const oy=big?1250:Math.max(ty+tb.h+40,760);const oh=(big?1700:1200)-oy;if(oh>180)o+=img(s.objet,540,oy,460,oh,imgs)}
   if(big)o+=`<g transform="translate(72,1700)"><rect width="180" height="64" rx="32" fill="${acc}"/><text x="90" y="42" text-anchor="middle" font-family="PJ" font-weight="800" font-size="28" fill="${C.in}">▶ ${X(s.duree||'30 s')}</text></g>`+`<g transform="translate(72,1810) scale(.24)">${LOGO(fg,C.ja)}</g>`;
   else o+=foot(dark,'',swipe)}
  else if(s.type==='texte'){o+=chip(String(i).padStart(2,'0')+' / '+String(n-1).padStart(2,'0'),dark,acc);const t=textBlock(s.titre,72,300,fit(s.titre,936,3,84,54),936,fg,emc);o+=t.svg;
-  o+=textBlock(s.texte,72,300+t.h+40,40,920,mut,emc,'m',1.38).svg;if(s.objet&&OBJ.includes(s.objet))o+=img(s.objet,640,880,360,300,imgs);o+=foot(dark,s.source||'',swipe)}
+  const tx2=textBlock(s.texte,72,300+t.h+40,40,920,mut,emc,'m',1.38);o+=tx2.svg;if(s.photo){const py=300+t.h+40+tx2.h+20;o+=photoCard(s.photo,72,py,936,1160-py,dark)}else if(s.objet&&OBJ.includes(s.objet))o+=img(s.objet,640,880,360,300,imgs);o+=foot(dark,s.source||'',swipe)}
  else if(s.type==='chiffre'){o+=chip(String(i).padStart(2,'0')+' / '+String(n-1).padStart(2,'0'),dark,acc);const cs=fit(s.chiffre,936,1,250,110);
   o+=`<text x="72" y="${420+cs*.3}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${dark?acc:accD}">${X(s.chiffre)}</text>`;
   o+=textBlock(s.label,72,560+cs*.3,fit(s.label,936,4,60,40,'b'),936,fg,emc).svg;o+=foot(dark,s.source||'',swipe)}

@@ -1,0 +1,45 @@
+name: Récupérer une image presse
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Lien direct de l'image (kit presse officiel, https)"
+        required: true
+      path:
+        description: "Destination dans le dépôt (ex. img/presse/gta-vi-01.jpg)"
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharger et convertir en JPEG
+        env:
+          URL: ${{ inputs.url }}
+          DEST: ${{ inputs.path }}
+        run: |
+          case "$URL" in https://*) ;; *) echo "URL refusée (https uniquement)"; exit 1;; esac
+          case "$DEST" in img/presse/*.jpg) ;; *) echo "Chemin refusé (img/presse/<nom>.jpg)"; exit 1;; esac
+          case "$DEST" in *..*) echo "Chemin refusé"; exit 1;; esac
+          mkdir -p img/presse
+          curl -fsSL --max-filesize 20000000 "$URL" -o /tmp/src
+          pip install -q pillow
+          python3 - <<'PY'
+          import os
+          from PIL import Image
+          im = Image.open('/tmp/src'); im = im.convert('RGB')
+          if max(im.size) > 2400: im.thumbnail((2400, 2400))
+          im.save(os.environ['DEST'], 'JPEG', quality=90)
+          print(im.size)
+          PY
+      - name: Enregistrer
+        env:
+          DEST: ${{ inputs.path }}
+        run: |
+          git config user.name "Olto (GitHub Actions)"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$DEST"
+          git commit -m "Image presse : $DEST"
+          git push

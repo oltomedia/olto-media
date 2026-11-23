@@ -13,6 +13,17 @@ def chrome():
     for p in ['/usr/bin/google-chrome','/usr/bin/chromium','/usr/bin/chromium-browser']:
         if os.path.exists(p): return p
     return None
+
+def inline_photos(data):
+    """Remplace slide.photo.src (chemin du dépôt, ex. img/presse/x.jpg) par une image intégrée (data URI)."""
+    import base64
+    for sl in (data.get('slides') or []):
+        ph = sl.get('photo') if isinstance(sl, dict) else None
+        if not ph or not ph.get('src') or str(ph['src']).startswith(('data:', 'http')): continue
+        p = (HERE.parent / ph['src']).resolve()
+        if HERE.parent.resolve() not in p.parents or not p.exists(): raise SystemExit(f"Image introuvable : {ph['src']}")
+        ph['src'] = 'data:image/jpeg;base64,' + base64.b64encode(p.read_bytes()).decode()
+    return data
 async def reel(src, voice, out):
     import base64, subprocess, shutil
     data = json.load(open(src))
@@ -38,7 +49,7 @@ async def reel(src, voice, out):
         shutil.move(str(tmp), out)
     print(out)
 async def main(kind, src, out):
-    data = json.load(open(src))
+    data = inline_photos(json.load(open(src)))
     os.makedirs(out, exist_ok=True)
     async with async_playwright() as pw:
         kw = {'args':['--allow-file-access-from-files']}
