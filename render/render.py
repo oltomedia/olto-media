@@ -17,8 +17,9 @@ def chrome():
 def inline_photos(data):
     """Remplace slide.photo.src (chemin du dépôt, ex. img/presse/x.jpg) par une image intégrée (data URI)."""
     import base64
-    for sl in (data.get('slides') or []):
-        ph = sl.get('photo') if isinstance(sl, dict) else None
+    items = [sl.get('photo') if isinstance(sl, dict) else None for sl in (data.get('slides') or [])]
+    items += [sc for sc in ((data.get('reel') or {}).get('scenes') or []) if isinstance(sc, dict) and sc.get('src')]
+    for ph in items:
         if not ph or not ph.get('src') or str(ph['src']).startswith(('data:', 'http')): continue
         p = (HERE.parent / ph['src']).resolve()
         if HERE.parent.resolve() not in p.parents or not p.exists(): raise SystemExit(f"Image introuvable : {ph['src']}")
@@ -26,7 +27,7 @@ def inline_photos(data):
     return data
 async def reel(src, voice, out):
     import base64, subprocess, shutil
-    data = json.load(open(src))
+    data = inline_photos(json.load(open(src)))
     tmp = pathlib.Path(out).with_suffix('.silent.mp4')
     async with async_playwright() as pw:
         kw = {'args':['--allow-file-access-from-files','--autoplay-policy=no-user-gesture-required']}
@@ -36,14 +37,35 @@ async def reel(src, voice, out):
         await pg.goto((HERE/'reel_page.html').as_uri()); await pg.wait_for_function('window.READY===1', timeout=60000)
         vurl = pathlib.Path(voice).resolve().as_uri() if voice and voice != '-' else None
         T = await pg.evaluate('([p,v,a])=>setup(p,v,a)', [data, vurl, 'voix' not in data])
+        CUES = await pg.evaluate('OltoReel.cues(P)'); MUS = await pg.evaluate('OltoReel.music(P)')
         n = int(T*30)
         ff = subprocess.Popen(['ffmpeg','-v','error','-y','-f','image2pipe','-framerate','30','-c:v','mjpeg','-i','-','-c:v','libx264','-preset','veryfast','-crf','18','-pix_fmt','yuv420p',str(tmp)], stdin=subprocess.PIPE)
         for i in range(n):
             d = await pg.evaluate(f"(draw({i}/30),document.getElementById('c').toDataURL('image/jpeg',.92))")
             ff.stdin.write(base64.b64decode(d.split(',')[1]))
         ff.stdin.close(); ff.wait(); await b.close()
+    # MIXAGE : voix (devant) + musique Olto (sous la voix, baissée quand on parle) + bruitages calés sur l'image
+    AUD = HERE / 'audio'
+    ins = ['-i', str(tmp)]; parts = []; mixin = []; k = 1
     if vurl:
-        subprocess.run(['ffmpeg','-v','error','-y','-i',str(tmp),'-i',voice,'-map','0:v','-map','1:a','-c:v','copy','-c:a','aac','-b:a','192k','-af','loudnorm=I=-14:TP=-1.5:LRA=11,apad','-shortest','-movflags','+faststart',out], check=True)
+        ins += ['-i', voice]; parts.append(f'[{k}:a]aresample=44100,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=11,apad=whole_dur={T:.2f},asplit=2[vox][key]'); mixin.append('[vox]'); k += 1
+    if MUS and (AUD / 'music' / f'{MUS}.m4a').exists():
+        ins += ['-stream_loop', '-1', '-i', str(AUD / 'music' / f'{MUS}.m4a')]
+        fo = max(0, T - 1.5)
+        chain = f'[{k}:a]aresample=44100,aformat=channel_layouts=stereo,atrim=0:{T:.2f},volume={0.22 if vurl else 0.5},afade=t=in:d=0.6,afade=t=out:st={fo:.2f}:d=1.5'
+        if vurl: parts.append(chain + '[m0]'); parts.append('[m0][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=300[mus]')
+        else: parts.append(chain + '[mus]')
+        mixin.append('[mus]'); k += 1
+    elif vurl:
+        parts.append('[key]anullsink')
+    for c in CUES:
+        f = AUD / 'sfx' / f"{c['s']}.wav"
+        if not f.exists() or c['t'] >= T: continue
+        ins += ['-i', str(f)]; ms = int(c['t'] * 1000)
+        parts.append(f"[{k}:a]aresample=44100,aformat=channel_layouts=stereo,volume={c.get('v', .5) * 0.6:.2f},adelay={ms}|{ms}[s{k}]"); mixin.append(f'[s{k}]'); k += 1
+    if mixin:
+        parts.append(''.join(mixin) + f'amix=inputs={len(mixin)}:normalize=0:duration=longest,atrim=0:{T:.2f},loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.95[a]')
+        subprocess.run(['ffmpeg','-v','error','-y',*ins,'-filter_complex',';'.join(parts),'-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','192k','-t',f'{T:.2f}','-movflags','+faststart',out], check=True)
         os.remove(tmp)
     else:
         shutil.move(str(tmp), out)

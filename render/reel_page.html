@@ -2,7 +2,7 @@
 @font-face{font-family:PJ;src:url(fonts/pj-500.woff2);font-weight:400 500}@font-face{font-family:PJ;src:url(fonts/pj-700.woff2);font-weight:600 700}@font-face{font-family:PJ;src:url(fonts/pj-800.woff2);font-weight:800}@font-face{font-family:IS;src:url(fonts/is-italic.woff2);font-style:italic}@font-face{font-family:PM;src:url(fonts/plex-mono.woff2)}
 body{margin:0;background:#222}</style></head><body><canvas id="c" width="1080" height="1920"></canvas>
 <script src="reel.js"></script><script>
-window.setup=async(p,voiceUrl,align)=>{await Promise.all(['800 40px PJ','500 40px PJ','italic 400 40px IS','400 20px PM'].map(f=>document.fonts.load(f)));await OltoReel.loadImgs();
+window.setup=async(p,voiceUrl,align)=>{await Promise.all(['800 40px PJ','500 40px PJ','italic 400 40px IS','400 20px PM'].map(f=>document.fonts.load(f)));await OltoReel.loadImgs();await OltoReel.loadPhotos(p);
  if(voiceUrl){const ab=await new OfflineAudioContext(1,44100,44100).decodeAudioData(await (await fetch(voiceUrl)).arrayBuffer());p._voice=ab;if(align)OltoReel.alignVoice(p,ab);else OltoReel.speechSpans(p,ab)}
  window.P=p;window.draw=t=>OltoReel.frame(document.getElementById('c').getContext('2d'),p,t);return OltoReel.total(p)};
 window.READY=1;
