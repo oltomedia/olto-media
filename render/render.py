@@ -110,6 +110,11 @@ async def main(kind, src, out):
         for k, d, i, fmt, name, zone in jobs:
             await pg.evaluate('([k,d,i,f])=>show(k,d,i,f)', [k, d, i, fmt]); await pg.wait_for_timeout(250)
             await pg.locator('#out svg').screenshot(path=os.path.join(out, name), type='jpeg', quality=94)
+            if name.startswith('tiktok/'):
+                # API TikTok : 1920 px de haut maximum. On garde la forme d'un iPhone (1080x2340) en réduisant à 886x1920.
+                from PIL import Image
+                im = Image.open(os.path.join(out, name)).convert('RGB')
+                if im.height > 1920: im.resize((round(im.width * 1920 / im.height), 1920), Image.LANCZOS).save(os.path.join(out, name), quality=93)
             if zone:
                 for pb in await pg.evaluate('(z)=>check(z)', zone): report.append(f'{name} : {pb}')
             print(os.path.join(out, name))
