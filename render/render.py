@@ -19,6 +19,8 @@ def inline_photos(data):
     import base64
     items = [sl.get('photo') if isinstance(sl, dict) else None for sl in (data.get('slides') or [])]
     items += [sc for sc in ((data.get('reel') or {}).get('scenes') or []) if isinstance(sc, dict) and sc.get('src')]
+    st = data.get('story') if isinstance(data.get('story'), dict) else data
+    items += [((st.get('une') or {}).get('photo'))] if isinstance(st, dict) else []
     for ph in items:
         if not ph or not ph.get('src') or str(ph['src']).startswith(('data:', 'http')): continue
         p = (HERE.parent / ph['src']).resolve()
@@ -94,6 +96,10 @@ async def main(kind, src, out):
         elif kind == 'story':
             st = data.get('story', data)
             os.makedirs(os.path.join(out, 'tiktok'), exist_ok=True)
+            # « La une » (photo de la valeur n°1) : 1re story Instagram (une.jpg) et 1re image TikTok (tiktok/00.jpg)
+            if ((st.get('une') or {}).get('photo') or {}).get('src'):
+                jobs.append(('une', st, 0, None, 'une.jpg', ZST))
+                jobs.append(('une', st, 0, 'tiktok', 'tiktok/00.jpg', ZTK))
             jobs.append(('top5', st, 0, None, 'top5.jpg', ZST))
             if (st.get('mot') or {}).get('terme'): jobs.append(('mot', st, 0, None, 'mot.jpg', ZST))
             # TikTok : post photo en 3 images (hausses, baisses, mot du jour), dans la zone visible
