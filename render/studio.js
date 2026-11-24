@@ -17,7 +17,7 @@ let PHN=0;
 function photoCard(ph,x,y,w,h,dark){if(!ph||!ph.src||h<120)return '';const id='ph'+(++PHN);const cr=ph.credit?`<text x="${x+w}" y="${y+h+28}" text-anchor="end" font-family="PM" font-size="18" fill="${dark?C.pm:C.mu}">${X(String(ph.credit).slice(0,60))}</text>`:'';
  return `<defs><clipPath id="${id}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="32"/></clipPath></defs><image href="${X(ph.src)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${id})"/><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="32" fill="none" stroke="${dark?C.pl:C.ln}" stroke-width="2"/>`+cr}
 // TikTok : agrandit le contenu pour occuper TOUTE la zone visible (hors barre de recherche, boutons, légende), fond intact.
-const TKBOX={x0:50,x1:905,y0:240,y1:1600,max:1.6};// mesuré sur iPhone (23/11) : sous la barre de recherche et le compteur 1/8, au-dessus des points et du nom
+const TKBOX={x0:50,x1:890,y0:365,y1:1555,max:1.6};// mesuré sur iPhone (23/11) : sous la barre de recherche et le compteur 1/8, au-dessus des points et du nom
 function fitTK(svg,box){box=box||TKBOX;const host=document.createElement('div');host.style.cssText='position:absolute;left:-20000px;top:0;width:1080px;visibility:hidden';host.innerHTML=svg;document.body.appendChild(host);
  try{const root=host.querySelector('svg');root.style.width='1080px';const o=root.getBoundingClientRect();const k=1080/o.width;
   const g=document.createElementNS('http://www.w3.org/2000/svg','g');[...root.childNodes].forEach(n=>{if(n.nodeType===1&&(n.getAttribute('data-bg')||n.tagName==='defs'))return;g.appendChild(n)});root.appendChild(g);
