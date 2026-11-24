@@ -8,7 +8,10 @@ const TKFADE='';
 // TikTok : image plus haute que 9:16 pour remplir les écrans allongés (iPhone) avec NOTRE fond, sans bande noire.
 // tallTK(svg,H) agrandit une image 1080x1920 à 1080xH en prolongeant le fond, contenu centré.
 function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2);const m=svg.match(/<rect width="1080" height="1920" fill="([^"]+)"/);const col=m?m[1]:'#0F1E1B';
- const inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
+ const FADE=(typeof window!=="undefined"&&window.TKFADE_ON);
+ let inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
+ if(FADE){inner=inner.replace(/<rect width="1080" height="1920" fill="[^"]+"( data-bg="1")?\/>/,'');
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><defs><linearGradient id="tkbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B7560"/><stop offset=".22" stop-color="#22604F"/><stop offset=".45" stop-color="#16392F"/><stop offset=".64" stop-color="#0A1A15"/><stop offset=".78" stop-color="#020504"/><stop offset="1" stop-color="#000"/></linearGradient></defs><rect width="1080" height="${H}" fill="url(#tkbg)"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g>${(typeof window!=="undefined"&&window.TKFADE_ON)?`<defs><linearGradient id="tkfb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".45" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity=".92"/></linearGradient><linearGradient id="tkft" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></linearGradient></defs><rect x="0" y="${H-560}" width="1080" height="560" fill="url(#tkfb)"/><rect x="0" y="0" width="1080" height="400" fill="url(#tkft)"/>`:""}</svg>`}
 
 
