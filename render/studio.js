@@ -81,8 +81,8 @@ function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [a
  else if(s.type==='recap'){head=chip('Récap · la semaine',dark,acc,X0,0);const tt=s.titre||'La semaine en *3 chiffres*.';T(tt,fit(tt,W,3,88,60),W,fg);y+=40;
   (s.items||[]).slice(0,3).forEach((it,k)=>{const cs=fit(it.chiffre||'',W-80,1,110,64);const ls=fit(it.label||'',W-80,2,36,28,'m');const L=layout(it.label||'',ls,W-80,'m').length;const h=36+cs*.95+16+L*ls*1.3+28;
    b+=`<rect x="${X0}" y="${y}" width="${W}" height="${h}" rx="32" fill="${card}" stroke="${strk}" stroke-width="2"/><text x="${X0+40}" y="${y+36+cs*.78}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${k===1?(dark?C.am:C.ad):(dark?acc:accD)}">${X(it.chiffre||'')}</text>`+textBlock(it.label||'',X0+40,y+36+cs*.95+16+ls*.8,ls,W-80,fg,emc,'m',1.3).svg;y+=h+22});src=s.source||''}
- else if(s.type==='cta'){head=chip('Olto',dark,acc,X0,0);const tt=s.titre||'Suis *@olto.media* pour la suite.';T(tt,fit(tt,W,4,112,64),W,fg);y+=44;
-  T(s.texte||'La lettre du dimanche : la semaine en 3 chiffres, lien en bio.',44,W,mut,'m');y+=40;b+=img(s.objet||'coins',W-400,y,400,300,imgs);y+=300}
+ else if(s.type==='cta'){head=chip('Olto',dark,acc,X0,0);/* TikTok : la dernière slide appelle à s'abonner (décision du 24/11), pas au lien en bio */const tt=s.titreTK||'*Abonne-toi* pour comprendre ton argent.';T(tt,fit(tt,W,4,112,64),W,fg);y+=44;
+  T(s.texteTK||((s.texte&&s.texte.includes('?'))?s.texte:'5 infos argent par semaine, chiffres sourcés, zéro promesse.'),44,W,mut,'m');y+=40;b+=img(s.objet||'coins',W-400,y,400,300,imgs);y+=300}
  else return null;
  // chip en haut, pied en bas, contenu centré entre les deux
  const top=56+70,fy=Math.max(HT,top+y+120);const off=top+Math.max(0,(fy-90-top-y)/2);
