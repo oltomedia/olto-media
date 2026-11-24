@@ -78,7 +78,7 @@ async def main(kind, src, out):
         if chrome(): kw['executable_path'] = chrome()
         b = await pw.chromium.launch(**kw)
         pg = await b.new_page(viewport={'width':1080,'height':1920})
-        await pg.goto((HERE/'page.html').as_uri()); await pg.wait_for_function('window.READY===1', timeout=60000)
+        await pg.goto((HERE/'page.html').as_uri() + ('?fade=0' if os.environ.get('OLTO_TK_FADE','1')=='0' else '')); await pg.wait_for_function('window.READY===1', timeout=60000)
         jobs = []
         Z45 = {'x0':60,'x1':1020,'y0':50,'y1':1300}
         TKH = int(os.environ.get('OLTO_TK_H', '2340'))   # hauteur des images TikTok (plus haute que 1920 = remplit les écrans allongés)

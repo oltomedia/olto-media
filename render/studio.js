@@ -9,7 +9,7 @@ const TKFADE='';
 // tallTK(svg,H) agrandit une image 1080x1920 à 1080xH en prolongeant le fond, contenu centré.
 function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2);const m=svg.match(/<rect width="1080" height="1920" fill="([^"]+)"/);const col=m?m[1]:'#0F1E1B';
  const inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
- return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
+ return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g>${(typeof window!=="undefined"&&window.TKFADE_ON)?`<defs><linearGradient id="tkfb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".45" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity=".92"/></linearGradient><linearGradient id="tkft" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></linearGradient></defs><rect x="0" y="${H-560}" width="1080" height="560" fill="url(#tkfb)"/><rect x="0" y="0" width="1080" height="400" fill="url(#tkft)"/>`:""}</svg>`}
 
 
 // Photo presse (kit presse officiel, créditée) : carte arrondie, image recadrée, crédit en dessous.
@@ -57,7 +57,7 @@ function img(name,x,y,w,h,imgs){const src=imgs&&imgs[name];if(!src)return '';ret
 
 // TikTok : mise en page native (colonne étroite, gros textes), empilée de haut en bas ; fitTK l'agrandit ensuite pour remplir la zone visible.
 function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
- const dark=s.theme?s.theme==='sombre':(s.type==='cover'||s.type==='cta'||s.type==='duel')?(i%2===0):false;const fg=dark?C.iv:C.in,mut=dark?C.pm:C.mu,emc=dark?acc:accD;
+ const dark=true;/* TikTok : tout en sombre (dégradé noir natif, décision du 24/11) */const fg=dark?C.iv:C.in,mut=dark?C.pm:C.mu,emc=dark?acc:accD;
  const W=760,HT=1130,X0=0;const card=dark?'rgba(238,243,244,.06)':'#fff',strk=dark?C.pl:C.ln;
  const last=i===n-1,swipe=p.format==='carrousel'&&!last?'Glisse →':'';let head='',b='',y=0,src='';
  const num=String(i).padStart(2,'0')+' / '+String(n-1).padStart(2,'0');
@@ -162,7 +162,7 @@ function storySVG(st){st=st||{};const H=1920;let o=`<svg xmlns="http://www.w3.or
  return o+'</svg>'}
 
 // story « Le mot du jour » 1080x1920 (fond ivoire, contraste avec le Top 5 sombre)
-function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=false;const fg=C.in,mut=C.mu;const X0=tk?60:72,MW=tk?740:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(false,H)}`;
+function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=tk;const fg=tk?C.iv:C.in,mut=tk?C.pm:C.mu;const X0=tk?60:72,MW=tk?740:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(dk,H)}`;
  o+=chip('Le mot du jour',false,C.ja,X0,T0);const head=o;o='';
  const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?150:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,C.jd,'b',1.0);o+=tb.svg;
  let y=T0+130+ts*.9+(tb.lines-1)*ts+60;
