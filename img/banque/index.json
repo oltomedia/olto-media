@@ -1,0 +1,2939 @@
+[
+ {
+  "slug": "air-liquide",
+  "nom": "Air Liquide",
+  "type": "entreprise",
+  "entreprise": "Air Liquide",
+  "indice": "CAC 40",
+  "credit": "Photo : Konushna, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Konushna",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAir_Liquide12.jpg",
+  "description": "Severstal",
+  "mots_cles": [
+   "air liquide",
+   "air liquide"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "airbus",
+  "nom": "Airbus",
+  "type": "entreprise",
+  "entreprise": "Airbus",
+  "indice": "CAC 40",
+  "credit": "Photo : Duch, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Duch",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAirbus_Lagard%C3%A8re_-_A%C3%A9roconstellation.jpg",
+  "description": "Aerial view of the Airbus plant Lagardère. In the background the Aéroconstellation area with the Aeroscopia museum and the association Ailes Anciennes Toulouse.",
+  "mots_cles": [
+   "airbus",
+   "airbus"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "arcelormittal",
+  "nom": "ArcelorMittal",
+  "type": "entreprise",
+  "entreprise": "ArcelorMittal",
+  "indice": "CAC 40",
+  "credit": "Photo : Meffo, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "Meffo",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AArcelorMittalLuxemburg.JPG",
+  "description": "ArcelorMittal, Administration, Luxembourg",
+  "mots_cles": [
+   "arcelormittal",
+   "arcelormittal"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "bnp-paribas",
+  "nom": "BNP Paribas",
+  "type": "entreprise",
+  "entreprise": "BNP Paribas",
+  "indice": "CAC 40",
+  "credit": "Photo : Carlo Dani, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Carlo Dani",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABNL_Sede_Roma_Via_Veneto.jpg",
+  "description": "Sede centrale della BNL a Roma, Via Veneto",
+  "mots_cles": [
+   "bnp paribas",
+   "bnp paribas"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "capgemini",
+  "nom": "Capgemini",
+  "type": "entreprise",
+  "entreprise": "Capgemini",
+  "indice": "CAC 40",
+  "credit": "Photo : Jakub Hałun, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Jakub Hałun",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AKrakow_Rondo_Business_Park_20070929_1300_2.jpg",
+  "description": "Wieżowiec Rondo Business Park w Krakowie",
+  "mots_cles": [
+   "capgemini",
+   "capgemini"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "carrefour",
+  "nom": "Carrefour",
+  "type": "entreprise",
+  "entreprise": "Carrefour",
+  "indice": "CAC 40",
+  "credit": "Photo : SanjibLemar, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "SanjibLemar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABig_single-family_home_2.jpg",
+  "description": "Big single-family home",
+  "mots_cles": [
+   "carrefour",
+   "carrefour"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "danone",
+  "nom": "Danone",
+  "type": "entreprise",
+  "entreprise": "Danone",
+  "indice": "CAC 40",
+  "credit": "Photo : Pancrat, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Pancrat",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AActimel.jpg",
+  "description": "Actimel de Danone, lait fermenté probiotique",
+  "mots_cles": [
+   "danone",
+   "danone"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "edenred",
+  "nom": "Edenred",
+  "type": "entreprise",
+  "entreprise": "Edenred",
+  "indice": "CAC 40",
+  "credit": "Photo : Wbc, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Wbc",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AImplantation_Edenred.jpg",
+  "description": "Implantation mondiale Edenred",
+  "mots_cles": [
+   "edenred",
+   "edenred"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "hermes",
+  "nom": "Hermès",
+  "type": "entreprise",
+  "entreprise": "Hermès",
+  "indice": "CAC 40",
+  "credit": "Photo : Theorb, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Theorb",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHermes_Birkin.JPG",
+  "description": "A picture of a genuine Hermes Birkin taken by me.",
+  "mots_cles": [
+   "hermès",
+   "hermès"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "kering",
+  "nom": "Kering",
+  "type": "entreprise",
+  "entreprise": "Kering",
+  "indice": "CAC 40",
+  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Unknown authorUnknown author",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABathingSuit1920s.jpg",
+  "description": "Woman's bathing suit from 1920s. Photo postcard. No copyright notice on card. This is a SOL postcard, series 2832. Here is a larger example of the posted image.",
+  "mots_cles": [
+   "kering",
+   "kering"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "l-oreal",
+  "nom": "L'Oréal",
+  "type": "entreprise",
+  "entreprise": "L'Oréal",
+  "indice": "CAC 40",
+  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Unknown authorUnknown author",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABathingSuit1920s.jpg",
+  "description": "Woman's bathing suit from 1920s. Photo postcard. No copyright notice on card. This is a SOL postcard, series 2832. Here is a larger example of the posted image.",
+  "mots_cles": [
+   "l'oréal",
+   "l'oréal"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "lvmh",
+  "nom": "LVMH",
+  "type": "entreprise",
+  "entreprise": "LVMH",
+  "indice": "CAC 40",
+  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Unknown authorUnknown author",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABathingSuit1920s.jpg",
+  "description": "Woman's bathing suit from 1920s. Photo postcard. No copyright notice on card. This is a SOL postcard, series 2832. Here is a larger example of the posted image.",
+  "mots_cles": [
+   "lvmh",
+   "lvmh"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "michelin",
+  "nom": "Michelin",
+  "type": "entreprise",
+  "entreprise": "Michelin",
+  "indice": "CAC 40",
+  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Unknown authorUnknown author",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAgincourt_Square.jpg",
+  "description": "Agincourt Square c. 1965-1970, view of old fashioned Michelin omnibus and two Michelin men with bystanders behind Rolls statue. Monmouth Museum Identity Number: M4488",
+  "mots_cles": [
+   "michelin",
+   "michelin"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "pernod-ricard",
+  "nom": "Pernod Ricard",
+  "type": "entreprise",
+  "entreprise": "Pernod Ricard",
+  "indice": "CAC 40",
+  "credit": "Photo : Peng (talk) 13:47, 17 June 2008 (UTC), CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Peng (talk) 13:47, 17 June 2008 (UTC)",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APernod_p_006.jpg",
+  "description": "1 l Pernodflasche mit Glas mit Eis",
+  "mots_cles": [
+   "pernod ricard",
+   "pernod ricard"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "renault",
+  "nom": "Renault",
+  "type": "entreprise",
+  "entreprise": "Renault",
+  "indice": "CAC 40",
+  "credit": "Photo : unknown, affiliated with Garage de l'Est, uploaded by User:B, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "unknown, affiliated with Garage de l'Est, uploaded by User:B",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A1959_Renault_Fr%C3%A9gate_Transfluide.jpg",
+  "description": "1959 Renault Frégate Transfluide saloon, ivory, interior in red fake leather\n\nThe vehicle was on sale at the Garage de l'Est at the time the image was uploaded",
+  "mots_cles": [
+   "renault",
+   "renault"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "safran",
+  "nom": "Safran",
+  "type": "entreprise",
+  "entreprise": "Safran",
+  "indice": "CAC 40",
+  "credit": "Photo : Bertrand SOUBEYRAND, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Bertrand SOUBEYRAND",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASite_groupe_aeronautique_SAFRAN_Casablanca_route_Nouaceur-Photo_Bertrand_SOUBEYRAND.jpg",
+  "description": "Viewpoint on the entrance to the Safran aerospace group site on Route de Nouaceur in Sidi Maârouf, Casablanca, which hosts engineering activities of the group, on 25/08/2026",
+  "mots_cles": [
+   "safran",
+   "safran"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "saint-gobain",
+  "nom": "Saint-Gobain",
+  "type": "entreprise",
+  "entreprise": "Saint-Gobain",
+  "indice": "CAC 40",
+  "credit": "Photo : Jane023, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Jane023",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AReeds_Ferry%2C_NH_04.jpg",
+  "description": "Saint-Gobain Performance Plastics, 701 Daniel Webster Hwy, Merrimack, NH 03054",
+  "mots_cles": [
+   "saint-gobain",
+   "saint-gobain"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "sanofi",
+  "nom": "Sanofi",
+  "type": "entreprise",
+  "entreprise": "Sanofi",
+  "indice": "CAC 40",
+  "credit": "Photo : Harrison Keely, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Harrison Keely",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AA_Sanofi_pharmaceutical_plant_in_Chattanooga%2C_Tennessee_04.jpg",
+  "description": "A Sanofi pharmaceutical plant in Chattanooga, Tennessee",
+  "mots_cles": [
+   "sanofi",
+   "sanofi"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "schneider-electric",
+  "nom": "Schneider Electric",
+  "type": "entreprise",
+  "entreprise": "Schneider Electric",
+  "indice": "CAC 40",
+  "credit": "Photo : Schneider Electric, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Schneider Electric",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASE_History-19cent-IC-900x500.jpg",
+  "description": "1838: \"La Gironde\", the first French locomotive",
+  "mots_cles": [
+   "schneider electric",
+   "schneider electric"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "societe-generale",
+  "nom": "Société Générale",
+  "type": "entreprise",
+  "entreprise": "Société Générale",
+  "indice": "CAC 40",
+  "credit": "Photo : Americasroof (talk), CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Americasroof (talk)",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A245parkNYC.jpg",
+  "description": "245 Park Avenue",
+  "mots_cles": [
+   "société générale",
+   "société générale"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "stmicroelectronics",
+  "nom": "STMicroelectronics",
+  "type": "entreprise",
+  "entreprise": "STMicroelectronics",
+  "indice": "CAC 40",
+  "credit": "Photo : yellowcloud from Germany, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "yellowcloud from Germany",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A256kbit_16kbit_EPROM_SRAM_Wafer_Scale_Integration_PSD311_%283%29.jpg",
+  "description": "256kbit/16kbit EPROM/SRAM Wafer Scale Integration PSD311",
+  "mots_cles": [
+   "stmicroelectronics",
+   "stmicroelectronics"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "thales",
+  "nom": "Thales",
+  "type": "entreprise",
+  "entreprise": "Thales",
+  "indice": "CAC 40",
+  "credit": "Photo : Matti Blume, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Matti Blume",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AILA_2018%2C_Sch%C3%B6nefeld_%281X7A5464%29.jpg",
+  "description": "Thales Ground Master 200 on Renault 8x8 truck chassis, ILA 2018",
+  "mots_cles": [
+   "thales",
+   "thales"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "totalenergies",
+  "nom": "TotalEnergies",
+  "type": "entreprise",
+  "entreprise": "TotalEnergies",
+  "indice": "CAC 40",
+  "credit": "Photo : Bertrand SOUBEYRAND, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Bertrand SOUBEYRAND",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AStation_Total_Energies_%C3%A0_casablanca_lors_du_blocage_du_d%C3%A9troit_d%27Ormuz_en_Iran-photo_Bertrand_SOUBEYRAND.jpg",
+  "description": "A TotalEnergies petrol station in Casablanca, Morocco, on 10/05/2026, during the blockade of the Strait of Hormuz by Iran and the United States. The price board shows diesel at 14.53 dirhams and unlea",
+  "mots_cles": [
+   "totalenergies",
+   "totalenergies"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "unibail-rodamco-westfield",
+  "nom": "Unibail-Rodamco-Westfield",
+  "type": "entreprise",
+  "entreprise": "Unibail-Rodamco-Westfield",
+  "indice": "CAC 40",
+  "credit": "Photo : TobiasSkopek, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "TobiasSkopek",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AWestfield_CHODOV_-_vchod_A.jpg",
+  "description": "Vchod A",
+  "mots_cles": [
+   "unibail-rodamco-westfield",
+   "unibail-rodamco-westfield"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "veolia",
+  "nom": "Veolia",
+  "type": "entreprise",
+  "entreprise": "Veolia",
+  "indice": "CAC 40",
+  "credit": "Photo : Philafrenzy, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Philafrenzy",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACity_of_Westminster_Veolia_refuse_lorry_10_Jun_2015_central_London.JPG",
+  "description": "City of Westminster Veolia refuse lorry 10 Jun 2015 central London.",
+  "mots_cles": [
+   "veolia",
+   "veolia"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "nvidia",
+  "nom": "Nvidia",
+  "type": "entreprise",
+  "entreprise": "Nvidia",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2788-2888_San_Tomas_Expwy.jpg",
+  "description": "NVIDIA headquarters at 2788-2888 San Tomas Expressway in Santa Clara, California.",
+  "mots_cles": [
+   "nvidia",
+   "nvidia"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "apple",
+  "nom": "Apple",
+  "type": "entreprise",
+  "entreprise": "Apple",
+  "indice": "S&P 500",
+  "credit": "Photo : Daniel L. Lu (user:dllu), CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Daniel L. Lu (user:dllu)",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAerial_view_of_Apple_Park_dllu.jpg",
+  "description": "Aerial view of Apple Park, the corporate headquarters of Apple Inc., located in Cupertino, California. The roof is covered in solar panels with an output of 17 MWp, making it one of the biggest solar ",
+  "mots_cles": [
+   "apple",
+   "apple"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "microsoft",
+  "nom": "Microsoft",
+  "type": "entreprise",
+  "entreprise": "Microsoft",
+  "indice": "S&P 500",
+  "credit": "Photo : Jelson25, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Jelson25",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAerial_Microsoft_West_Campus_August_2009.jpg",
+  "description": "The west campus of Microsoft, Redmond, Washington, taken from about 1,500'.  The photo is looking south-east.  The west campus is bounded on the west by 148th Ave, on the east by SR 520, and on the no",
+  "mots_cles": [
+   "microsoft",
+   "microsoft"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "alphabet",
+  "nom": "Alphabet",
+  "type": "entreprise",
+  "entreprise": "Alphabet",
+  "indice": "S&P 500",
+  "credit": "Photo : Austin McKinley, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "Austin McKinley",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AGoogle_Campus%2C_Mountain_View%2C_CA.jpg",
+  "description": "Aerial view of the main Google Campus in Mountain View, CA.",
+  "mots_cles": [
+   "alphabet",
+   "alphabet"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "google",
+  "nom": "Google",
+  "type": "entreprise",
+  "entreprise": "Google",
+  "indice": "S&P 500",
+  "credit": "Photo : Asoundd, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Asoundd",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AGoogleplex_HQ_%28cropped%29.jpg",
+  "description": "Googleplex Headquarters, Mountain View, US",
+  "mots_cles": [
+   "google",
+   "google"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "amazon",
+  "nom": "Amazon",
+  "type": "entreprise",
+  "entreprise": "Amazon",
+  "indice": "S&P 500",
+  "credit": "Photo : SounderBruce, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "SounderBruce",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAmazon_Tower_I_topped_out%2C_June_2015.jpg",
+  "description": "Amazon Tower I, a 37-story office building in Seattle, Washington built for Amazon.com, being topped out in 2015.",
+  "mots_cles": [
+   "amazon",
+   "amazon"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "meta",
+  "nom": "Meta",
+  "type": "entreprise",
+  "entreprise": "Meta",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar at English Wikipedia, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Coolcaesar at English Wikipedia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A1601californiaavelobby.jpg",
+  "description": "Entrance to the lobby of the office building at 1601 California Avenue in Palo Alto.\nFacebook moved into this building on May 14, 2009.\n\nPhotographed by user Coolcaesar on May 25, 2009.",
+  "mots_cles": [
+   "meta",
+   "meta"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "tesla",
+  "nom": "Tesla",
+  "type": "entreprise",
+  "entreprise": "Tesla",
+  "indice": "S&P 500",
+  "credit": "Photo : Jeremy from Sydney, Australia, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Jeremy from Sydney, Australia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2011-2012_Tesla_Roadster_convertible_%2824365020656%29.jpg",
+  "description": "Tesla Roadster",
+  "mots_cles": [
+   "tesla",
+   "tesla"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "broadcom",
+  "nom": "Broadcom",
+  "type": "entreprise",
+  "entreprise": "Broadcom",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABroadcom_Headquarters_San_Jose.jpg",
+  "description": "Broadcom Inc. headquarters in San Jose, California. Photographed by user Coolcaesar on June 1, 2019.",
+  "mots_cles": [
+   "broadcom",
+   "broadcom"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "amd",
+  "nom": "AMD",
+  "type": "entreprise",
+  "entreprise": "AMD",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2485_Augustine_Drive_headquarters_in_Santa_Clara%2C_California.jpg",
+  "description": "2485 Augustine Drive headquarters in Santa Clara, California. At the time this photo was taken, this office building was home to the headquarters of Advanced Micro Devices, Inc. Photographed on June 2",
+  "mots_cles": [
+   "amd",
+   "amd"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "intel",
+  "nom": "Intel",
+  "type": "entreprise",
+  "entreprise": "Intel",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AIntel_Headquarters_in_2023.jpg",
+  "description": "Intel headquarters at 2200 Mission College Boulevard in Santa Clara, California. At the time this photo was taken in 2023, the Robert Noyce Building was wrapped with a temporary poster honoring the li",
+  "mots_cles": [
+   "intel",
+   "intel"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "micron",
+  "nom": "Micron",
+  "type": "entreprise",
+  "entreprise": "Micron",
+  "indice": "S&P 500",
+  "credit": "Photo : Multicherry, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Multicherry",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACrucial_SD_Cards_2007_1GB_and_2GB_%28front%29.jpg",
+  "description": "Crucial Technology (Micron) SD Cards (front side) - 1GB (left) and 2GB (right). Purchased 2007, photographed 2017. It appears Micron stopped using the \"Crucial\" brand for SD cards (in favour of \"Lexar",
+  "mots_cles": [
+   "micron",
+   "micron"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "dell",
+  "nom": "Dell",
+  "type": "entreprise",
+  "entreprise": "Dell",
+  "indice": "S&P 500",
+  "credit": "Photo : Dell Technologies, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Dell Technologies",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADell_Technologies_Headquarters.jpg",
+  "description": "Dell Technologies Headquarters in Round Rock, Texas",
+  "mots_cles": [
+   "dell",
+   "dell"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "hpe",
+  "nom": "HPE",
+  "type": "entreprise",
+  "entreprise": "HPE",
+  "indice": "S&P 500",
+  "credit": "Photo : auteur inconnu, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "auteur inconnu",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHPE_headquarters.jpg",
+  "description": "",
+  "mots_cles": [
+   "hpe",
+   "hpe"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "oracle",
+  "nom": "Oracle",
+  "type": "entreprise",
+  "entreprise": "Oracle",
+  "indice": "S&P 500",
+  "credit": "Photo : DronePhotographer, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "DronePhotographer",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AOracle_Campus_in_Austin_2018.jpg",
+  "description": "Picture of the Oracle Riverside Campus in Austin, Texas in 2018.",
+  "mots_cles": [
+   "oracle",
+   "oracle"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "netflix",
+  "nom": "Netflix",
+  "type": "entreprise",
+  "entreprise": "Netflix",
+  "indice": "S&P 500",
+  "credit": "Photo : Paowee, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Paowee",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AGoogle_ATV_Reference_RCU_G10_-_Netflix_button.jpg",
+  "description": "The Netflix button on a Google Android TV Reference RCU (G10) remote. The other buttons present besides the Netflix button are the Prime Video, Google Play, and Youtube buttons.",
+  "mots_cles": [
+   "netflix",
+   "netflix"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "disney",
+  "nom": "Disney",
+  "type": "entreprise",
+  "entreprise": "Disney",
+  "indice": "S&P 500",
+  "credit": "Photo : chensiyuan, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "chensiyuan",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A1_epcot_spaceship_earth_2010a.JPG",
+  "description": "Epcot Spaceship Earth Walt Disney World Orlando 2010",
+  "mots_cles": [
+   "disney",
+   "disney"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "nike",
+  "nom": "Nike",
+  "type": "entreprise",
+  "entreprise": "Nike",
+  "indice": "S&P 500",
+  "credit": "Photo : Gary Halvorson, Oregon State Archives, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Gary Halvorson, Oregon State Archives",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ANike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg",
+  "description": "The Nike Campus in Beaverton.",
+  "mots_cles": [
+   "nike",
+   "nike"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "boeing",
+  "nom": "Boeing",
+  "type": "entreprise",
+  "entreprise": "Boeing",
+  "indice": "S&P 500",
+  "credit": "Photo : mr_t_77, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "mr_t_77",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABoeing_Virginia_Headquarters_%28cropped_and_brighter%29.jpg",
+  "description": "Boeing's offices in Arlington County, Virginia, the corporate headquarters of the company as of 2022.",
+  "mots_cles": [
+   "boeing",
+   "boeing"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "jpmorgan",
+  "nom": "JPMorgan",
+  "type": "entreprise",
+  "entreprise": "JPMorgan",
+  "indice": "S&P 500",
+  "credit": "Photo : Jfendi, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Jfendi",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A270parkave_from_empirestate_03_14_2025_%28cropped%29.jpg",
+  "description": "View of 270 Park Avenue between 432 Park Avenue and One Vanderbilt from the 86th floor of the Empire State Building after dusk on March 14, 2025.",
+  "mots_cles": [
+   "jpmorgan",
+   "jpmorgan"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "visa",
+  "nom": "Visa",
+  "type": "entreprise",
+  "entreprise": "Visa",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A300_Toni_Stone_Crossing.jpg",
+  "description": "As of 2025, this office building at 300 Toni Stone Crossing in San Francisco, California was home to the Market Support Center of Visa Inc., the company's de facto headquarters. Photographed by user C",
+  "mots_cles": [
+   "visa",
+   "visa"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "mastercard",
+  "nom": "Mastercard",
+  "type": "entreprise",
+  "entreprise": "Mastercard",
+  "indice": "S&P 500",
+  "credit": "Photo : auteur inconnu, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "auteur inconnu",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHudson_river_from_bear_mountain_bridge.jpg",
+  "description": "",
+  "mots_cles": [
+   "mastercard",
+   "mastercard"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "walmart",
+  "nom": "Walmart",
+  "type": "entreprise",
+  "entreprise": "Walmart",
+  "indice": "S&P 500",
+  "credit": "Photo : Bssasidhar, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Bssasidhar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABest_Price_Modern_Wholesale%2C_Hyderabad%2C_India%2810_Aug_2019%29.jpg",
+  "description": "A Best Price Modern Wholesale location in Hyderabad. Photo taken on 10 Aug 2019.",
+  "mots_cles": [
+   "walmart",
+   "walmart"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "costco",
+  "nom": "Costco",
+  "type": "entreprise",
+  "entreprise": "Costco",
+  "indice": "S&P 500",
+  "credit": "Photo : Aaron F. Stone, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Aaron F. Stone",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACostco_Wholesale_-_Fredericksburg%2C_Virginia.jpg",
+  "description": "Costco Wholesale store in Fredericksburg, Virginia. Anchored at the Spotsylvania Towne Centre",
+  "mots_cles": [
+   "costco",
+   "costco"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "coca-cola",
+  "nom": "Coca-Cola",
+  "type": "entreprise",
+  "entreprise": "Coca-Cola",
+  "indice": "S&P 500",
+  "credit": "Photo : DXR, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "DXR",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACoca-Cola_Tower_and_Guggenheim_Building%2C_Atlanta%2C_Northeast_view_20160717_1.jpg",
+  "description": "A northeast view of the headquarters of Coca-Cola and the Guggenheim Building, Georgia Tech, Atlanta",
+  "mots_cles": [
+   "coca-cola",
+   "coca-cola"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "mcdonald-s",
+  "nom": "McDonald's",
+  "type": "entreprise",
+  "entreprise": "McDonald's",
+  "indice": "S&P 500",
+  "credit": "Photo : Harrison Keely, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Harrison Keely",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AA_modern_McDonald%27s_restaurant_in_Franklin%2C_North_Carolina.jpg",
+  "description": "A modern McDonald's restaurant in Franklin, North Carolina",
+  "mots_cles": [
+   "mcdonald's",
+   "mcdonald's"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "starbucks",
+  "nom": "Starbucks",
+  "type": "entreprise",
+  "entreprise": "Starbucks",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AStarbuckscenter.jpg",
+  "description": "Starbucks Center in Seattle, Washington (headquarters of Starbucks Coffee).  \nPhotographed by user Coolcaesar on May 30, 2016.",
+  "mots_cles": [
+   "starbucks",
+   "starbucks"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "pfizer",
+  "nom": "Pfizer",
+  "type": "entreprise",
+  "entreprise": "Pfizer",
+  "indice": "S&P 500",
+  "credit": "Photo : Jim.henderson, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Jim.henderson",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A235_E42_St_2025_jeh.jpg",
+  "description": "looking north",
+  "mots_cles": [
+   "pfizer",
+   "pfizer"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "moderna",
+  "nom": "Moderna",
+  "type": "entreprise",
+  "entreprise": "Moderna",
+  "indice": "S&P 500",
+  "credit": "Photo : Fletcher, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Fletcher",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AModerna_Headquarters%2C_December_2020.jpg",
+  "description": "Moderna office in Cambridge, Massachusetts",
+  "mots_cles": [
+   "moderna",
+   "moderna"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "eli-lilly",
+  "nom": "Eli Lilly",
+  "type": "entreprise",
+  "entreprise": "Eli Lilly",
+  "indice": "S&P 500",
+  "credit": "Photo : photographer not idenfied, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "photographer not idenfied",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AColonel_eli_lilly_in_1885-full.JPG",
+  "description": "An 1885 photograph of Colonel Eli Lilly. American Civil War veteran, founder of Eli Lilly & co, inventor, chemist, philanthropist.",
+  "mots_cles": [
+   "eli lilly",
+   "eli lilly"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "berkshire-hathaway",
+  "nom": "Berkshire Hathaway",
+  "type": "entreprise",
+  "entreprise": "Berkshire Hathaway",
+  "indice": "S&P 500",
+  "credit": "Photo : JonClee86, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "JonClee86",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AOmahaKiewitPlaza.jpg",
+  "description": "Kiewit Plaza in midtown Omaha, Nebraska, USA.",
+  "mots_cles": [
+   "berkshire hathaway",
+   "berkshire hathaway"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "exxonmobil",
+  "nom": "ExxonMobil",
+  "type": "entreprise",
+  "entreprise": "ExxonMobil",
+  "indice": "S&P 500",
+  "credit": "Photo : Harrison Keely, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Harrison Keely",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAn_ExxonMobil_gas_station_in_Hiawassee%2C_Georgia.jpg",
+  "description": "An ExxonMobil gas station in Hiawassee, Georgia",
+  "mots_cles": [
+   "exxonmobil",
+   "exxonmobil"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "chevron",
+  "nom": "Chevron",
+  "type": "entreprise",
+  "entreprise": "Chevron",
+  "indice": "S&P 500",
+  "credit": "Photo : Cancillería Ecuador from Ecuador, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Cancillería Ecuador from Ecuador",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACaso_Chevron_-_Texaco%2C_conversatorio_con_prensa_extranjera_%2811227582075%29.jpg",
+  "description": "Quito (Ecuador), 05 de diciembre 2013. La Cancillería recibió a la prensa extranjera que visita el país para conocer sobre el caso Chevron - Texaco. El Canciller Ricardo Patiño contestó sus preguntas,",
+  "mots_cles": [
+   "chevron",
+   "chevron"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "johnson-johnson",
+  "nom": "Johnson & Johnson",
+  "type": "entreprise",
+  "entreprise": "Johnson & Johnson",
+  "indice": "S&P 500",
+  "credit": "Photo : ajay_suresh, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "ajay_suresh",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AJohnson_%26_Johnson_%28J%26J%29_%2855143119004%29.jpg",
+  "description": "New Brunswick, NJ",
+  "mots_cles": [
+   "johnson & johnson",
+   "johnson & johnson"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "procter-gamble",
+  "nom": "Procter & Gamble",
+  "type": "entreprise",
+  "entreprise": "Procter & Gamble",
+  "indice": "S&P 500",
+  "credit": "Photo : auteur inconnu, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "auteur inconnu",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACincinnati-procter-and-gamble-headquarters.jpg",
+  "description": "",
+  "mots_cles": [
+   "procter & gamble",
+   "procter & gamble"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "goldman-sachs",
+  "nom": "Goldman Sachs",
+  "type": "entreprise",
+  "entreprise": "Goldman Sachs",
+  "indice": "S&P 500",
+  "credit": "Photo : Ajay Suresh, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Ajay Suresh",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AGoldman_Sachs_%2855312935052%29.jpg",
+  "description": "New York, NY",
+  "mots_cles": [
+   "goldman sachs",
+   "goldman sachs"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bank-of-america",
+  "nom": "Bank of America",
+  "type": "entreprise",
+  "entreprise": "Bank of America",
+  "indice": "S&P 500",
+  "credit": "Photo : No machine-readable author provided. Nopira assumed (based o, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "No machine-readable author provided. Nopira assumed (based o",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABank_of_America_Corporate_Center.jpg",
+  "description": "From en:Image:Bank of America Corporate Center.jpg, by user Fife Club.",
+  "mots_cles": [
+   "bank of america",
+   "bank of america"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "salesforce",
+  "nom": "Salesforce",
+  "type": "entreprise",
+  "entreprise": "Salesforce",
+  "indice": "S&P 500",
+  "credit": "Photo : Raysonho @ Open Grid Scheduler / Grid Engine, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Raysonho @ Open Grid Scheduler / Grid Engine",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASalesforceCustomerCompanyTour4.JPG",
+  "description": "Innovation Panel with Accenture, Facebook, Google, Salesforce\nLeft to Right: Peter Coffee (Salesforce.com), Jordan Banks (Facebook Canada Managing Director), Chris O’Neill (Google Canada Managing Dire",
+  "mots_cles": [
+   "salesforce",
+   "salesforce"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "adobe",
+  "nom": "Adobe",
+  "type": "entreprise",
+  "entreprise": "Adobe",
+  "indice": "S&P 500",
+  "credit": "Photo : Xnatedawgx, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Xnatedawgx",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAdobe_Founders_Tower%2C_San_Jose%2C_CA%2C_south_side_2024-02-28.jpg",
+  "description": "Adobe Founders Tower, San Jose, CA, south side",
+  "mots_cles": [
+   "adobe",
+   "adobe"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "qualcomm",
+  "nom": "Qualcomm",
+  "type": "entreprise",
+  "entreprise": "Qualcomm",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AQualcomm_Headquarters_La_Jolla.jpg",
+  "description": "The headquarters of Qualcomm in the La Jolla area of San Diego, California. Photographed on December 26, 2015 by user Coolcaesar.",
+  "mots_cles": [
+   "qualcomm",
+   "qualcomm"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "palantir",
+  "nom": "Palantir",
+  "type": "entreprise",
+  "entreprise": "Palantir",
+  "indice": "S&P 500",
+  "credit": "Photo : FASTILY, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "FASTILY",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APalantir_1_2018-09-06.jpg",
+  "description": "Palantir",
+  "mots_cles": [
+   "palantir",
+   "palantir"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "super-micro",
+  "nom": "Super Micro",
+  "type": "entreprise",
+  "entreprise": "Super Micro",
+  "indice": "S&P 500",
+  "credit": "Photo : Solomon203, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Solomon203",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASuper_Micro_Computer_booth_20190601.jpg",
+  "description": "​2019台北國際電腦展，美超微電腦攤位。",
+  "mots_cles": [
+   "super micro",
+   "super micro"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "crowdstrike",
+  "nom": "CrowdStrike",
+  "type": "entreprise",
+  "entreprise": "CrowdStrike",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A150_Mathilda_Place.jpg",
+  "description": "This office building at 150 Mathilda Place in Sunnyvale, California was formerly home to the headquarters of CrowdStrike but is now home to its Silicon Valley branch office.  Photographed by user Cool",
+  "mots_cles": [
+   "crowdstrike",
+   "crowdstrike"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "dollar-tree",
+  "nom": "Dollar Tree",
+  "type": "entreprise",
+  "entreprise": "Dollar Tree",
+  "indice": "S&P 500",
+  "credit": "Photo : Harrison Keely, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Harrison Keely",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADollar_Tree_discount_store_exterior_in_Greenville%2C_South_Carolina_02.jpg",
+  "description": "Dollar Tree discount store exterior in Greenville, South Carolina, during its grand opening",
+  "mots_cles": [
+   "dollar tree",
+   "dollar tree"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "analog-devices",
+  "nom": "Analog Devices",
+  "type": "entreprise",
+  "entreprise": "Analog Devices",
+  "indice": "S&P 500",
+  "credit": "Photo : Sgroey, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Sgroey",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAnalog_Devices_16_bit_SoundPort_stereo_codec_chip.jpg",
+  "description": "From an Ensoniq Soundscape Elite 16 bit computer sound card",
+  "mots_cles": [
+   "analog devices",
+   "analog devices"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "texas-instruments",
+  "nom": "Texas Instruments",
+  "type": "entreprise",
+  "entreprise": "Texas Instruments",
+  "indice": "S&P 500",
+  "credit": "Photo : RuthAS, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "RuthAS",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AConvair_240-1_N240HH_Texas_Inst_Chino_05.10.90R_edited-3.jpg",
+  "description": "Convair 240 N240HH of Texas Instruments at Chino airfield California in 1990",
+  "mots_cles": [
+   "texas instruments",
+   "texas instruments"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "paypal",
+  "nom": "PayPal",
+  "type": "entreprise",
+  "entreprise": "PayPal",
+  "indice": "S&P 500",
+  "credit": "Photo : Sagar Savla, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Sagar Savla",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APayPal_San_Jose_Headquarters.jpg",
+  "description": "HQ of PayPal. 2211 N First St, San Jose, California, USA.",
+  "mots_cles": [
+   "paypal",
+   "paypal"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "uber",
+  "nom": "Uber",
+  "type": "entreprise",
+  "entreprise": "Uber",
+  "indice": "S&P 500",
+  "credit": "Photo : HaeB, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "HaeB",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AUber_offices%2C_Mission_Bay_%28July_2020%29_-2.jpg",
+  "description": "Offices of Uber at the intersection of 3rd Street and 16th Street in San Francisco's Mission Bay neighborhood. Part of the company's (then) new headquarters. The Chase Center is visible in the backgro",
+  "mots_cles": [
+   "uber",
+   "uber"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "airbnb",
+  "nom": "Airbnb",
+  "type": "entreprise",
+  "entreprise": "Airbnb",
+  "indice": "S&P 500",
+  "credit": "Photo : Dllu, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Dllu",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A888_Brannan%2C_San_Francisco%2C_2016.jpg",
+  "description": "A building in San Francisco. The building contains the AirBnB North American headquarters.",
+  "mots_cles": [
+   "airbnb",
+   "airbnb"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "unitedhealth",
+  "nom": "UnitedHealth",
+  "type": "entreprise",
+  "entreprise": "UnitedHealth",
+  "indice": "S&P 500",
+  "credit": "Photo : Wikideas1, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Wikideas1",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALHI_buildings.jpg",
+  "description": "LHI buildings",
+  "mots_cles": [
+   "unitedhealth",
+   "unitedhealth"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "home-depot",
+  "nom": "Home Depot",
+  "type": "entreprise",
+  "entreprise": "Home Depot",
+  "indice": "S&P 500",
+  "credit": "Photo : Bobak Ha'Eri, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "Bobak Ha'Eri",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2009-0912-GameDay-FowlerHoward.jpg",
+  "description": "ESPN College GameDay's Chris Fowler (left) and Desmond Howard (right) doing post-game analysis after a game at Ohio Stadium in Columbus, Ohio.",
+  "mots_cles": [
+   "home depot",
+   "home depot"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ford",
+  "nom": "Ford",
+  "type": "entreprise",
+  "entreprise": "Ford",
+  "indice": "S&P 500",
+  "credit": "Photo : 42-BRT, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "42-BRT",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AFord_World_Headquarters_from_sidewalk%2C_against_sun.jpg",
+  "description": "Exterior of the new Ford World Headquarters in Dearborn, Michigan, United States, seen the day after its grand opening.",
+  "mots_cles": [
+   "ford",
+   "ford"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "general-motors",
+  "nom": "General Motors",
+  "type": "entreprise",
+  "entreprise": "General Motors",
+  "indice": "S&P 500",
+  "credit": "Photo : TheWxResearcher, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "TheWxResearcher",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHudson%E2%80%99s_Detroit_Building_2026-01-01.jpg",
+  "description": "The Completed Hudson’s Detroit in January 2026",
+  "mots_cles": [
+   "general motors",
+   "general motors"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ibm",
+  "nom": "IBM",
+  "type": "entreprise",
+  "entreprise": "IBM",
+  "indice": "S&P 500",
+  "credit": "Photo : Treesmittenex, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Treesmittenex",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AIBM_CHQ_-_Oct_2014.jpg",
+  "description": "IBM Corporate Headquarters in Armonk, NY, USA",
+  "mots_cles": [
+   "ibm",
+   "ibm"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "cisco",
+  "nom": "Cisco",
+  "type": "entreprise",
+  "entreprise": "Cisco",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A3098_Olsen_Drive.jpg",
+  "description": "An office building at 3098 Olsen Drive in San Jose, California which at the time was home to Splunk.  Photographed by user Coolcaesar on July 2, 2023.",
+  "mots_cles": [
+   "cisco",
+   "cisco"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "caterpillar",
+  "nom": "Caterpillar",
+  "type": "entreprise",
+  "entreprise": "Caterpillar",
+  "indice": "S&P 500",
+  "credit": "Photo : User: (WT-shared) Ethajek at wts wikivoyage, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "User: (WT-shared) Ethajek at wts wikivoyage",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACaterpillarhq.JPG",
+  "description": "Caterpillar world headquarters (G.O. / building AB), east from corner of Adams Street and Main Street, downtown Peoria, Illinois, USA, August 2009.  Flags from front to back (right to left): Caterpill",
+  "mots_cles": [
+   "caterpillar",
+   "caterpillar"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "lockheed-martin",
+  "nom": "Lockheed Martin",
+  "type": "entreprise",
+  "entreprise": "Lockheed Martin",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar at en.wikipedia, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Coolcaesar at en.wikipedia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALockheed_Martin_headquarters.jpg",
+  "description": "Main entrance to Lockheed Martin Center for Leadership Excellence (CLE) in Bethesda.",
+  "mots_cles": [
+   "lockheed martin",
+   "lockheed martin"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "spotify",
+  "nom": "Spotify",
+  "type": "entreprise",
+  "entreprise": "Spotify",
+  "indice": "",
+  "credit": "Photo : Goombah, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Goombah",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASpotify_HK_Stockholm.jpg",
+  "description": "Spotify huvudkontor i Stockholm",
+  "mots_cles": [
+   "spotify",
+   "spotify"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "novo-nordisk",
+  "nom": "Novo Nordisk",
+  "type": "entreprise",
+  "entreprise": "Novo Nordisk",
+  "indice": "",
+  "credit": "Photo : News Øresund - Johan Wessman, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "News Øresund - Johan Wessman",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ANovo_Nordisk_headquarters_building_Denmark.jpg",
+  "description": "Headquarters building of Novo Nordisk in Bagsværd, Denmark.",
+  "mots_cles": [
+   "novo nordisk",
+   "novo nordisk"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "asml",
+  "nom": "ASML",
+  "type": "entreprise",
+  "entreprise": "ASML",
+  "indice": "",
+  "credit": "Photo : Johfrael, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "Johfrael",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AASML_8_Tower.jpg",
+  "description": "ASML 8 Tower",
+  "mots_cles": [
+   "asml",
+   "asml"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "sap",
+  "nom": "SAP",
+  "type": "entreprise",
+  "entreprise": "SAP",
+  "indice": "",
+  "credit": "Photo : Intel Free Press, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Intel Free Press",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2013-09-11_Bus_wrapped_with_SAP_Big_Data_parked_outside_IDF13_%289730051783%29.jpg",
+  "description": "Bus wrapped with SAP Big Data parked outside IDF13.",
+  "mots_cles": [
+   "sap",
+   "sap"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "toyota",
+  "nom": "Toyota",
+  "type": "entreprise",
+  "entreprise": "Toyota",
+  "indice": "",
+  "credit": "Photo : Tokumeigakarinoaoshima, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Tokumeigakarinoaoshima",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHeadquarter_of_Toyota_Motor_Corporation_3.JPG",
+  "description": "トヨタ自動車本社を撮影 Toyota headquarters building",
+  "mots_cles": [
+   "toyota",
+   "toyota"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "samsung",
+  "nom": "Samsung",
+  "type": "entreprise",
+  "entreprise": "Samsung",
+  "indice": "",
+  "credit": "Photo : Oskar Alexanderson, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Oskar Alexanderson",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASamsung_headquarters.jpg",
+  "description": "The Samsung headquarters",
+  "mots_cles": [
+   "samsung",
+   "samsung"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "tsmc",
+  "nom": "TSMC",
+  "type": "entreprise",
+  "entreprise": "TSMC",
+  "indice": "",
+  "credit": "Photo : 曾 成訓, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "曾 成訓",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ATSMC_Global_R%EF%BC%86D_Center_at_night.jpg",
+  "description": "​夜間的台積電全球研發中心",
+  "mots_cles": [
+   "tsmc",
+   "tsmc"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "openai",
+  "nom": "OpenAI",
+  "type": "entreprise",
+  "entreprise": "OpenAI",
+  "indice": "",
+  "credit": "Photo : Coolcaesar, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A1515_Third_Street.jpg",
+  "description": "An office building at 1515 Third Street in the Mission Bay neighborhood of San Francisco, California.  At the time this photo was taken, this building was home to the headquarters of OpenAI.  Photogra",
+  "mots_cles": [
+   "openai",
+   "openai"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "shein",
+  "nom": "Shein",
+  "type": "entreprise",
+  "entreprise": "Shein",
+  "indice": "",
+  "credit": "Photo : Raysonho @ Open Grid Scheduler / Scalable Grid Engine, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASheinPopupStoreSquareOne2.jpg",
+  "description": "Shein pop-up store at the Square One Shopping Centre. (Photographer's note: good luck on the IPO, Shein!)",
+  "mots_cles": [
+   "shein",
+   "shein"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "playstation",
+  "nom": "PlayStation",
+  "type": "entreprise",
+  "entreprise": "PlayStation",
+  "indice": "",
+  "credit": "Photo : Sonson2, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Sonson2",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADualSense_Edge_Controller.jpg",
+  "description": "A Picture of the DualSense Edge Wireless Controller for PlayStation 5",
+  "mots_cles": [
+   "playstation",
+   "playstation"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "volkswagen",
+  "nom": "Volkswagen",
+  "type": "entreprise",
+  "entreprise": "Volkswagen",
+  "indice": "",
+  "credit": "Photo : Jeremy from Sydney, Australia, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Jeremy from Sydney, Australia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A1969_Volkswagen_1600_Type_3_Squareback_%2817081445566%29.jpg",
+  "description": "Volkswagen Type 3 Squareback",
+  "mots_cles": [
+   "volkswagen",
+   "volkswagen"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "byd",
+  "nom": "BYD",
+  "type": "entreprise",
+  "entreprise": "BYD",
+  "indice": "",
+  "credit": "Photo : S5A-0043, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "S5A-0043",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A%28CHN-Guangdong%29_Western_Bus_%E7%B2%A4B00602D_M209_2024-05-27.jpg",
+  "description": "Photo by S5A-0043. CC-BY.",
+  "mots_cles": [
+   "byd",
+   "byd"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ryanair",
+  "nom": "Ryanair",
+  "type": "entreprise",
+  "entreprise": "Ryanair",
+  "indice": "",
+  "credit": "Photo : Anna Zvereva from Tallinn, Estonia, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Anna Zvereva from Tallinn, Estonia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ARyanair%2C_EI-DYZ%2C_Boeing_737-8AS_%2849585974527%29.jpg",
+  "description": "Ryanair, EI-DYZ, Boeing 737-8AS",
+  "mots_cles": [
+   "ryanair",
+   "ryanair"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ikea",
+  "nom": "Ikea",
+  "type": "entreprise",
+  "entreprise": "Ikea",
+  "indice": "",
+  "credit": "Photo : News Oresund, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "News Oresund",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AIkea_Hubhult.jpg",
+  "description": "IKEA Hubhult in Malmö, Sweden",
+  "mots_cles": [
+   "ikea",
+   "ikea"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "e-leclerc",
+  "nom": "E.Leclerc",
+  "type": "entreprise",
+  "entreprise": "E.Leclerc",
+  "indice": "",
+  "credit": "Photo : Marek Mróz, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Marek Mróz",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2022-05_Katowice_-_Piotrowice-Ochojec_075.jpg",
+  "description": "Katowice - Piotrowice-Ochojec. Ulica Generała Zygmunta Waltera Jankego 15d. Sklep sieci E.Leclerc",
+  "mots_cles": [
+   "e.leclerc",
+   "e.leclerc"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "sncf",
+  "nom": "SNCF",
+  "type": "entreprise",
+  "entreprise": "SNCF",
+  "indice": "",
+  "credit": "Photo : BB 22385, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "BB 22385",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABB15048-Amiens.JPG",
+  "description": "BB 15048 en attente à Amiens",
+  "mots_cles": [
+   "sncf",
+   "sncf"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "edf",
+  "nom": "EDF",
+  "type": "entreprise",
+  "entreprise": "EDF",
+  "indice": "",
+  "credit": "Photo : Stefan Kühn, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Stefan Kühn",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ANuclear_Power_Plant_Cattenom.jpg",
+  "description": "Nuclear power plant in Cattenom, France",
+  "mots_cles": [
+   "edf",
+   "edf"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "la-poste",
+  "nom": "La Poste",
+  "type": "entreprise",
+  "entreprise": "La Poste",
+  "indice": "",
+  "credit": "Photo : Original uploader was Ruizo at fr.wikipedia, CC BY-SA 1.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 1.0",
+  "auteur": "Original uploader was Ruizo at fr.wikipedia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2cv_la_poste.jpg",
+  "description": "cliché personnel véhicule dérivés de la 2cv. Reprenant principalement la plateforme et la mécanique.les plaques d'immatriculation ont volontairement été masquées. Restauration conforme d'un véhicule d",
+  "mots_cles": [
+   "la poste",
+   "la poste"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "lidl",
+  "nom": "Lidl",
+  "type": "entreprise",
+  "entreprise": "Lidl",
+  "indice": "",
+  "credit": "Photo : Nickmariostories, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Nickmariostories",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A6406488-Lidl_Santorini-0.jpg",
+  "description": "Lidl in Santorini,Greece",
+  "mots_cles": [
+   "lidl",
+   "lidl"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "tim-cook",
+  "nom": "Tim Cook",
+  "type": "personne",
+  "entreprise": "Apple",
+  "indice": "",
+  "credit": "Photo : Dati Bendo / European Union, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Dati Bendo / European Union",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ATim_Cook_in_New_York_City_-_2026_%28cropped%29.jpg",
+  "description": "Tim Cook, Ursula von der Leyen, from left to right",
+  "mots_cles": [
+   "tim cook",
+   "apple"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "satya-nadella",
+  "nom": "Satya Nadella",
+  "type": "personne",
+  "entreprise": "Microsoft",
+  "indice": "",
+  "credit": "Photo : Brian Smale and Microsoft, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Brian Smale and Microsoft",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg",
+  "description": "Microsoft CEO Satya Nadella",
+  "mots_cles": [
+   "satya nadella",
+   "microsoft"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "sundar-pichai",
+  "nom": "Sundar Pichai",
+  "type": "personne",
+  "entreprise": "Alphabet",
+  "indice": "",
+  "credit": "Photo : Photographer: Lukasz Kobus (European Commission), CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Photographer: Lukasz Kobus (European Commission)",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASundar_Pichai_-_2023_%28cropped%29.jpg",
+  "description": "Sundar Pichai, CEO of Google.",
+  "mots_cles": [
+   "sundar pichai",
+   "alphabet"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "andy-jassy",
+  "nom": "Andy Jassy",
+  "type": "personne",
+  "entreprise": "Amazon",
+  "indice": "",
+  "credit": "Photo : Lisi Mezistrano Wolf, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Lisi Mezistrano Wolf",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAndy_Jassy.jpg",
+  "description": "Original, adjusted headshot picture of Andy Jassy, CEO at Amazon.com.\nPhoto with permission provided by Lisi Wolf.\n\nPhotograph 9-01-2021.",
+  "mots_cles": [
+   "andy jassy",
+   "amazon"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "elon-musk",
+  "nom": "Elon Musk",
+  "type": "personne",
+  "entreprise": "Tesla",
+  "indice": "",
+  "credit": "Photo : Gage Skidmore, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Gage Skidmore",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AElon_Musk_-_54820081119_%283x4_cropped%2C_Rule_of_thirds%29.jpg",
+  "description": "Elon Musk at the Memorial for Charlie Kirk at State Farm Stadium in Glendale, Arizona.",
+  "mots_cles": [
+   "elon musk",
+   "tesla"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "lisa-su",
+  "nom": "Lisa Su",
+  "type": "personne",
+  "entreprise": "AMD",
+  "indice": "",
+  "credit": "Photo : Fuzheado, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Fuzheado",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASXSW-2024-alih-OB7A0861-Lisa_Su_%28cropped_2%29.jpg",
+  "description": "South by Southwest Conference, Austin, Texas, March 11, 2024 - Lisa Su",
+  "mots_cles": [
+   "lisa su",
+   "amd"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "sanjay-mehrotra",
+  "nom": "Sanjay Mehrotra",
+  "type": "personne",
+  "entreprise": "Micron",
+  "indice": "",
+  "credit": "Photo : 首相官邸ホームページ, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "首相官邸ホームページ",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASanjay_Mehrotra_2025_%28cropped%29.jpg",
+  "description": "On July 23, 2025, Prime Minister Ishiba received a courtesy call from Mr. Sanjay Mehrotra, Chairman, President, and CEO of Micron Technology, Inc., at the Prime Minister’s Office.",
+  "mots_cles": [
+   "sanjay mehrotra",
+   "micron"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ted-sarandos",
+  "nom": "Ted Sarandos",
+  "type": "personne",
+  "entreprise": "Netflix",
+  "indice": "",
+  "credit": "Photo : Kevin Paul, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Kevin Paul",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ATed_Sarandos_at_TAFFF_2026-4.jpg",
+  "description": "Ted Sarandos at The American French Film Festival 2026",
+  "mots_cles": [
+   "ted sarandos",
+   "netflix"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bob-iger",
+  "nom": "Bob Iger",
+  "type": "personne",
+  "entreprise": "Disney",
+  "indice": "",
+  "credit": "Photo : nagi usano from Tokyo, Japan, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "nagi usano from Tokyo, Japan",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABob_Iger_2019_Disney_Legends_Awards_Ceremony_D23_EXPO_2019_%2851441457900%29_%28cropped%29.jpg",
+  "description": "Bob Iger | 2019 Disney Legends Awards Ceremony | D23 EXPO 2019",
+  "mots_cles": [
+   "bob iger",
+   "disney"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "warren-buffett",
+  "nom": "Warren Buffett",
+  "type": "personne",
+  "entreprise": "Berkshire Hathaway",
+  "indice": "",
+  "credit": "Photo : USA International Trade Administration, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "USA International Trade Administration",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AWarren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg",
+  "description": "Warren Buffett at the 2015 SelectUSA Investment Summit",
+  "mots_cles": [
+   "warren buffett",
+   "berkshire hathaway"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "jeff-bezos",
+  "nom": "Jeff Bezos",
+  "type": "personne",
+  "entreprise": "Amazon",
+  "indice": "",
+  "credit": "Photo : SECWAR, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "SECWAR",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg",
+  "description": "Secretary of War Pete Hegseth is greeted by Blue Origin Founder Jeff Bezos and Blue Origin CEO David Limp upon his arrival at Blue Origin, as part of his Arsenal of Freedom Tour, Cape Canaveral, Fla.,",
+  "mots_cles": [
+   "jeff bezos",
+   "amazon"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bill-gates",
+  "nom": "Bill Gates",
+  "type": "personne",
+  "entreprise": "Microsoft",
+  "indice": "",
+  "credit": "Photo : Bogdan Hoyaux / European Union, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Bogdan Hoyaux / European Union",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg",
+  "description": "On 25 June 2025, Ursula von der Leyen, President of the European Commission, receives Bill Gates, Co-Chair of the Gates Foundation, Founder of Gates Ventures, and Chairman of Breakthrough Energy, ahea",
+  "mots_cles": [
+   "bill gates",
+   "microsoft"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "larry-page",
+  "nom": "Larry Page",
+  "type": "personne",
+  "entreprise": "Alphabet",
+  "indice": "",
+  "credit": "Photo : Stansfield PL, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Stansfield PL",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALarry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped_2%29.jpg",
+  "description": "Larry Page, co-founder of Google, in the European Parliament on 17.06.2009",
+  "mots_cles": [
+   "larry page",
+   "alphabet"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "daniel-ek",
+  "nom": "Daniel Ek",
+  "type": "personne",
+  "entreprise": "Spotify",
+  "indice": "",
+  "credit": "Photo : Lukasz Kobus/European Commission, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Lukasz Kobus/European Commission",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADaniel_Ek_EC_2025_%28cropped%29.jpg",
+  "description": "On 25 February 2025, Henna Virkkunen, Executive Vice-President of the European Commission for Tech Sovereignty, Security and Democracy, and Glenn Micallef, European Commissioner for Intergenerational ",
+  "mots_cles": [
+   "daniel ek",
+   "spotify"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "brian-chesky",
+  "nom": "Brian Chesky",
+  "type": "personne",
+  "entreprise": "Airbnb",
+  "indice": "",
+  "credit": "Photo : Celeste Sloman, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Celeste Sloman",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABrian_Chesky_2025.jpg",
+  "description": "Portrait of Brian Chesky, 2025",
+  "mots_cles": [
+   "brian chesky",
+   "airbnb"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "reed-hastings",
+  "nom": "Reed Hastings",
+  "type": "personne",
+  "entreprise": "Netflix",
+  "indice": "",
+  "credit": "Photo : re:publica from Germany, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "re:publica from Germany",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ARe_publica_2015_-_Tag_1_%2817381870955%29_%28cropped%29.jpg",
+  "description": "Reed Hastings spricht auf der re:publica 2015 am 05.05.2015 in Berlin.\n\nCopyright: re:publica/Gregor Fischer",
+  "mots_cles": [
+   "reed hastings",
+   "netflix"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "marc-benioff",
+  "nom": "Marc Benioff",
+  "type": "personne",
+  "entreprise": "Salesforce",
+  "indice": "",
+  "credit": "Photo : Salesforce., CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Salesforce.",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMarc_Benioff.jpg",
+  "description": "Photo of Marc Benioff by Christie Hemm Klok",
+  "mots_cles": [
+   "marc benioff",
+   "salesforce"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "alex-karp",
+  "nom": "Alex Karp",
+  "type": "personne",
+  "entreprise": "Palantir",
+  "indice": "",
+  "credit": "Photo : UK Government, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "UK Government",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAlex_Karp_attends_AI_Summit_%2853302457013%29_4-5_ratio.jpg",
+  "description": "01/11/2023. Bletchley, United Kingdom. Deputy Prime Minister Oliver Dowden holds a bilateral meeting with Dr Alex Karp as he attends the AI Summit. Bletchley Park. Picture by Ben Dance / No 10 Downing",
+  "mots_cles": [
+   "alex karp",
+   "palantir"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ray-dalio",
+  "nom": "Ray Dalio",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Web Summit, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Web Summit",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AWeb_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg",
+  "description": "7 November 2018; Ray Dalio, Founder, Co-Chief Investment Officer & Co-Chairman, Bridgewater Associates on the Forum Stage during day two of Web Summit 2018 at the Altice Arena in Lisbon, Portugal. Pho",
+  "mots_cles": [
+   "ray dalio"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "cathie-wood",
+  "nom": "Cathie Wood",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Caroline Wood, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Caroline Wood",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACathie_Wood_ARK_Invest_Photo.jpg",
+  "description": "Wood in 2020",
+  "mots_cles": [
+   "cathie wood"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bernard-arnault",
+  "nom": "Bernard Arnault",
+  "type": "personne",
+  "entreprise": "LVMH",
+  "indice": "",
+  "credit": "Photo : Jérémy Barande, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Jérémy Barande",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABernard_Arnault_%283%29_-_2017_%28cropped%29.jpg",
+  "description": "Conference at the Ecole polytechnique of Bernard Arnault \"LVMH: construction of a worldwide French leader\"",
+  "mots_cles": [
+   "bernard arnault",
+   "lvmh"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "patrick-pouyanne",
+  "nom": "Patrick Pouyanné",
+  "type": "personne",
+  "entreprise": "TotalEnergies",
+  "indice": "",
+  "credit": "Photo : Jérémy Barande, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Jérémy Barande",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APatrick_Pouyann%C3%A9%2C_PDG_du_groupe_Total.jpg",
+  "description": "Patrick Pouyanné, Chairman and CEO of Total",
+  "mots_cles": [
+   "patrick pouyanné",
+   "totalenergies"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "paul-hudson",
+  "nom": "Paul Hudson",
+  "type": "personne",
+  "entreprise": "Sanofi",
+  "indice": "",
+  "credit": "Photo : RachelGross, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "RachelGross",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APaul_Hudson_Sanofi.jpg",
+  "description": "CEO of Sanofi, Paul Hudson",
+  "mots_cles": [
+   "paul hudson",
+   "sanofi"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "xavier-niel",
+  "nom": "Xavier Niel",
+  "type": "personne",
+  "entreprise": "Free",
+  "indice": "",
+  "credit": "Photo : cmichel67, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "cmichel67",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AXavier_Niel004.jpg",
+  "description": "Xavier Niel, lors de la conférence LeWeb 2014.",
+  "mots_cles": [
+   "xavier niel",
+   "free"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "nicolas-hieronimus",
+  "nom": "Nicolas Hieronimus",
+  "type": "personne",
+  "entreprise": "L'Oréal",
+  "indice": "",
+  "credit": "Photo : Engayrrand, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Engayrrand",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ANicolas_Hieronimus_%28cropped%29.jpg",
+  "description": "Directeur général adjoint de l'Oréal lors d'une conférence",
+  "mots_cles": [
+   "nicolas hieronimus",
+   "l'oréal"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "luca-de-meo",
+  "nom": "Luca de Meo",
+  "type": "personne",
+  "entreprise": "Renault",
+  "indice": "",
+  "credit": "Photo : Original: Y.Leclercq / Derivative work: Danyele, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Original: Y.Leclercq / Derivative work: Danyele",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALuca_de_Meo_%28headshot%29.jpg",
+  "description": "Luca de Meo au Mondial de l'automobile de Paris 2024",
+  "mots_cles": [
+   "luca de meo",
+   "renault"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "christel-heydemann",
+  "nom": "Christel Heydemann",
+  "type": "personne",
+  "entreprise": "Orange",
+  "indice": "",
+  "credit": "Photo : Jérémy Barande, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Jérémy Barande",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AChristel_Heydemann_%28cropped%29.jpg",
+  "description": "Graduate degree programs GDP Christel HEYDEMANN Président de Schneider Electric France Crédit photographique : © École polytechnique - J.Barande",
+  "mots_cles": [
+   "christel heydemann",
+   "orange"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "michel-edouard-leclerc",
+  "nom": "Michel-Édouard Leclerc",
+  "type": "personne",
+  "entreprise": "E.Leclerc",
+  "indice": "",
+  "credit": "Photo : MFonzatti, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "MFonzatti",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMichel-%C3%89douard_Leclerc_2024_TDFF24_MEL_%28cropped%29.jpg",
+  "description": "Michel-Édouard Leclerc lors du Tour de France Femmes 2024",
+  "mots_cles": [
+   "michel-édouard leclerc",
+   "e.leclerc"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "francois-henri-pinault",
+  "nom": "François-Henri Pinault",
+  "type": "personne",
+  "entreprise": "Kering",
+  "indice": "",
+  "credit": "Photo : Leafar, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Leafar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APortrait_de_Fran%C3%A7ois-Henri_Pinault_pris_aux_journ%C3%A9e_de_la_terre_en_2011_%C3%A0_l%27unesco_paris.jpg",
+  "description": "Portrait de François-Henri Pinault pris aux journée de la terre en 2011 à l'unesco paris",
+  "mots_cles": [
+   "françois-henri pinault",
+   "kering"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "vincent-bollore",
+  "nom": "Vincent Bolloré",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Thesupermat, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Thesupermat",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AFestival_automobile_international_2014_-_Photocall_-_103.jpg",
+  "description": "Photocall du festival automobile international 2014.",
+  "mots_cles": [
+   "vincent bolloré"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "martin-bouygues",
+  "nom": "Martin Bouygues",
+  "type": "personne",
+  "entreprise": "Bouygues",
+  "indice": "",
+  "credit": "Photo : Isabelle Franciosa, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Isabelle Franciosa",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABouygues_Martin_MG_3350.jpg",
+  "description": "Portrait officiel de Martin Bouygues (Président-directeur général du groupe Bouygues)",
+  "mots_cles": [
+   "martin bouygues",
+   "bouygues"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "jerome-powell",
+  "nom": "Jerome Powell",
+  "type": "personne",
+  "entreprise": "Fed",
+  "indice": "",
+  "credit": "Photo : Federalreserve, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Federalreserve",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AJerome_H._Powell%2C_Federal_Reserve_Chair_%28cropped%29.jpg",
+  "description": "Jerome H. Powell, Chair\nJerome H. Powell first took office as Chair of the Board of Governors of the Federal Reserve System on 5 February 2018, for a four-year term. He was reappointed to the office a",
+  "mots_cles": [
+   "jerome powell",
+   "fed"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "emmanuel-macron",
+  "nom": "Emmanuel Macron",
+  "type": "personne",
+  "entreprise": "Élysée",
+  "indice": "",
+  "credit": "Photo : Nebojša Tejić, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Nebojša Tejić",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AEmmanuel_Macron_2025_%28cropped%29.jpg",
+  "description": "Foto: Nebojša Tejić / STA",
+  "mots_cles": [
+   "emmanuel macron",
+   "élysée"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ursula-von-der-leyen",
+  "nom": "Ursula von der Leyen",
+  "type": "personne",
+  "entreprise": "Commission européenne",
+  "indice": "",
+  "credit": "Photo : European People's Party, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "European People's Party",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AUrsula_von_der_Leyen_2024.jpg",
+  "description": "The following images are available for download and use free of rights",
+  "mots_cles": [
+   "ursula von der leyen",
+   "commission européenne"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "donald-trump",
+  "nom": "Donald Trump",
+  "type": "personne",
+  "entreprise": "Maison-Blanche",
+  "indice": "",
+  "credit": "Photo : Daniel Torok, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Daniel Torok",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AOfficial_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg",
+  "description": "Official Presidential Portrait of President Donald J. Trump in his second term",
+  "mots_cles": [
+   "donald trump",
+   "maison-blanche"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "scott-bessent",
+  "nom": "Scott Bessent",
+  "type": "personne",
+  "entreprise": "Trésor américain",
+  "indice": "",
+  "credit": "Photo : U.S. Department of the Treasury, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "U.S. Department of the Treasury",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AOfficial_portrait_of_Treasury_Secretary_Scott_Bessent_%28borderless%29_%28cropped%29.jpg",
+  "description": "Official portrait of Secretary of the Treasury, Scott Bessent",
+  "mots_cles": [
+   "scott bessent",
+   "trésor américain"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "kristalina-georgieva",
+  "nom": "Kristalina Georgieva",
+  "type": "personne",
+  "entreprise": "FMI",
+  "indice": "",
+  "credit": "Photo : World Bank Group/ Grant Ellis, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "World Bank Group/ Grant Ellis",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AKristalina_Georgieva_Headshot.jpg",
+  "description": "Headshot of Kristalina Georgieva, CEO of the World Bank",
+  "mots_cles": [
+   "kristalina georgieva",
+   "fmi"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bruno-le-maire",
+  "nom": "Bruno Le Maire",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Sebastiaan ter Burg from Utrecht, The Netherlands, CC BY 2.5 via Wikimedia Commons",
+  "licence": "CC BY 2.5",
+  "auteur": "Sebastiaan ter Burg from Utrecht, The Netherlands",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABruno_Le_Maire_in_2022.jpg",
+  "description": "Bruno Le Maire en novembre 2022 lors de la séance d'annonce des nouveaux astronautes de l'ESA.",
+  "mots_cles": [
+   "bruno le maire"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bce",
+  "nom": "BCE",
+  "type": "institution",
+  "entreprise": "BCE",
+  "indice": "",
+  "credit": "Photo : X-angel, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "X-angel",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADSCI0115_Blockupy_2014_Transparent_EZB.jpg",
+  "description": "Blockupy 2014 banner in front of the new headquarter of the ECB",
+  "mots_cles": [
+   "bce",
+   "bce"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "fed",
+  "nom": "Fed",
+  "type": "institution",
+  "entreprise": "Fed",
+  "indice": "",
+  "credit": "Photo : Federalreserve, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Federalreserve",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AChristopher_J._Waller%2C_Federal_Reserve_Governor_2.jpg",
+  "description": "Christopher J. Waller\nChristopher J. Waller took office as a member of the Board of Governors of the Federal Reserve System on December 18, 2020, to fill an unexpired term ending January 31, 2030.\n\nRe",
+  "mots_cles": [
+   "fed",
+   "fed"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "banque-de-france",
+  "nom": "Banque de France",
+  "type": "institution",
+  "entreprise": "Banque de France",
+  "indice": "",
+  "credit": "Photo : Coenen, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coenen",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AATM_Banque_de_France.jpg",
+  "description": "Automated Teller Machine of the Banque de France, Rue Radziwill, Paris, France",
+  "mots_cles": [
+   "banque de france",
+   "banque de france"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "wall-street",
+  "nom": "Wall Street",
+  "type": "institution",
+  "entreprise": "Wall Street",
+  "indice": "",
+  "credit": "Photo : Ajay Suresh, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Ajay Suresh",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AWall_Street_%2855314253740%29.jpg",
+  "description": "New York, NY",
+  "mots_cles": [
+   "wall street",
+   "wall street"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "new-york-stock-exchange",
+  "nom": "New York Stock Exchange",
+  "type": "institution",
+  "entreprise": "New York Stock Exchange",
+  "indice": "",
+  "credit": "Photo : Jeffrey Zeldman from Manhattan, USA, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Jeffrey Zeldman from Manhattan, USA",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ANew_York_Stock_Exchange_Facade_2015.jpg",
+  "description": "New York Stock Exchange",
+  "mots_cles": [
+   "new york stock exchange",
+   "new york stock exchange"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "nasdaq",
+  "nom": "Nasdaq",
+  "type": "institution",
+  "entreprise": "Nasdaq",
+  "indice": "",
+  "credit": "Photo : Mynamepenny, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Mynamepenny",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AKelley_School_of_Business_IU_-_Nasdaq.jpg",
+  "description": "In the Capital Markets Academy, you can launch a career ininvestment management, investment banking, or private wealth management. You’ll learn how the macroeconomic environment influences investment ",
+  "mots_cles": [
+   "nasdaq",
+   "nasdaq"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bourse-de-paris",
+  "nom": "Bourse de Paris",
+  "type": "institution",
+  "entreprise": "Bourse de Paris",
+  "indice": "",
+  "credit": "Photo : Arthur Weidmann, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Arthur Weidmann",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APalais_Brongniart_Facade.jpg",
+  "description": "Le palais Brongniart à Paris.",
+  "mots_cles": [
+   "bourse de paris",
+   "bourse de paris"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "fmi",
+  "nom": "FMI",
+  "type": "institution",
+  "entreprise": "FMI",
+  "indice": "",
+  "credit": "Photo : Kaihsu Tai, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Kaihsu Tai",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AArticles_of_Agreement_of_the_International_Monetary_Fund.jpg",
+  "description": "First page of the Articles of Agreement of the International Monetary Fund, 1 March 1946. Finnish Ministry of Foreign Affairs archives",
+  "mots_cles": [
+   "fmi",
+   "fmi"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "assemblee-nationale",
+  "nom": "Assemblée nationale",
+  "type": "institution",
+  "entreprise": "Assemblée nationale",
+  "indice": "",
+  "credit": "Photo : Benjamin Lemaire - Virtuo Presse, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Benjamin Lemaire - Virtuo Presse",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAccoyer.jpg",
+  "description": "Bernard Accoyer, place du Trocadéro",
+  "mots_cles": [
+   "assemblée nationale",
+   "assemblée nationale"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "billets-en-euros",
+  "nom": "Billets en euros",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Friedrich Haag, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Friedrich Haag",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AOne_stands_out_002_2025_01_01.jpg",
+  "description": "Plain euro banknotes, one of which is folded as a paper boat\n\n   \n\n\n\nObject: Euro banknote   \n\n\n\nTitle\nEuro banknote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDepicts\nSpijkenisse's euro-bridges\n\n\n\n\n\n\n\n\n   \n\n\n\n",
+  "mots_cles": [
+   "billets en euros",
+   "euro banknotes"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "pieces-en-euros",
+  "nom": "Pièces en euros",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Kritzolina, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Kritzolina",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APaid_bill_for_coffee.jpg",
+  "description": "Bill for two cups of coffee in the Cafè at the Sóller train station with Euro coins on a small plate",
+  "mots_cles": [
+   "pièces en euros",
+   "euro coins"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "carte-bancaire",
+  "nom": "Carte bancaire",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Lotus Head from Johannesburg, Gauteng, South Africa, CC BY-SA 2.5 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.5",
+  "auteur": "Lotus Head from Johannesburg, Gauteng, South Africa",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACredit-cards.jpg",
+  "description": "Credit cards",
+  "mots_cles": [
+   "carte bancaire",
+   "credit card payment"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "terminal-de-paiement",
+  "nom": "Terminal de paiement",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Lmccart5, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Lmccart5",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AContactless_Payment_Model.jpg",
+  "description": "Contactless Payment Model Matrix",
+  "mots_cles": [
+   "terminal de paiement",
+   "payment terminal contactless"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "pompe-a-essence",
+  "nom": "Pompe à essence",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Rama, CC BY-SA 2.0 fr via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0 fr",
+  "auteur": "Rama",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APetrol_pump_mp3h0355.jpg",
+  "description": "Petrol pumps in a petrol station in Switzerland.",
+  "mots_cles": [
+   "pompe à essence",
+   "fuel pump nozzle"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "station-service",
+  "nom": "Station-service",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : kallerna, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "kallerna",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APetrol_prices_in_Russia.jpg",
+  "description": "Petrol prices in Russia.",
+  "mots_cles": [
+   "station-service",
+   "petrol station prices"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "caddie",
+  "nom": "Caddie",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : safaritravelplus, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "safaritravelplus",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AShopping_Cart_Supermarket.jpg",
+  "description": "A shopping cart at Naivas supermarket in Kenya",
+  "mots_cles": [
+   "caddie",
+   "shopping cart supermarket"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "rayon-de-supermarche",
+  "nom": "Rayon de supermarché",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Wilfredor, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Wilfredor",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
+  "description": "An aisle of the Intermarché supermarket, jars and bottles of preserves on the shelves to the left and the refrigerated cases of cured meat and cheese to the right, a single shopper at the far end. Que",
+  "mots_cles": [
+   "rayon de supermarché",
+   "supermarket aisle"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "compteur-electrique",
+  "nom": "Compteur électrique",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Jorge Royan, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Jorge Royan",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AIndia_-_Kolkata_electricity_meters_-_3832.jpg",
+  "description": "Electric circuits in a bulding Calcutta Kolkata India. A child stands by.",
+  "mots_cles": [
+   "compteur électrique",
+   "electricity meter"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "plaque-de-cuisson-gaz",
+  "nom": "Plaque de cuisson gaz",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Lisafern, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Lisafern",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AGas_stove_burner_flame.jpg",
+  "description": "gas burner flame",
+  "mots_cles": [
+   "plaque de cuisson gaz",
+   "gas stove flame"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "chantier",
+  "nom": "Chantier",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Dietmar Rabich, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Dietmar Rabich",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AD%C3%BClmen%2C_Br%C3%BCckenbaustelle_der_Deutschen_Bahn_--_2016_--_2329.jpg",
+  "description": "Construction site of the bridge for the underpass of the railway line from Münster to Essen in Dülmen, North Rhine-Westphalia, GermanyThe bridge was moved to his destination just before.",
+  "mots_cles": [
+   "chantier",
+   "construction site crane"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "cles-de-maison",
+  "nom": "Clés de maison",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : User:Hassocks5489, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "User:Hassocks5489",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACross_Keys_House%2C_Queen_Street%2C_Salisbury_%28NHLE_Code_1258721%29_%28July_2022%29.jpg",
+  "description": "Cross Keys House, Queen Street, Salisbury, Wiltshire, England.  \n\nThis is a photo of listed building number 1258721.",
+  "mots_cles": [
+   "clés de maison",
+   "house keys"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "tirelire",
+  "nom": "Tirelire",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Noah Wulf, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Noah Wulf",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AModel_1925_Kenworth_Collectible_Piggy_Bank_front_view_2.jpg",
+  "description": "A Model 1925 Kenworth with Watkins Products Markings used as a collectible piggy bank. Seen from front.",
+  "mots_cles": [
+   "tirelire",
+   "piggy bank"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "ecran-de-bourse",
+  "nom": "Écran de Bourse",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : ehnmark, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "ehnmark",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMarket_centre_in_Tokyo_stock_exchange.jpg",
+  "description": "Tokyo Stock Exchange's so-called Market Center. The real stock trading floor closed in 1999. In its place is now just a glass cylinder, a few screens and a silly ticker—something for clueless journali",
+  "mots_cles": [
+   "écran de bourse",
+   "stock ticker screen"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "calculatrice-et-factures",
+  "nom": "Calculatrice et factures",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Steve Elliott from UK, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Steve Elliott from UK",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMagic_Calculator_%2851333056644%29.jpg",
+  "description": "I never had one of these but my Dad used something very similar when he was a Milkman.\nI used to help him on his round in Farnham and he had a mechanical calculator like this to add £ s and d for bill",
+  "mots_cles": [
+   "calculatrice et factures",
+   "calculator bills"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "smartphone-banque",
+  "nom": "Smartphone banque",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : HLundgaard, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "HLundgaard",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMobile_payment_03.JPG",
+  "description": "Mobile payment terminal.",
+  "mots_cles": [
+   "smartphone banque",
+   "smartphone banking app"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "distributeur-de-billets",
+  "nom": "Distributeur de billets",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : LondonHistoryatHome, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "LondonHistoryatHome",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AFirst_cash_machine_blue_plaque_in_Enfield.jpg",
+  "description": "First cash machine blue plaque in Enfield",
+  "mots_cles": [
+   "distributeur de billets",
+   "ATM cash machine"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "lingots-d-or",
+  "nom": "Lingots d'or",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Ibex73, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Ibex73",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AGold_ingot_and_bar_of_Banque_de_France.jpg",
+  "description": "Gold ingot and bar on display at the Banque de France, Paris, European Heritage Days, September 2022",
+  "mots_cles": [
+   "lingots d'or",
+   "gold bars"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "data-center",
+  "nom": "Data center",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : BalticServers.com, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "BalticServers.com",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg",
+  "description": "Server room of BalticServers",
+  "mots_cles": [
+   "data center",
+   "data center servers"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "puce-electronique",
+  "nom": "Puce électronique",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Steve Jurvetson, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Steve Jurvetson",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHot_off_the_press_%E2%80%94_the_latest_D-Wave_wafer_of_quantum_processors_and_TIME_cover_story.jpg",
+  "description": "I took this photo of the latest hot lot of processor chips of various sizes at the spook shop summit (InQTel CEO Summit).   Pretty shiny bling.\nI am in the D-Wave board meeting now, and we just got a ",
+  "mots_cles": [
+   "puce électronique",
+   "computer chip wafer"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "voiture-electrique-en-charge",
+  "nom": "Voiture électrique en charge",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : CEphoto, Uwe Aranas, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "CEphoto, Uwe Aranas",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACologne_Germany_Electric-Car-Charging-Point-at-TUV-Rheinland-02.jpg",
+  "description": "Cologne, Germany: Electric Car Charging Point at TUV Rheinland Headquarters in Cologne, Germany",
+  "mots_cles": [
+   "voiture électrique en charge",
+   "electric car charging"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "avion-de-ligne",
+  "nom": "Avion de ligne",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Jack Delano, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Jack Delano",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APre-fight%2C_Oil_for_the_engine_of_an_airliner_preparatory_to_takeoff._Municipal_airport%2C_Washington%2C_D.C._July_1941._-_Flickr_-_polkbritton.jpg",
+  "description": "A Douglas DC-3 of Pennsylvania Central Airlines being serviced at Washington National Airport. A mechanic is refilling the supply of lubricating oil for the right engine.",
+  "mots_cles": [
+   "avion de ligne",
+   "airliner takeoff"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "panneaux-solaires",
+  "nom": "Panneaux solaires",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Diego Delso, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Diego Delso",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APaneles_solares_en_Cari%C3%B1ena%2C_Espa%C3%B1a%2C_2015-01-08%2C_DD_09-12_PAN.JPG",
+  "description": "Panoramic view of the photovoltaic power station of Cariñena, Zaragoza, Spain. The panels are mounted on dual axis trackers in order to maximise the intensity of incoming direct radiation. This soluti",
+  "mots_cles": [
+   "panneaux solaires",
+   "solar panels"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "eolienne",
+  "nom": "Éolienne",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : Crisco 1492, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Crisco 1492",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AWind_turbines_along_North_Middle_Road%2C_Essex_County%2C_Ontario%2C_2025-06-29.jpg",
+  "description": "Three wind turbines along North Middle Road, Essex, Ontario, Canada. The area of Essex north of County Road 8 has numerous wind turbines, which are highly prominent in the area's predominantly flat la",
+  "mots_cles": [
+   "éolienne",
+   "wind turbine"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "colis-livraison",
+  "nom": "Colis livraison",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "credit": "Photo : WrS.tm.pl, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "WrS.tm.pl",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADelivery_of_parcels_to_an_Allegro_parcel_locker_AL005ETM._Tomasz%C3%B3w_Mazowiecki%2C_Poland.jpg",
+  "description": "Delivery of parcels to an Allegro parcel locker AL005ETM. Tomaszów Mazowiecki, Poland",
+  "mots_cles": [
+   "colis livraison",
+   "parcel delivery boxes"
+  ],
+  "a_verifier": false
+ }
+]
