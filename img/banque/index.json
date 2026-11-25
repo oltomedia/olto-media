@@ -1,22 +1,5 @@
 [
  {
-  "slug": "air-liquide",
-  "nom": "Air Liquide",
-  "type": "entreprise",
-  "entreprise": "Air Liquide",
-  "indice": "CAC 40",
-  "credit": "Photo : Konushna, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "Konushna",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AAir_Liquide12.jpg",
-  "description": "Severstal",
-  "mots_cles": [
-   "air liquide",
-   "air liquide"
-  ],
-  "a_verifier": true
- },
- {
   "slug": "airbus",
   "nom": "Airbus",
   "type": "entreprise",
@@ -31,7 +14,8 @@
    "airbus",
    "airbus"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "arcelormittal",
@@ -48,58 +32,8 @@
    "arcelormittal",
    "arcelormittal"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "bnp-paribas",
-  "nom": "BNP Paribas",
-  "type": "entreprise",
-  "entreprise": "BNP Paribas",
-  "indice": "CAC 40",
-  "credit": "Photo : Carlo Dani, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Carlo Dani",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABNL_Sede_Roma_Via_Veneto.jpg",
-  "description": "Sede centrale della BNL a Roma, Via Veneto",
-  "mots_cles": [
-   "bnp paribas",
-   "bnp paribas"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "capgemini",
-  "nom": "Capgemini",
-  "type": "entreprise",
-  "entreprise": "Capgemini",
-  "indice": "CAC 40",
-  "credit": "Photo : Jakub Hałun, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "Jakub Hałun",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AKrakow_Rondo_Business_Park_20070929_1300_2.jpg",
-  "description": "Wieżowiec Rondo Business Park w Krakowie",
-  "mots_cles": [
-   "capgemini",
-   "capgemini"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "carrefour",
-  "nom": "Carrefour",
-  "type": "entreprise",
-  "entreprise": "Carrefour",
-  "indice": "CAC 40",
-  "credit": "Photo : SanjibLemar, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "SanjibLemar",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABig_single-family_home_2.jpg",
-  "description": "Big single-family home",
-  "mots_cles": [
-   "carrefour",
-   "carrefour"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "danone",
@@ -116,24 +50,8 @@
    "danone",
    "danone"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "edenred",
-  "nom": "Edenred",
-  "type": "entreprise",
-  "entreprise": "Edenred",
-  "indice": "CAC 40",
-  "credit": "Photo : Wbc, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Wbc",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AImplantation_Edenred.jpg",
-  "description": "Implantation mondiale Edenred",
-  "mots_cles": [
-   "edenred",
-   "edenred"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "hermes",
@@ -150,58 +68,8 @@
    "hermès",
    "hermès"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "kering",
-  "nom": "Kering",
-  "type": "entreprise",
-  "entreprise": "Kering",
-  "indice": "CAC 40",
-  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Unknown authorUnknown author",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABathingSuit1920s.jpg",
-  "description": "Woman's bathing suit from 1920s. Photo postcard. No copyright notice on card. This is a SOL postcard, series 2832. Here is a larger example of the posted image.",
-  "mots_cles": [
-   "kering",
-   "kering"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "l-oreal",
-  "nom": "L'Oréal",
-  "type": "entreprise",
-  "entreprise": "L'Oréal",
-  "indice": "CAC 40",
-  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Unknown authorUnknown author",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABathingSuit1920s.jpg",
-  "description": "Woman's bathing suit from 1920s. Photo postcard. No copyright notice on card. This is a SOL postcard, series 2832. Here is a larger example of the posted image.",
-  "mots_cles": [
-   "l'oréal",
-   "l'oréal"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "lvmh",
-  "nom": "LVMH",
-  "type": "entreprise",
-  "entreprise": "LVMH",
-  "indice": "CAC 40",
-  "credit": "Photo : Unknown authorUnknown author, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Unknown authorUnknown author",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABathingSuit1920s.jpg",
-  "description": "Woman's bathing suit from 1920s. Photo postcard. No copyright notice on card. This is a SOL postcard, series 2832. Here is a larger example of the posted image.",
-  "mots_cles": [
-   "lvmh",
-   "lvmh"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "michelin",
@@ -218,7 +86,8 @@
    "michelin",
    "michelin"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "pernod-ricard",
@@ -235,7 +104,8 @@
    "pernod ricard",
    "pernod ricard"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "renault",
@@ -252,41 +122,8 @@
    "renault",
    "renault"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "safran",
-  "nom": "Safran",
-  "type": "entreprise",
-  "entreprise": "Safran",
-  "indice": "CAC 40",
-  "credit": "Photo : Bertrand SOUBEYRAND, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Bertrand SOUBEYRAND",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ASite_groupe_aeronautique_SAFRAN_Casablanca_route_Nouaceur-Photo_Bertrand_SOUBEYRAND.jpg",
-  "description": "Viewpoint on the entrance to the Safran aerospace group site on Route de Nouaceur in Sidi Maârouf, Casablanca, which hosts engineering activities of the group, on 25/08/2026",
-  "mots_cles": [
-   "safran",
-   "safran"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "saint-gobain",
-  "nom": "Saint-Gobain",
-  "type": "entreprise",
-  "entreprise": "Saint-Gobain",
-  "indice": "CAC 40",
-  "credit": "Photo : Jane023, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Jane023",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AReeds_Ferry%2C_NH_04.jpg",
-  "description": "Saint-Gobain Performance Plastics, 701 Daniel Webster Hwy, Merrimack, NH 03054",
-  "mots_cles": [
-   "saint-gobain",
-   "saint-gobain"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sanofi",
@@ -303,7 +140,8 @@
    "sanofi",
    "sanofi"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "schneider-electric",
@@ -320,24 +158,8 @@
    "schneider electric",
    "schneider electric"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "societe-generale",
-  "nom": "Société Générale",
-  "type": "entreprise",
-  "entreprise": "Société Générale",
-  "indice": "CAC 40",
-  "credit": "Photo : Americasroof (talk), CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "Americasroof (talk)",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3A245parkNYC.jpg",
-  "description": "245 Park Avenue",
-  "mots_cles": [
-   "société générale",
-   "société générale"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "stmicroelectronics",
@@ -354,7 +176,8 @@
    "stmicroelectronics",
    "stmicroelectronics"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "thales",
@@ -371,7 +194,8 @@
    "thales",
    "thales"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "totalenergies",
@@ -388,24 +212,8 @@
    "totalenergies",
    "totalenergies"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "unibail-rodamco-westfield",
-  "nom": "Unibail-Rodamco-Westfield",
-  "type": "entreprise",
-  "entreprise": "Unibail-Rodamco-Westfield",
-  "indice": "CAC 40",
-  "credit": "Photo : TobiasSkopek, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "TobiasSkopek",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AWestfield_CHODOV_-_vchod_A.jpg",
-  "description": "Vchod A",
-  "mots_cles": [
-   "unibail-rodamco-westfield",
-   "unibail-rodamco-westfield"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "veolia",
@@ -422,7 +230,8 @@
    "veolia",
    "veolia"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "nvidia",
@@ -439,7 +248,8 @@
    "nvidia",
    "nvidia"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "apple",
@@ -456,7 +266,8 @@
    "apple",
    "apple"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "microsoft",
@@ -473,7 +284,8 @@
    "microsoft",
    "microsoft"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "alphabet",
@@ -490,7 +302,8 @@
    "alphabet",
    "alphabet"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "google",
@@ -507,7 +320,8 @@
    "google",
    "google"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "amazon",
@@ -524,7 +338,8 @@
    "amazon",
    "amazon"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "meta",
@@ -541,7 +356,8 @@
    "meta",
    "meta"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "tesla",
@@ -558,7 +374,8 @@
    "tesla",
    "tesla"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "broadcom",
@@ -575,7 +392,8 @@
    "broadcom",
    "broadcom"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "amd",
@@ -592,7 +410,8 @@
    "amd",
    "amd"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "intel",
@@ -609,7 +428,8 @@
    "intel",
    "intel"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "micron",
@@ -626,7 +446,8 @@
    "micron",
    "micron"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "dell",
@@ -643,7 +464,8 @@
    "dell",
    "dell"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "hpe",
@@ -660,7 +482,8 @@
    "hpe",
    "hpe"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "oracle",
@@ -677,7 +500,8 @@
    "oracle",
    "oracle"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "netflix",
@@ -694,7 +518,8 @@
    "netflix",
    "netflix"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "disney",
@@ -711,7 +536,8 @@
    "disney",
    "disney"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "nike",
@@ -728,7 +554,8 @@
    "nike",
    "nike"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "boeing",
@@ -745,7 +572,8 @@
    "boeing",
    "boeing"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "jpmorgan",
@@ -762,7 +590,8 @@
    "jpmorgan",
    "jpmorgan"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "visa",
@@ -779,24 +608,8 @@
    "visa",
    "visa"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "mastercard",
-  "nom": "Mastercard",
-  "type": "entreprise",
-  "entreprise": "Mastercard",
-  "indice": "S&P 500",
-  "credit": "Photo : auteur inconnu, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "auteur inconnu",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AHudson_river_from_bear_mountain_bridge.jpg",
-  "description": "",
-  "mots_cles": [
-   "mastercard",
-   "mastercard"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "walmart",
@@ -813,7 +626,8 @@
    "walmart",
    "walmart"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "costco",
@@ -830,7 +644,8 @@
    "costco",
    "costco"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "coca-cola",
@@ -847,7 +662,8 @@
    "coca-cola",
    "coca-cola"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "mcdonald-s",
@@ -864,7 +680,8 @@
    "mcdonald's",
    "mcdonald's"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "starbucks",
@@ -881,7 +698,8 @@
    "starbucks",
    "starbucks"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "pfizer",
@@ -898,7 +716,8 @@
    "pfizer",
    "pfizer"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "moderna",
@@ -915,7 +734,8 @@
    "moderna",
    "moderna"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "eli-lilly",
@@ -932,7 +752,8 @@
    "eli lilly",
    "eli lilly"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "berkshire-hathaway",
@@ -949,7 +770,8 @@
    "berkshire hathaway",
    "berkshire hathaway"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "exxonmobil",
@@ -966,24 +788,8 @@
    "exxonmobil",
    "exxonmobil"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "chevron",
-  "nom": "Chevron",
-  "type": "entreprise",
-  "entreprise": "Chevron",
-  "indice": "S&P 500",
-  "credit": "Photo : Cancillería Ecuador from Ecuador, CC BY-SA 2.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 2.0",
-  "auteur": "Cancillería Ecuador from Ecuador",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ACaso_Chevron_-_Texaco%2C_conversatorio_con_prensa_extranjera_%2811227582075%29.jpg",
-  "description": "Quito (Ecuador), 05 de diciembre 2013. La Cancillería recibió a la prensa extranjera que visita el país para conocer sobre el caso Chevron - Texaco. El Canciller Ricardo Patiño contestó sus preguntas,",
-  "mots_cles": [
-   "chevron",
-   "chevron"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "johnson-johnson",
@@ -1000,7 +806,8 @@
    "johnson & johnson",
    "johnson & johnson"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "procter-gamble",
@@ -1017,7 +824,8 @@
    "procter & gamble",
    "procter & gamble"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "goldman-sachs",
@@ -1034,7 +842,8 @@
    "goldman sachs",
    "goldman sachs"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "bank-of-america",
@@ -1051,7 +860,8 @@
    "bank of america",
    "bank of america"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "salesforce",
@@ -1068,7 +878,8 @@
    "salesforce",
    "salesforce"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "adobe",
@@ -1085,7 +896,8 @@
    "adobe",
    "adobe"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "qualcomm",
@@ -1102,7 +914,8 @@
    "qualcomm",
    "qualcomm"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "palantir",
@@ -1119,7 +932,8 @@
    "palantir",
    "palantir"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "super-micro",
@@ -1136,7 +950,8 @@
    "super micro",
    "super micro"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "crowdstrike",
@@ -1153,7 +968,8 @@
    "crowdstrike",
    "crowdstrike"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "dollar-tree",
@@ -1170,7 +986,8 @@
    "dollar tree",
    "dollar tree"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "analog-devices",
@@ -1187,24 +1004,8 @@
    "analog devices",
    "analog devices"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "texas-instruments",
-  "nom": "Texas Instruments",
-  "type": "entreprise",
-  "entreprise": "Texas Instruments",
-  "indice": "S&P 500",
-  "credit": "Photo : RuthAS, CC BY 3.0 via Wikimedia Commons",
-  "licence": "CC BY 3.0",
-  "auteur": "RuthAS",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AConvair_240-1_N240HH_Texas_Inst_Chino_05.10.90R_edited-3.jpg",
-  "description": "Convair 240 N240HH of Texas Instruments at Chino airfield California in 1990",
-  "mots_cles": [
-   "texas instruments",
-   "texas instruments"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "paypal",
@@ -1221,7 +1022,8 @@
    "paypal",
    "paypal"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "uber",
@@ -1238,7 +1040,8 @@
    "uber",
    "uber"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "airbnb",
@@ -1255,7 +1058,8 @@
    "airbnb",
    "airbnb"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "unitedhealth",
@@ -1272,24 +1076,8 @@
    "unitedhealth",
    "unitedhealth"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "home-depot",
-  "nom": "Home Depot",
-  "type": "entreprise",
-  "entreprise": "Home Depot",
-  "indice": "S&P 500",
-  "credit": "Photo : Bobak Ha'Eri, CC BY 3.0 via Wikimedia Commons",
-  "licence": "CC BY 3.0",
-  "auteur": "Bobak Ha'Eri",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3A2009-0912-GameDay-FowlerHoward.jpg",
-  "description": "ESPN College GameDay's Chris Fowler (left) and Desmond Howard (right) doing post-game analysis after a game at Ohio Stadium in Columbus, Ohio.",
-  "mots_cles": [
-   "home depot",
-   "home depot"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ford",
@@ -1306,7 +1094,8 @@
    "ford",
    "ford"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "general-motors",
@@ -1323,7 +1112,8 @@
    "general motors",
    "general motors"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ibm",
@@ -1340,7 +1130,8 @@
    "ibm",
    "ibm"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "cisco",
@@ -1357,7 +1148,8 @@
    "cisco",
    "cisco"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "caterpillar",
@@ -1374,7 +1166,8 @@
    "caterpillar",
    "caterpillar"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "lockheed-martin",
@@ -1391,7 +1184,8 @@
    "lockheed martin",
    "lockheed martin"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "spotify",
@@ -1408,7 +1202,8 @@
    "spotify",
    "spotify"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "novo-nordisk",
@@ -1425,7 +1220,8 @@
    "novo nordisk",
    "novo nordisk"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "asml",
@@ -1442,7 +1238,8 @@
    "asml",
    "asml"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sap",
@@ -1459,7 +1256,8 @@
    "sap",
    "sap"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "toyota",
@@ -1476,7 +1274,8 @@
    "toyota",
    "toyota"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "samsung",
@@ -1493,7 +1292,8 @@
    "samsung",
    "samsung"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "tsmc",
@@ -1510,7 +1310,8 @@
    "tsmc",
    "tsmc"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "openai",
@@ -1527,7 +1328,8 @@
    "openai",
    "openai"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "shein",
@@ -1544,7 +1346,8 @@
    "shein",
    "shein"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "playstation",
@@ -1561,7 +1364,8 @@
    "playstation",
    "playstation"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "volkswagen",
@@ -1578,7 +1382,8 @@
    "volkswagen",
    "volkswagen"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "byd",
@@ -1595,7 +1400,8 @@
    "byd",
    "byd"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ryanair",
@@ -1612,7 +1418,8 @@
    "ryanair",
    "ryanair"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ikea",
@@ -1629,24 +1436,8 @@
    "ikea",
    "ikea"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "e-leclerc",
-  "nom": "E.Leclerc",
-  "type": "entreprise",
-  "entreprise": "E.Leclerc",
-  "indice": "",
-  "credit": "Photo : Marek Mróz, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Marek Mróz",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3A2022-05_Katowice_-_Piotrowice-Ochojec_075.jpg",
-  "description": "Katowice - Piotrowice-Ochojec. Ulica Generała Zygmunta Waltera Jankego 15d. Sklep sieci E.Leclerc",
-  "mots_cles": [
-   "e.leclerc",
-   "e.leclerc"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sncf",
@@ -1663,7 +1454,8 @@
    "sncf",
    "sncf"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "edf",
@@ -1680,7 +1472,8 @@
    "edf",
    "edf"
   ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "la-poste",
@@ -1697,24 +1490,8 @@
    "la poste",
    "la poste"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "lidl",
-  "nom": "Lidl",
-  "type": "entreprise",
-  "entreprise": "Lidl",
-  "indice": "",
-  "credit": "Photo : Nickmariostories, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Nickmariostories",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3A6406488-Lidl_Santorini-0.jpg",
-  "description": "Lidl in Santorini,Greece",
-  "mots_cles": [
-   "lidl",
-   "lidl"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "tim-cook",
@@ -1731,7 +1508,8 @@
    "tim cook",
    "apple"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "satya-nadella",
@@ -1748,7 +1526,8 @@
    "satya nadella",
    "microsoft"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sundar-pichai",
@@ -1765,7 +1544,8 @@
    "sundar pichai",
    "alphabet"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "andy-jassy",
@@ -1782,7 +1562,8 @@
    "andy jassy",
    "amazon"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "elon-musk",
@@ -1799,7 +1580,8 @@
    "elon musk",
    "tesla"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "lisa-su",
@@ -1816,7 +1598,8 @@
    "lisa su",
    "amd"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sanjay-mehrotra",
@@ -1833,7 +1616,8 @@
    "sanjay mehrotra",
    "micron"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ted-sarandos",
@@ -1850,7 +1634,8 @@
    "ted sarandos",
    "netflix"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "bob-iger",
@@ -1867,7 +1652,8 @@
    "bob iger",
    "disney"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "warren-buffett",
@@ -1884,7 +1670,8 @@
    "warren buffett",
    "berkshire hathaway"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "jeff-bezos",
@@ -1901,7 +1688,8 @@
    "jeff bezos",
    "amazon"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "bill-gates",
@@ -1918,7 +1706,8 @@
    "bill gates",
    "microsoft"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "larry-page",
@@ -1935,7 +1724,8 @@
    "larry page",
    "alphabet"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "daniel-ek",
@@ -1952,7 +1742,8 @@
    "daniel ek",
    "spotify"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "brian-chesky",
@@ -1969,7 +1760,8 @@
    "brian chesky",
    "airbnb"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "reed-hastings",
@@ -1986,7 +1778,8 @@
    "reed hastings",
    "netflix"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "marc-benioff",
@@ -2003,7 +1796,8 @@
    "marc benioff",
    "salesforce"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "alex-karp",
@@ -2020,7 +1814,8 @@
    "alex karp",
    "palantir"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ray-dalio",
@@ -2036,7 +1831,8 @@
   "mots_cles": [
    "ray dalio"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "cathie-wood",
@@ -2052,7 +1848,8 @@
   "mots_cles": [
    "cathie wood"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "bernard-arnault",
@@ -2069,7 +1866,8 @@
    "bernard arnault",
    "lvmh"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "patrick-pouyanne",
@@ -2086,7 +1884,8 @@
    "patrick pouyanné",
    "totalenergies"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "paul-hudson",
@@ -2103,7 +1902,8 @@
    "paul hudson",
    "sanofi"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "xavier-niel",
@@ -2120,7 +1920,8 @@
    "xavier niel",
    "free"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "nicolas-hieronimus",
@@ -2137,7 +1938,8 @@
    "nicolas hieronimus",
    "l'oréal"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "luca-de-meo",
@@ -2154,7 +1956,8 @@
    "luca de meo",
    "renault"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "christel-heydemann",
@@ -2171,7 +1974,8 @@
    "christel heydemann",
    "orange"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "michel-edouard-leclerc",
@@ -2188,7 +1992,8 @@
    "michel-édouard leclerc",
    "e.leclerc"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "francois-henri-pinault",
@@ -2205,7 +2010,8 @@
    "françois-henri pinault",
    "kering"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "vincent-bollore",
@@ -2221,7 +2027,8 @@
   "mots_cles": [
    "vincent bolloré"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "martin-bouygues",
@@ -2238,7 +2045,8 @@
    "martin bouygues",
    "bouygues"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "jerome-powell",
@@ -2255,7 +2063,8 @@
    "jerome powell",
    "fed"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "emmanuel-macron",
@@ -2272,7 +2081,8 @@
    "emmanuel macron",
    "élysée"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ursula-von-der-leyen",
@@ -2289,7 +2099,8 @@
    "ursula von der leyen",
    "commission européenne"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "donald-trump",
@@ -2306,7 +2117,8 @@
    "donald trump",
    "maison-blanche"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "scott-bessent",
@@ -2323,7 +2135,8 @@
    "scott bessent",
    "trésor américain"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "kristalina-georgieva",
@@ -2340,7 +2153,8 @@
    "kristalina georgieva",
    "fmi"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "bruno-le-maire",
@@ -2356,41 +2170,8 @@
   "mots_cles": [
    "bruno le maire"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "bce",
-  "nom": "BCE",
-  "type": "institution",
-  "entreprise": "BCE",
-  "indice": "",
-  "credit": "Photo : X-angel, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "X-angel",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ADSCI0115_Blockupy_2014_Transparent_EZB.jpg",
-  "description": "Blockupy 2014 banner in front of the new headquarter of the ECB",
-  "mots_cles": [
-   "bce",
-   "bce"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "fed",
-  "nom": "Fed",
-  "type": "institution",
-  "entreprise": "Fed",
-  "indice": "",
-  "credit": "Photo : Federalreserve, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Federalreserve",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AChristopher_J._Waller%2C_Federal_Reserve_Governor_2.jpg",
-  "description": "Christopher J. Waller\nChristopher J. Waller took office as a member of the Board of Governors of the Federal Reserve System on December 18, 2020, to fill an unexpired term ending January 31, 2030.\n\nRe",
-  "mots_cles": [
-   "fed",
-   "fed"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "banque-de-france",
@@ -2407,7 +2188,8 @@
    "banque de france",
    "banque de france"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "wall-street",
@@ -2424,7 +2206,8 @@
    "wall street",
    "wall street"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "new-york-stock-exchange",
@@ -2441,7 +2224,8 @@
    "new york stock exchange",
    "new york stock exchange"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "nasdaq",
@@ -2458,7 +2242,8 @@
    "nasdaq",
    "nasdaq"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "bourse-de-paris",
@@ -2475,41 +2260,8 @@
    "bourse de paris",
    "bourse de paris"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "fmi",
-  "nom": "FMI",
-  "type": "institution",
-  "entreprise": "FMI",
-  "indice": "",
-  "credit": "Photo : Kaihsu Tai, CC0 via Wikimedia Commons",
-  "licence": "CC0",
-  "auteur": "Kaihsu Tai",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AArticles_of_Agreement_of_the_International_Monetary_Fund.jpg",
-  "description": "First page of the Articles of Agreement of the International Monetary Fund, 1 March 1946. Finnish Ministry of Foreign Affairs archives",
-  "mots_cles": [
-   "fmi",
-   "fmi"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "assemblee-nationale",
-  "nom": "Assemblée nationale",
-  "type": "institution",
-  "entreprise": "Assemblée nationale",
-  "indice": "",
-  "credit": "Photo : Benjamin Lemaire - Virtuo Presse, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "Benjamin Lemaire - Virtuo Presse",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AAccoyer.jpg",
-  "description": "Bernard Accoyer, place du Trocadéro",
-  "mots_cles": [
-   "assemblée nationale",
-   "assemblée nationale"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "billets-en-euros",
@@ -2526,7 +2278,8 @@
    "billets en euros",
    "euro banknotes"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "pieces-en-euros",
@@ -2543,7 +2296,8 @@
    "pièces en euros",
    "euro coins"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "carte-bancaire",
@@ -2560,24 +2314,8 @@
    "carte bancaire",
    "credit card payment"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "terminal-de-paiement",
-  "nom": "Terminal de paiement",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : Lmccart5, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Lmccart5",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AContactless_Payment_Model.jpg",
-  "description": "Contactless Payment Model Matrix",
-  "mots_cles": [
-   "terminal de paiement",
-   "payment terminal contactless"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "pompe-a-essence",
@@ -2594,7 +2332,8 @@
    "pompe à essence",
    "fuel pump nozzle"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "station-service",
@@ -2611,7 +2350,8 @@
    "station-service",
    "petrol station prices"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "caddie",
@@ -2628,7 +2368,8 @@
    "caddie",
    "shopping cart supermarket"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "rayon-de-supermarche",
@@ -2645,7 +2386,8 @@
    "rayon de supermarché",
    "supermarket aisle"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "compteur-electrique",
@@ -2662,7 +2404,8 @@
    "compteur électrique",
    "electricity meter"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "plaque-de-cuisson-gaz",
@@ -2679,7 +2422,8 @@
    "plaque de cuisson gaz",
    "gas stove flame"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "chantier",
@@ -2696,41 +2440,8 @@
    "chantier",
    "construction site crane"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "cles-de-maison",
-  "nom": "Clés de maison",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : User:Hassocks5489, CC0 via Wikimedia Commons",
-  "licence": "CC0",
-  "auteur": "User:Hassocks5489",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ACross_Keys_House%2C_Queen_Street%2C_Salisbury_%28NHLE_Code_1258721%29_%28July_2022%29.jpg",
-  "description": "Cross Keys House, Queen Street, Salisbury, Wiltshire, England.  \n\nThis is a photo of listed building number 1258721.",
-  "mots_cles": [
-   "clés de maison",
-   "house keys"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "tirelire",
-  "nom": "Tirelire",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : Noah Wulf, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Noah Wulf",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AModel_1925_Kenworth_Collectible_Piggy_Bank_front_view_2.jpg",
-  "description": "A Model 1925 Kenworth with Watkins Products Markings used as a collectible piggy bank. Seen from front.",
-  "mots_cles": [
-   "tirelire",
-   "piggy bank"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "ecran-de-bourse",
@@ -2747,24 +2458,8 @@
    "écran de bourse",
    "stock ticker screen"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "calculatrice-et-factures",
-  "nom": "Calculatrice et factures",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : Steve Elliott from UK, CC BY-SA 2.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 2.0",
-  "auteur": "Steve Elliott from UK",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AMagic_Calculator_%2851333056644%29.jpg",
-  "description": "I never had one of these but my Dad used something very similar when he was a Milkman.\nI used to help him on his round in Farnham and he had a mechanical calculator like this to add £ s and d for bill",
-  "mots_cles": [
-   "calculatrice et factures",
-   "calculator bills"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "smartphone-banque",
@@ -2781,24 +2476,8 @@
    "smartphone banque",
    "smartphone banking app"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "distributeur-de-billets",
-  "nom": "Distributeur de billets",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : LondonHistoryatHome, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "LondonHistoryatHome",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AFirst_cash_machine_blue_plaque_in_Enfield.jpg",
-  "description": "First cash machine blue plaque in Enfield",
-  "mots_cles": [
-   "distributeur de billets",
-   "ATM cash machine"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "lingots-d-or",
@@ -2815,7 +2494,8 @@
    "lingots d'or",
    "gold bars"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "data-center",
@@ -2832,7 +2512,8 @@
    "data center",
    "data center servers"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "puce-electronique",
@@ -2849,7 +2530,8 @@
    "puce électronique",
    "computer chip wafer"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "voiture-electrique-en-charge",
@@ -2866,24 +2548,8 @@
    "voiture électrique en charge",
    "electric car charging"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "avion-de-ligne",
-  "nom": "Avion de ligne",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : Jack Delano, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Jack Delano",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3APre-fight%2C_Oil_for_the_engine_of_an_airliner_preparatory_to_takeoff._Municipal_airport%2C_Washington%2C_D.C._July_1941._-_Flickr_-_polkbritton.jpg",
-  "description": "A Douglas DC-3 of Pennsylvania Central Airlines being serviced at Washington National Airport. A mechanic is refilling the supply of lubricating oil for the right engine.",
-  "mots_cles": [
-   "avion de ligne",
-   "airliner takeoff"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "panneaux-solaires",
@@ -2900,7 +2566,8 @@
    "panneaux solaires",
    "solar panels"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "eolienne",
@@ -2917,41 +2584,8 @@
    "éolienne",
    "wind turbine"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "colis-livraison",
-  "nom": "Colis livraison",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "credit": "Photo : WrS.tm.pl, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "WrS.tm.pl",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ADelivery_of_parcels_to_an_Allegro_parcel_locker_AL005ETM._Tomasz%C3%B3w_Mazowiecki%2C_Poland.jpg",
-  "description": "Delivery of parcels to an Allegro parcel locker AL005ETM. Tomaszów Mazowiecki, Poland",
-  "mots_cles": [
-   "colis livraison",
-   "parcel delivery boxes"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "accor",
-  "nom": "Accor",
-  "type": "entreprise",
-  "entreprise": "Accor",
-  "indice": "CAC 40",
-  "credit": "Photo : Travelarz, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "Travelarz",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AAccor_ITB2014.jpg",
-  "description": "Stoisko hoteli Accor podczas ITB Berlin 2014.",
-  "mots_cles": [
-   "accor",
-   "accor"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "axa",
@@ -2968,92 +2602,8 @@
    "axa",
    "axa"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "bouygues",
-  "nom": "Bouygues",
-  "type": "entreprise",
-  "entreprise": "Bouygues",
-  "indice": "CAC 40",
-  "credit": "Photo : Laurent Grassin, CC BY 2.0 via Wikimedia Commons",
-  "licence": "CC BY 2.0",
-  "auteur": "Laurent Grassin",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABoutique-bouygues-telecom-grassin-voiron.jpg",
-  "description": "Boutique-bouygues-telecom-grassin-voiron",
-  "mots_cles": [
-   "bouygues",
-   "bouygues"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "bureau-veritas",
-  "nom": "Bureau Veritas",
-  "type": "entreprise",
-  "entreprise": "Bureau Veritas",
-  "indice": "CAC 40",
-  "credit": "Photo : GeorgHH, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "GeorgHH",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABureau_Veritas_Hamburg_02.jpg",
-  "description": "Deutscher Hauptsitz der technischen Prüforganisation Bureau Veritas S. A. in Hamburg-Harburg, Veritaskai.",
-  "mots_cles": [
-   "bureau veritas",
-   "bureau veritas"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "credit-agricole",
-  "nom": "Crédit Agricole",
-  "type": "entreprise",
-  "entreprise": "Crédit Agricole",
-  "indice": "CAC 40",
-  "credit": "Photo : Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w wojewód, CC0 via Wikimedia Commons",
-  "licence": "CC0",
-  "auteur": "Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w wojewód",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABank_Cr%C3%A9dit_Agricole_w_Tomaszowie_Mazowieckim.jpg",
-  "description": "Bank Crédit Agricole w 60-tysięcznym Tomaszowie Mazowieckim, w województwie łódzkim",
-  "mots_cles": [
-   "crédit agricole",
-   "crédit agricole"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "dassault-systemes",
-  "nom": "Dassault Systèmes",
-  "type": "entreprise",
-  "entreprise": "Dassault Systèmes",
-  "indice": "CAC 40",
-  "credit": "Photo : Francisjbernard, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Francisjbernard",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ADirection_G%C3%A9n%C3%A9rale_Dassault_Syst%C3%A8mes.jpg",
-  "description": "Direction Générale Dassault Systèmes en Septembre 1987",
-  "mots_cles": [
-   "dassault systèmes",
-   "dassault systèmes"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "engie",
-  "nom": "Engie",
-  "type": "entreprise",
-  "entreprise": "Engie",
-  "indice": "CAC 40",
-  "credit": "Photo : May Khalil, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "May Khalil",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AENGIE_global_markets_solid_BLUE_RGB.jpg",
-  "description": "logo ENGIE Global Markets",
-  "mots_cles": [
-   "engie",
-   "engie"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "essilorluxottica",
@@ -3070,58 +2620,8 @@
    "essilorluxottica",
    "essilorluxottica"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "eurofins",
-  "nom": "Eurofins",
-  "type": "entreprise",
-  "entreprise": "Eurofins",
-  "indice": "CAC 40",
-  "credit": "Photo : bartbrp, CC BY 3.0 via Wikimedia Commons",
-  "licence": "CC BY 3.0",
-  "auteur": "bartbrp",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AEurofins_-_panoramio.jpg",
-  "description": "eurofins",
-  "mots_cles": [
-   "eurofins",
-   "eurofins"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "legrand",
-  "nom": "Legrand",
-  "type": "entreprise",
-  "entreprise": "Legrand",
-  "indice": "CAC 40",
-  "credit": "Photo : Didier Descouens, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Didier Descouens",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3A%28Albi%29_Portrait_de_femme_-_Louis_Legrand_MTL.inv.07.1.1.jpg",
-  "description": "",
-  "mots_cles": [
-   "legrand",
-   "legrand"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "publicis",
-  "nom": "Publicis",
-  "type": "entreprise",
-  "entreprise": "Publicis",
-  "indice": "CAC 40",
-  "credit": "Photo : Thomon, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Thomon",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3APublicis_No%C3%ABl.jpg",
-  "description": "Illuminations de Noël du restaurant du Drugstore Publicis.",
-  "mots_cles": [
-   "publicis",
-   "publicis"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "stellantis",
@@ -3138,109 +2638,8 @@
    "stellantis",
    "stellantis"
   ],
-  "a_verifier": true
- },
- {
-  "slug": "teleperformance",
-  "nom": "Teleperformance",
-  "type": "entreprise",
-  "entreprise": "Teleperformance",
-  "indice": "CAC 40",
-  "credit": "Photo : JDipterocarpus, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "JDipterocarpus",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ATeleperformance_Philippines_15.jpg",
-  "description": "Teleperformance Philippines",
-  "mots_cles": [
-   "teleperformance",
-   "teleperformance"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "vinci",
-  "nom": "Vinci",
-  "type": "entreprise",
-  "entreprise": "Vinci",
-  "indice": "CAC 40",
-  "credit": "Photo : Leonardo da Vinci, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "Leonardo da Vinci",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ADa_Vinci_Studies_of_Embryos_Luc_Viatour.jpg",
-  "description": "Studies of Embryos by Leonardo da Vinci (Pen over red chalk 1510-1513)",
-  "mots_cles": [
-   "vinci",
-   "vinci"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "temu",
-  "nom": "Temu",
-  "type": "entreprise",
-  "entreprise": "Temu",
-  "indice": "",
-  "credit": "Photo : Luca Giarelli, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "Luca Giarelli",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3APanorama_-_Tem%C3%B9_%28Foto_Luca_Giarelli%29.jpg",
-  "description": "Panorama. Temù, Val Camonica, Italy.",
-  "mots_cles": [
-   "temu",
-   "temu"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "rockstar-games",
-  "nom": "Rockstar Games",
-  "type": "entreprise",
-  "entreprise": "Rockstar Games",
-  "indice": "",
-  "credit": "Photo : Sergey Galyonkin from Kyiv, Ukraine, CC BY-SA 2.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 2.0",
-  "auteur": "Sergey Galyonkin from Kyiv, Ukraine",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3ABiggest_Rockstar_Games_fan_ever_-_Flickr_-_Sergey_Galyonkin.jpg",
-  "description": "Biggest Rockstar Games fan ever",
-  "mots_cles": [
-   "rockstar games",
-   "rockstar games"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "free",
-  "nom": "Free",
-  "type": "entreprise",
-  "entreprise": "Free",
-  "indice": "",
-  "credit": "Photo : „Niabot, because commons should stay free“, CC BY-SA 3.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 3.0",
-  "auteur": "„Niabot, because commons should stay free“",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AOn_the_edge_-_free_world_version.jpg",
-  "description": "Drawing of a fictional landscape with a figure in manga/anime style. The title of this image is: On the Edge. Programs used: GIMP, Inkscape, Blender.",
-  "mots_cles": [
-   "free",
-   "free"
-  ],
-  "a_verifier": true
- },
- {
-  "slug": "intermarche",
-  "nom": "Intermarché",
-  "type": "entreprise",
-  "entreprise": "Intermarché",
-  "indice": "",
-  "credit": "Photo : Marcel Roblin, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "Marcel Roblin",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AIntermarch%C3%A9_Serres-Castet.jpg",
-  "description": "Image devanture d'Intermarché Hyper de Serres-Castet",
-  "mots_cles": [
-   "intermarché",
-   "intermarché"
-  ],
-  "a_verifier": true
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "jensen-huang",
@@ -3257,7 +2656,8 @@
    "jensen huang",
    "nvidia"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "mark-zuckerberg",
@@ -3274,58 +2674,8 @@
    "mark zuckerberg",
    "meta"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "hock-tan",
-  "nom": "Hock Tan",
-  "type": "personne",
-  "entreprise": "Broadcom",
-  "indice": "",
-  "credit": "Photo : SwarmCheng, CC BY-SA 4.0 via Wikimedia Commons",
-  "licence": "CC BY-SA 4.0",
-  "auteur": "SwarmCheng",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AChong_Hock_Tong_Temple_19.jpg",
-  "description": "Manila Chinese Cemetery  Chong Hock Tong Temple Built in1878s - reconstructed by craftsmen and artisans from Taiwan, its lateral belfries appended at each end,  reconstructed as an all-stone edifice b",
-  "mots_cles": [
-   "hock tan",
-   "broadcom"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "lip-bu-tan",
-  "nom": "Lip-Bu Tan",
-  "type": "personne",
-  "entreprise": "Intel",
-  "indice": "",
-  "credit": "Photo : United States Department of Commerce, Public domain via Wikimedia Commons",
-  "licence": "Public domain",
-  "auteur": "United States Department of Commerce",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AHoward_Lutnick_with_Intel_CEO_Lip-Bu_Tan_%282025%29.jpg",
-  "description": "United States Commerce Secretary Howard Lutnick with Intel CEO Lip-Bu Tan.",
-  "mots_cles": [
-   "lip-bu tan",
-   "intel"
-  ],
-  "a_verifier": false
- },
- {
-  "slug": "michael-dell",
-  "nom": "Michael Dell",
-  "type": "personne",
-  "entreprise": "Dell",
-  "indice": "",
-  "credit": "Photo : Village Global, CC BY 2.0 via Wikimedia Commons",
-  "licence": "CC BY 2.0",
-  "auteur": "Village Global",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AMichael_Dell_%2852548152888%29.jpg",
-  "description": "The Grove 2021",
-  "mots_cles": [
-   "michael dell",
-   "dell"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "antonio-neri",
@@ -3342,7 +2692,8 @@
    "antonio neri",
    "hpe"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "larry-ellison",
@@ -3359,7 +2710,8 @@
    "larry ellison",
    "oracle"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "jamie-dimon",
@@ -3376,24 +2728,8 @@
    "jamie dimon",
    "jpmorgan"
   ],
-  "a_verifier": false
- },
- {
-  "slug": "greg-abel",
-  "nom": "Greg Abel",
-  "type": "personne",
-  "entreprise": "Berkshire Hathaway",
-  "indice": "",
-  "credit": "Photo : TheAHL, CC BY 2.0 via Wikimedia Commons",
-  "licence": "CC BY 2.0",
-  "auteur": "TheAHL",
-  "source_url": "https://commons.wikimedia.org/wiki/File%3AAllstar_%2838712752750%29.jpg",
-  "description": "Graig Abel Photography/AHL",
-  "mots_cles": [
-   "greg abel",
-   "berkshire hathaway"
-  ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sam-altman",
@@ -3410,7 +2746,8 @@
    "sam altman",
    "openai"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "sergey-brin",
@@ -3427,7 +2764,8 @@
    "sergey brin",
    "alphabet"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "dara-khosrowshahi",
@@ -3444,7 +2782,8 @@
    "dara khosrowshahi",
    "uber"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "guillaume-faury",
@@ -3461,7 +2800,8 @@
    "guillaume faury",
    "airbus"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "florent-menegaux",
@@ -3478,7 +2818,8 @@
    "florent menegaux",
    "michelin"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "alexandre-bompard",
@@ -3495,7 +2836,8 @@
    "alexandre bompard",
    "carrefour"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "christine-lagarde",
@@ -3512,7 +2854,8 @@
    "christine lagarde",
    "bce"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  },
  {
   "slug": "francois-villeroy-de-galhau",
@@ -3529,6 +2872,7 @@
    "françois villeroy de galhau",
    "banque de france"
   ],
-  "a_verifier": false
+  "a_verifier": false,
+  "statut": "ok"
  }
 ]

@@ -1,31 +1,5 @@
 [
  {
-  "slug": "accor",
-  "nom": "Accor",
-  "type": "entreprise",
-  "entreprise": "Accor",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "accor",
-   "accor"
-  ],
-  "wiki": "Accor",
-  "pays": "FR"
- },
- {
-  "slug": "air-liquide",
-  "nom": "Air Liquide",
-  "type": "entreprise",
-  "entreprise": "Air Liquide",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "air liquide",
-   "air liquide"
-  ],
-  "wiki": "Air Liquide",
-  "pays": "FR"
- },
- {
   "slug": "airbus",
   "nom": "Airbus",
   "type": "entreprise",
@@ -65,84 +39,6 @@
   "pays": "FR"
  },
  {
-  "slug": "bnp-paribas",
-  "nom": "BNP Paribas",
-  "type": "entreprise",
-  "entreprise": "BNP Paribas",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "bnp paribas",
-   "bnp paribas"
-  ],
-  "wiki": "BNP Paribas",
-  "pays": "FR"
- },
- {
-  "slug": "bouygues",
-  "nom": "Bouygues",
-  "type": "entreprise",
-  "entreprise": "Bouygues",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "bouygues",
-   "bouygues"
-  ],
-  "wiki": "Bouygues",
-  "pays": "FR"
- },
- {
-  "slug": "bureau-veritas",
-  "nom": "Bureau Veritas",
-  "type": "entreprise",
-  "entreprise": "Bureau Veritas",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "bureau veritas",
-   "bureau veritas"
-  ],
-  "wiki": "Bureau Veritas",
-  "pays": "FR"
- },
- {
-  "slug": "capgemini",
-  "nom": "Capgemini",
-  "type": "entreprise",
-  "entreprise": "Capgemini",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "capgemini",
-   "capgemini"
-  ],
-  "wiki": "Capgemini",
-  "pays": "FR"
- },
- {
-  "slug": "carrefour",
-  "nom": "Carrefour",
-  "type": "entreprise",
-  "entreprise": "Carrefour",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "carrefour",
-   "carrefour"
-  ],
-  "wiki": "Carrefour",
-  "pays": "FR"
- },
- {
-  "slug": "credit-agricole",
-  "nom": "Crédit Agricole",
-  "type": "entreprise",
-  "entreprise": "Crédit Agricole",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "crédit agricole",
-   "crédit agricole"
-  ],
-  "wiki": "Crédit Agricole",
-  "pays": "FR"
- },
- {
   "slug": "danone",
   "nom": "Danone",
   "type": "entreprise",
@@ -153,45 +49,6 @@
    "danone"
   ],
   "wiki": "Danone",
-  "pays": "FR"
- },
- {
-  "slug": "dassault-systemes",
-  "nom": "Dassault Systèmes",
-  "type": "entreprise",
-  "entreprise": "Dassault Systèmes",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "dassault systèmes",
-   "dassault systèmes"
-  ],
-  "wiki": "Dassault Systèmes",
-  "pays": "FR"
- },
- {
-  "slug": "edenred",
-  "nom": "Edenred",
-  "type": "entreprise",
-  "entreprise": "Edenred",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "edenred",
-   "edenred"
-  ],
-  "wiki": "Edenred",
-  "pays": "FR"
- },
- {
-  "slug": "engie",
-  "nom": "Engie",
-  "type": "entreprise",
-  "entreprise": "Engie",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "engie",
-   "engie"
-  ],
-  "wiki": "Engie",
   "pays": "FR"
  },
  {
@@ -208,19 +65,6 @@
   "pays": "FR"
  },
  {
-  "slug": "eurofins",
-  "nom": "Eurofins",
-  "type": "entreprise",
-  "entreprise": "Eurofins",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "eurofins",
-   "eurofins"
-  ],
-  "wiki": "Eurofins Scientific",
-  "pays": "FR"
- },
- {
   "slug": "hermes",
   "nom": "Hermès",
   "type": "entreprise",
@@ -231,58 +75,6 @@
    "hermès"
   ],
   "wiki": "Hermès",
-  "pays": "FR"
- },
- {
-  "slug": "kering",
-  "nom": "Kering",
-  "type": "entreprise",
-  "entreprise": "Kering",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "kering",
-   "kering"
-  ],
-  "wiki": "Kering",
-  "pays": "FR"
- },
- {
-  "slug": "l-oreal",
-  "nom": "L'Oréal",
-  "type": "entreprise",
-  "entreprise": "L'Oréal",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "l'oréal",
-   "l'oréal"
-  ],
-  "wiki": "L'Oréal",
-  "pays": "FR"
- },
- {
-  "slug": "legrand",
-  "nom": "Legrand",
-  "type": "entreprise",
-  "entreprise": "Legrand",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "legrand",
-   "legrand"
-  ],
-  "wiki": "Legrand (company)",
-  "pays": "FR"
- },
- {
-  "slug": "lvmh",
-  "nom": "LVMH",
-  "type": "entreprise",
-  "entreprise": "LVMH",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "lvmh",
-   "lvmh"
-  ],
-  "wiki": "LVMH",
   "pays": "FR"
  },
  {
@@ -325,19 +117,6 @@
   "pays": "FR"
  },
  {
-  "slug": "publicis",
-  "nom": "Publicis",
-  "type": "entreprise",
-  "entreprise": "Publicis",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "publicis",
-   "publicis"
-  ],
-  "wiki": "Publicis",
-  "pays": "FR"
- },
- {
   "slug": "renault",
   "nom": "Renault",
   "type": "entreprise",
@@ -348,32 +127,6 @@
    "renault"
   ],
   "wiki": "Renault",
-  "pays": "FR"
- },
- {
-  "slug": "safran",
-  "nom": "Safran",
-  "type": "entreprise",
-  "entreprise": "Safran",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "safran",
-   "safran"
-  ],
-  "wiki": "Safran",
-  "pays": "FR"
- },
- {
-  "slug": "saint-gobain",
-  "nom": "Saint-Gobain",
-  "type": "entreprise",
-  "entreprise": "Saint-Gobain",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "saint-gobain",
-   "saint-gobain"
-  ],
-  "wiki": "Saint-Gobain",
   "pays": "FR"
  },
  {
@@ -403,19 +156,6 @@
   "pays": "FR"
  },
  {
-  "slug": "societe-generale",
-  "nom": "Société Générale",
-  "type": "entreprise",
-  "entreprise": "Société Générale",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "société générale",
-   "société générale"
-  ],
-  "wiki": "Société Générale",
-  "pays": "FR"
- },
- {
   "slug": "stellantis",
   "nom": "Stellantis",
   "type": "entreprise",
@@ -439,19 +179,6 @@
    "stmicroelectronics"
   ],
   "wiki": "STMicroelectronics",
-  "pays": "FR"
- },
- {
-  "slug": "teleperformance",
-  "nom": "Teleperformance",
-  "type": "entreprise",
-  "entreprise": "Teleperformance",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "teleperformance",
-   "teleperformance"
-  ],
-  "wiki": "Teleperformance",
   "pays": "FR"
  },
  {
@@ -481,19 +208,6 @@
   "pays": "FR"
  },
  {
-  "slug": "unibail-rodamco-westfield",
-  "nom": "Unibail-Rodamco-Westfield",
-  "type": "entreprise",
-  "entreprise": "Unibail-Rodamco-Westfield",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "unibail-rodamco-westfield",
-   "unibail-rodamco-westfield"
-  ],
-  "wiki": "Unibail-Rodamco-Westfield",
-  "pays": "FR"
- },
- {
   "slug": "veolia",
   "nom": "Veolia",
   "type": "entreprise",
@@ -504,19 +218,6 @@
    "veolia"
   ],
   "wiki": "Veolia",
-  "pays": "FR"
- },
- {
-  "slug": "vinci",
-  "nom": "Vinci",
-  "type": "entreprise",
-  "entreprise": "Vinci",
-  "indice": "CAC 40",
-  "mots_cles": [
-   "vinci",
-   "vinci"
-  ],
-  "wiki": "Vinci SA",
   "pays": "FR"
  },
  {
@@ -772,18 +473,6 @@
   "wiki": "Visa Inc."
  },
  {
-  "slug": "mastercard",
-  "nom": "Mastercard",
-  "type": "entreprise",
-  "entreprise": "Mastercard",
-  "indice": "S&P 500",
-  "mots_cles": [
-   "mastercard",
-   "mastercard"
-  ],
-  "wiki": "Mastercard"
- },
- {
   "slug": "walmart",
   "nom": "Walmart",
   "type": "entreprise",
@@ -902,18 +591,6 @@
    "exxonmobil"
   ],
   "wiki": "ExxonMobil"
- },
- {
-  "slug": "chevron",
-  "nom": "Chevron",
-  "type": "entreprise",
-  "entreprise": "Chevron",
-  "indice": "S&P 500",
-  "mots_cles": [
-   "chevron",
-   "chevron"
-  ],
-  "wiki": "Chevron Corporation"
  },
  {
   "slug": "johnson-johnson",
@@ -1060,18 +737,6 @@
   "wiki": "Analog Devices"
  },
  {
-  "slug": "texas-instruments",
-  "nom": "Texas Instruments",
-  "type": "entreprise",
-  "entreprise": "Texas Instruments",
-  "indice": "S&P 500",
-  "mots_cles": [
-   "texas instruments",
-   "texas instruments"
-  ],
-  "wiki": "Texas Instruments"
- },
- {
   "slug": "paypal",
   "nom": "PayPal",
   "type": "entreprise",
@@ -1118,18 +783,6 @@
    "unitedhealth"
   ],
   "wiki": "UnitedHealth Group"
- },
- {
-  "slug": "home-depot",
-  "nom": "Home Depot",
-  "type": "entreprise",
-  "entreprise": "Home Depot",
-  "indice": "S&P 500",
-  "mots_cles": [
-   "home depot",
-   "home depot"
-  ],
-  "wiki": "The Home Depot"
  },
  {
   "slug": "ford",
@@ -1312,30 +965,6 @@
   "wiki": "Shein"
  },
  {
-  "slug": "temu",
-  "nom": "Temu",
-  "type": "entreprise",
-  "entreprise": "Temu",
-  "indice": "",
-  "mots_cles": [
-   "temu",
-   "temu"
-  ],
-  "wiki": "Temu"
- },
- {
-  "slug": "rockstar-games",
-  "nom": "Rockstar Games",
-  "type": "entreprise",
-  "entreprise": "Rockstar Games",
-  "indice": "",
-  "mots_cles": [
-   "rockstar games",
-   "rockstar games"
-  ],
-  "wiki": "Rockstar Games"
- },
- {
   "slug": "playstation",
   "nom": "PlayStation",
   "type": "entreprise",
@@ -1396,19 +1025,6 @@
   "wiki": "IKEA"
  },
  {
-  "slug": "e-leclerc",
-  "nom": "E.Leclerc",
-  "type": "entreprise",
-  "entreprise": "E.Leclerc",
-  "indice": "",
-  "mots_cles": [
-   "e.leclerc",
-   "e.leclerc"
-  ],
-  "wiki": "E.Leclerc",
-  "pays": "FR"
- },
- {
   "slug": "sncf",
   "nom": "SNCF",
   "type": "entreprise",
@@ -1419,19 +1035,6 @@
    "sncf"
   ],
   "wiki": "SNCF",
-  "pays": "FR"
- },
- {
-  "slug": "free",
-  "nom": "Free",
-  "type": "entreprise",
-  "entreprise": "Free",
-  "indice": "",
-  "mots_cles": [
-   "free",
-   "free"
-  ],
-  "wiki": "Free (ISP)",
   "pays": "FR"
  },
  {
@@ -1471,32 +1074,6 @@
    "decathlon"
   ],
   "wiki": "Decathlon",
-  "pays": "FR"
- },
- {
-  "slug": "lidl",
-  "nom": "Lidl",
-  "type": "entreprise",
-  "entreprise": "Lidl",
-  "indice": "",
-  "mots_cles": [
-   "lidl",
-   "lidl"
-  ],
-  "wiki": "Lidl",
-  "pays": "FR"
- },
- {
-  "slug": "intermarche",
-  "nom": "Intermarché",
-  "type": "entreprise",
-  "entreprise": "Intermarché",
-  "indice": "",
-  "mots_cles": [
-   "intermarché",
-   "intermarché"
-  ],
-  "wiki": "Les Mousquetaires",
   "pays": "FR"
  },
  {
@@ -1584,18 +1161,6 @@
   "wiki": "Elon Musk"
  },
  {
-  "slug": "hock-tan",
-  "nom": "Hock Tan",
-  "type": "personne",
-  "entreprise": "Broadcom",
-  "indice": "",
-  "mots_cles": [
-   "hock tan",
-   "broadcom"
-  ],
-  "wiki": "Hock Tan"
- },
- {
   "slug": "lisa-su",
   "nom": "Lisa Su",
   "type": "personne",
@@ -1608,18 +1173,6 @@
   "wiki": "Lisa Su"
  },
  {
-  "slug": "lip-bu-tan",
-  "nom": "Lip-Bu Tan",
-  "type": "personne",
-  "entreprise": "Intel",
-  "indice": "",
-  "mots_cles": [
-   "lip-bu tan",
-   "intel"
-  ],
-  "wiki": "Lip-Bu Tan"
- },
- {
   "slug": "sanjay-mehrotra",
   "nom": "Sanjay Mehrotra",
   "type": "personne",
@@ -1630,18 +1183,6 @@
    "micron"
   ],
   "wiki": "Sanjay Mehrotra"
- },
- {
-  "slug": "michael-dell",
-  "nom": "Michael Dell",
-  "type": "personne",
-  "entreprise": "Dell",
-  "indice": "",
-  "mots_cles": [
-   "michael dell",
-   "dell"
-  ],
-  "wiki": "Michael Dell"
  },
  {
   "slug": "antonio-neri",
@@ -1714,18 +1255,6 @@
    "berkshire hathaway"
   ],
   "wiki": "Warren Buffett"
- },
- {
-  "slug": "greg-abel",
-  "nom": "Greg Abel",
-  "type": "personne",
-  "entreprise": "Berkshire Hathaway",
-  "indice": "",
-  "mots_cles": [
-   "greg abel",
-   "berkshire hathaway"
-  ],
-  "wiki": "Greg Abel"
  },
  {
   "slug": "sam-altman",
@@ -2156,30 +1685,6 @@
   "wiki": "Bruno Le Maire"
  },
  {
-  "slug": "bce",
-  "nom": "BCE",
-  "type": "institution",
-  "entreprise": "BCE",
-  "indice": "",
-  "mots_cles": [
-   "bce",
-   "bce"
-  ],
-  "wiki": "European Central Bank"
- },
- {
-  "slug": "fed",
-  "nom": "Fed",
-  "type": "institution",
-  "entreprise": "Fed",
-  "indice": "",
-  "mots_cles": [
-   "fed",
-   "fed"
-  ],
-  "wiki": "Federal Reserve"
- },
- {
   "slug": "banque-de-france",
   "nom": "Banque de France",
   "type": "institution",
@@ -2240,30 +1745,6 @@
   "wiki": "Palais Brongniart"
  },
  {
-  "slug": "fmi",
-  "nom": "FMI",
-  "type": "institution",
-  "entreprise": "FMI",
-  "indice": "",
-  "mots_cles": [
-   "fmi",
-   "fmi"
-  ],
-  "wiki": "International Monetary Fund"
- },
- {
-  "slug": "assemblee-nationale",
-  "nom": "Assemblée nationale",
-  "type": "institution",
-  "entreprise": "Assemblée nationale",
-  "indice": "",
-  "mots_cles": [
-   "assemblée nationale",
-   "assemblée nationale"
-  ],
-  "wiki": "National Assembly (France)"
- },
- {
   "slug": "billets-en-euros",
   "nom": "Billets en euros",
   "type": "generique",
@@ -2298,18 +1779,6 @@
    "credit card payment"
   ],
   "commons": "credit card payment"
- },
- {
-  "slug": "terminal-de-paiement",
-  "nom": "Terminal de paiement",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "terminal de paiement",
-   "payment terminal contactless"
-  ],
-  "commons": "payment terminal contactless"
  },
  {
   "slug": "pompe-a-essence",
@@ -2396,30 +1865,6 @@
   "commons": "construction site crane"
  },
  {
-  "slug": "cles-de-maison",
-  "nom": "Clés de maison",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "clés de maison",
-   "house keys"
-  ],
-  "commons": "house keys"
- },
- {
-  "slug": "tirelire",
-  "nom": "Tirelire",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "tirelire",
-   "piggy bank"
-  ],
-  "commons": "piggy bank"
- },
- {
   "slug": "ecran-de-bourse",
   "nom": "Écran de Bourse",
   "type": "generique",
@@ -2432,18 +1877,6 @@
   "commons": "stock ticker screen"
  },
  {
-  "slug": "calculatrice-et-factures",
-  "nom": "Calculatrice et factures",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "calculatrice et factures",
-   "calculator bills"
-  ],
-  "commons": "calculator bills"
- },
- {
   "slug": "smartphone-banque",
   "nom": "Smartphone banque",
   "type": "generique",
@@ -2454,18 +1887,6 @@
    "smartphone banking app"
   ],
   "commons": "smartphone banking app"
- },
- {
-  "slug": "distributeur-de-billets",
-  "nom": "Distributeur de billets",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "distributeur de billets",
-   "ATM cash machine"
-  ],
-  "commons": "ATM cash machine"
  },
  {
   "slug": "lingots-d-or",
@@ -2516,18 +1937,6 @@
   "commons": "electric car charging"
  },
  {
-  "slug": "avion-de-ligne",
-  "nom": "Avion de ligne",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "avion de ligne",
-   "airliner takeoff"
-  ],
-  "commons": "airliner takeoff"
- },
- {
   "slug": "panneaux-solaires",
   "nom": "Panneaux solaires",
   "type": "generique",
@@ -2550,17 +1959,5 @@
    "wind turbine"
   ],
   "commons": "wind turbine"
- },
- {
-  "slug": "colis-livraison",
-  "nom": "Colis livraison",
-  "type": "generique",
-  "entreprise": "",
-  "indice": "",
-  "mots_cles": [
-   "colis livraison",
-   "parcel delivery boxes"
-  ],
-  "commons": "parcel delivery boxes"
  }
 ]
