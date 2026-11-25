@@ -2935,5 +2935,600 @@
    "parcel delivery boxes"
   ],
   "a_verifier": false
+ },
+ {
+  "slug": "accor",
+  "nom": "Accor",
+  "type": "entreprise",
+  "entreprise": "Accor",
+  "indice": "CAC 40",
+  "credit": "Photo : Travelarz, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Travelarz",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAccor_ITB2014.jpg",
+  "description": "Stoisko hoteli Accor podczas ITB Berlin 2014.",
+  "mots_cles": [
+   "accor",
+   "accor"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "axa",
+  "nom": "AXA",
+  "type": "entreprise",
+  "entreprise": "AXA",
+  "indice": "CAC 40",
+  "credit": "Photo : Photograph by Mike Peel (www.mikepeel.net)., CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Photograph by Mike Peel (www.mikepeel.net).",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AKLM_Airbus_A321neo_%28PH-AXA%29_%40_MAN%2C_2025-07-16_%2803%29.jpg",
+  "description": "KLM Airbus A321neo (PH-AXA) @ MAN, 2025-07-16",
+  "mots_cles": [
+   "axa",
+   "axa"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "bouygues",
+  "nom": "Bouygues",
+  "type": "entreprise",
+  "entreprise": "Bouygues",
+  "indice": "CAC 40",
+  "credit": "Photo : Laurent Grassin, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Laurent Grassin",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABoutique-bouygues-telecom-grassin-voiron.jpg",
+  "description": "Boutique-bouygues-telecom-grassin-voiron",
+  "mots_cles": [
+   "bouygues",
+   "bouygues"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "bureau-veritas",
+  "nom": "Bureau Veritas",
+  "type": "entreprise",
+  "entreprise": "Bureau Veritas",
+  "indice": "CAC 40",
+  "credit": "Photo : GeorgHH, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "GeorgHH",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABureau_Veritas_Hamburg_02.jpg",
+  "description": "Deutscher Hauptsitz der technischen Prüforganisation Bureau Veritas S. A. in Hamburg-Harburg, Veritaskai.",
+  "mots_cles": [
+   "bureau veritas",
+   "bureau veritas"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "credit-agricole",
+  "nom": "Crédit Agricole",
+  "type": "entreprise",
+  "entreprise": "Crédit Agricole",
+  "indice": "CAC 40",
+  "credit": "Photo : Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w wojewód, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w wojewód",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABank_Cr%C3%A9dit_Agricole_w_Tomaszowie_Mazowieckim.jpg",
+  "description": "Bank Crédit Agricole w 60-tysięcznym Tomaszowie Mazowieckim, w województwie łódzkim",
+  "mots_cles": [
+   "crédit agricole",
+   "crédit agricole"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "dassault-systemes",
+  "nom": "Dassault Systèmes",
+  "type": "entreprise",
+  "entreprise": "Dassault Systèmes",
+  "indice": "CAC 40",
+  "credit": "Photo : Francisjbernard, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Francisjbernard",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADirection_G%C3%A9n%C3%A9rale_Dassault_Syst%C3%A8mes.jpg",
+  "description": "Direction Générale Dassault Systèmes en Septembre 1987",
+  "mots_cles": [
+   "dassault systèmes",
+   "dassault systèmes"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "engie",
+  "nom": "Engie",
+  "type": "entreprise",
+  "entreprise": "Engie",
+  "indice": "CAC 40",
+  "credit": "Photo : May Khalil, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "May Khalil",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AENGIE_global_markets_solid_BLUE_RGB.jpg",
+  "description": "logo ENGIE Global Markets",
+  "mots_cles": [
+   "engie",
+   "engie"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "essilorluxottica",
+  "nom": "EssilorLuxottica",
+  "type": "entreprise",
+  "entreprise": "EssilorLuxottica",
+  "indice": "CAC 40",
+  "credit": "Photo : InvadingInvader, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "InvadingInvader",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALuxottica_Carlos.jpg",
+  "description": "Luxottica Carlos sunglasses. Prior to Luxottica's licensing deals, the company produced eyewear under its own name and brand.",
+  "mots_cles": [
+   "essilorluxottica",
+   "essilorluxottica"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "eurofins",
+  "nom": "Eurofins",
+  "type": "entreprise",
+  "entreprise": "Eurofins",
+  "indice": "CAC 40",
+  "credit": "Photo : bartbrp, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "bartbrp",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AEurofins_-_panoramio.jpg",
+  "description": "eurofins",
+  "mots_cles": [
+   "eurofins",
+   "eurofins"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "legrand",
+  "nom": "Legrand",
+  "type": "entreprise",
+  "entreprise": "Legrand",
+  "indice": "CAC 40",
+  "credit": "Photo : Didier Descouens, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Didier Descouens",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A%28Albi%29_Portrait_de_femme_-_Louis_Legrand_MTL.inv.07.1.1.jpg",
+  "description": "",
+  "mots_cles": [
+   "legrand",
+   "legrand"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "publicis",
+  "nom": "Publicis",
+  "type": "entreprise",
+  "entreprise": "Publicis",
+  "indice": "CAC 40",
+  "credit": "Photo : Thomon, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Thomon",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APublicis_No%C3%ABl.jpg",
+  "description": "Illuminations de Noël du restaurant du Drugstore Publicis.",
+  "mots_cles": [
+   "publicis",
+   "publicis"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "stellantis",
+  "nom": "Stellantis",
+  "type": "entreprise",
+  "entreprise": "Stellantis",
+  "indice": "CAC 40",
+  "credit": "Photo : Matti Blume, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Matti Blume",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AStellantis_Pro_One%2C_IAA_2024%2C_Hanover_%28P1200027%29.jpg",
+  "description": "Opel Movano Hydrogen at IAA Transportation 2024",
+  "mots_cles": [
+   "stellantis",
+   "stellantis"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "teleperformance",
+  "nom": "Teleperformance",
+  "type": "entreprise",
+  "entreprise": "Teleperformance",
+  "indice": "CAC 40",
+  "credit": "Photo : JDipterocarpus, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "JDipterocarpus",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ATeleperformance_Philippines_15.jpg",
+  "description": "Teleperformance Philippines",
+  "mots_cles": [
+   "teleperformance",
+   "teleperformance"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "vinci",
+  "nom": "Vinci",
+  "type": "entreprise",
+  "entreprise": "Vinci",
+  "indice": "CAC 40",
+  "credit": "Photo : Leonardo da Vinci, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Leonardo da Vinci",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADa_Vinci_Studies_of_Embryos_Luc_Viatour.jpg",
+  "description": "Studies of Embryos by Leonardo da Vinci (Pen over red chalk 1510-1513)",
+  "mots_cles": [
+   "vinci",
+   "vinci"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "temu",
+  "nom": "Temu",
+  "type": "entreprise",
+  "entreprise": "Temu",
+  "indice": "",
+  "credit": "Photo : Luca Giarelli, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Luca Giarelli",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3APanorama_-_Tem%C3%B9_%28Foto_Luca_Giarelli%29.jpg",
+  "description": "Panorama. Temù, Val Camonica, Italy.",
+  "mots_cles": [
+   "temu",
+   "temu"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "rockstar-games",
+  "nom": "Rockstar Games",
+  "type": "entreprise",
+  "entreprise": "Rockstar Games",
+  "indice": "",
+  "credit": "Photo : Sergey Galyonkin from Kyiv, Ukraine, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Sergey Galyonkin from Kyiv, Ukraine",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABiggest_Rockstar_Games_fan_ever_-_Flickr_-_Sergey_Galyonkin.jpg",
+  "description": "Biggest Rockstar Games fan ever",
+  "mots_cles": [
+   "rockstar games",
+   "rockstar games"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "free",
+  "nom": "Free",
+  "type": "entreprise",
+  "entreprise": "Free",
+  "indice": "",
+  "credit": "Photo : „Niabot, because commons should stay free“, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "„Niabot, because commons should stay free“",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AOn_the_edge_-_free_world_version.jpg",
+  "description": "Drawing of a fictional landscape with a figure in manga/anime style. The title of this image is: On the Edge. Programs used: GIMP, Inkscape, Blender.",
+  "mots_cles": [
+   "free",
+   "free"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "intermarche",
+  "nom": "Intermarché",
+  "type": "entreprise",
+  "entreprise": "Intermarché",
+  "indice": "",
+  "credit": "Photo : Marcel Roblin, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Marcel Roblin",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AIntermarch%C3%A9_Serres-Castet.jpg",
+  "description": "Image devanture d'Intermarché Hyper de Serres-Castet",
+  "mots_cles": [
+   "intermarché",
+   "intermarché"
+  ],
+  "a_verifier": true
+ },
+ {
+  "slug": "jensen-huang",
+  "nom": "Jensen Huang",
+  "type": "personne",
+  "entreprise": "Nvidia",
+  "indice": "",
+  "credit": "Photo : Anderseidesvik, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Anderseidesvik",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AJensen_Huang_Stanford_2026-04-30_010_%28cropped%29.jpg",
+  "description": "Jensen Huang, founder and CEO of Nvidia, during a fireside chat in Stanford University's CS 153 course on April 30, 2026.",
+  "mots_cles": [
+   "jensen huang",
+   "nvidia"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "mark-zuckerberg",
+  "nom": "Mark Zuckerberg",
+  "type": "personne",
+  "entreprise": "Meta",
+  "indice": "",
+  "credit": "Photo : Guillaume Paumier, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "Guillaume Paumier",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1.jpg",
+  "description": "Mark Zuckerberg, Founder & CEO of Facebook, at the press conference about the e-G8 forum during the 37th G8 summit in Deauville, France.",
+  "mots_cles": [
+   "mark zuckerberg",
+   "meta"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "hock-tan",
+  "nom": "Hock Tan",
+  "type": "personne",
+  "entreprise": "Broadcom",
+  "indice": "",
+  "credit": "Photo : SwarmCheng, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "SwarmCheng",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AChong_Hock_Tong_Temple_19.jpg",
+  "description": "Manila Chinese Cemetery  Chong Hock Tong Temple Built in1878s - reconstructed by craftsmen and artisans from Taiwan, its lateral belfries appended at each end,  reconstructed as an all-stone edifice b",
+  "mots_cles": [
+   "hock tan",
+   "broadcom"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "lip-bu-tan",
+  "nom": "Lip-Bu Tan",
+  "type": "personne",
+  "entreprise": "Intel",
+  "indice": "",
+  "credit": "Photo : United States Department of Commerce, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "United States Department of Commerce",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHoward_Lutnick_with_Intel_CEO_Lip-Bu_Tan_%282025%29.jpg",
+  "description": "United States Commerce Secretary Howard Lutnick with Intel CEO Lip-Bu Tan.",
+  "mots_cles": [
+   "lip-bu tan",
+   "intel"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "michael-dell",
+  "nom": "Michael Dell",
+  "type": "personne",
+  "entreprise": "Dell",
+  "indice": "",
+  "credit": "Photo : Village Global, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Village Global",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMichael_Dell_%2852548152888%29.jpg",
+  "description": "The Grove 2021",
+  "mots_cles": [
+   "michael dell",
+   "dell"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "antonio-neri",
+  "nom": "Antonio Neri",
+  "type": "personne",
+  "entreprise": "HPE",
+  "indice": "",
+  "credit": "Photo : Hewlett Packard Enterprise, CC BY 3.0 via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "auteur": "Hewlett Packard Enterprise",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAntonio_Neri%2C_Hewlett_Packard_Enterprise.jpg",
+  "description": "Antonio Neri, Hewlett Packard Enterprise",
+  "mots_cles": [
+   "antonio neri",
+   "hpe"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "larry-ellison",
+  "nom": "Larry Ellison",
+  "type": "personne",
+  "entreprise": "Oracle",
+  "indice": "",
+  "credit": "Photo : Oracle Corporate Communications, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Oracle Corporate Communications",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALarry_Ellison_on_stage.jpg",
+  "description": "Larry Ellison on stage.",
+  "mots_cles": [
+   "larry ellison",
+   "oracle"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "jamie-dimon",
+  "nom": "Jamie Dimon",
+  "type": "personne",
+  "entreprise": "JPMorgan",
+  "indice": "",
+  "credit": "Photo : Steve Jurvetson, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Steve Jurvetson",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AJamie_Dimon%2C_CEO_of_JPMorgan_Chase.jpg",
+  "description": "Jamie Dimon at the JPMorgan Healthcare Investment Conference.",
+  "mots_cles": [
+   "jamie dimon",
+   "jpmorgan"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "greg-abel",
+  "nom": "Greg Abel",
+  "type": "personne",
+  "entreprise": "Berkshire Hathaway",
+  "indice": "",
+  "credit": "Photo : TheAHL, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "TheAHL",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAllstar_%2838712752750%29.jpg",
+  "description": "Graig Abel Photography/AHL",
+  "mots_cles": [
+   "greg abel",
+   "berkshire hathaway"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "sam-altman",
+  "nom": "Sam Altman",
+  "type": "personne",
+  "entreprise": "OpenAI",
+  "indice": "",
+  "credit": "Photo : TechCrunch, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "TechCrunch",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASam_Altman_CropEdit_James_Tamim.jpg",
+  "description": "SAN FRANCISCO, CALIFORNIA - OCTOBER 03: OpenAI Co-Founder & CEO Sam Altman speaks onstage during TechCrunch Disrupt San Francisco 2019 at Moscone Convention Center on October 03, 2019 in San Francisco",
+  "mots_cles": [
+   "sam altman",
+   "openai"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "sergey-brin",
+  "nom": "Sergey Brin",
+  "type": "personne",
+  "entreprise": "Alphabet",
+  "indice": "",
+  "credit": "Photo : Steve Jurvetson, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Steve Jurvetson",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASergey_Brin_Ted_2010_%28cropped%29.jpg",
+  "description": "Sergey today: \n“I think a lot of people think I’m naive, and that may well be true, but I wouldn’t have started a search engine in 1998 if I wasn’t naive.”\n“I’m an optimist. I want to find a way to wo",
+  "mots_cles": [
+   "sergey brin",
+   "alphabet"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "dara-khosrowshahi",
+  "nom": "Dara Khosrowshahi",
+  "type": "personne",
+  "entreprise": "Uber",
+  "indice": "",
+  "credit": "Photo : LuchoCR, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "LuchoCR",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ADara_Khosrowshahi_Uber_%283%29.jpg",
+  "description": "Dara Khosrowshahi, CEO de Uber.",
+  "mots_cles": [
+   "dara khosrowshahi",
+   "uber"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "guillaume-faury",
+  "nom": "Guillaume Faury",
+  "type": "personne",
+  "entreprise": "Airbus",
+  "indice": "",
+  "credit": "Photo : Junta de Andalucía, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Junta de Andalucía",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2019_Guillaume_Faury_%2848749918017%29_%28cropped%29_%28cropped%29.jpg",
+  "description": "El presidente del Gobierno de Andalucía, Juanma Moreno, recibe en San Telmo a Guillaume Faury, CEO de Airbus, que estará acompañado por Alberto Gutiérrez Moreno, presidente de Airbus España. Al encuen",
+  "mots_cles": [
+   "guillaume faury",
+   "airbus"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "florent-menegaux",
+  "nom": "Florent Menegaux",
+  "type": "personne",
+  "entreprise": "Michelin",
+  "indice": "",
+  "credit": "Photo : David.Monniaux, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "David.Monniaux",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AFlorent_Menegaux_P2070588.jpg",
+  "description": "Florent Menegaux, président du groupe Michelin, à la convention des directeurs d'unité CNRS le 12 décembre 2024",
+  "mots_cles": [
+   "florent menegaux",
+   "michelin"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "alexandre-bompard",
+  "nom": "Alexandre Bompard",
+  "type": "personne",
+  "entreprise": "Carrefour",
+  "indice": "",
+  "credit": "Photo : ActuaLitté, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "ActuaLitté",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAlexandre_Bompard_-_Prix_BD_Fnac_2016_%2823869690963%29.jpg",
+  "description": "Alexandre Bompard - Prix BD Fnac 2016",
+  "mots_cles": [
+   "alexandre bompard",
+   "carrefour"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "christine-lagarde",
+  "nom": "Christine Lagarde",
+  "type": "personne",
+  "entreprise": "BCE",
+  "indice": "",
+  "credit": "Photo : Français : Fonds monétaire international (identité du photog, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Français : Fonds monétaire international (identité du photog",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ALagarde%2C_Christine_%28official_portrait_2011%29.jpg",
+  "description": "Christine Lagarde, Managing Director of the International Monetary Fund from 2011 to 2019, President of the European Central Bank since 2019.",
+  "mots_cles": [
+   "christine lagarde",
+   "bce"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "francois-villeroy-de-galhau",
+  "nom": "François Villeroy de Galhau",
+  "type": "personne",
+  "entreprise": "Banque de France",
+  "indice": "",
+  "credit": "Photo : The Jacques Delors Institute, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "The Jacques Delors Institute",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AFran%C3%A7ois_Villeroy_de_Galhau_%2824331097667%29.jpg",
+  "description": "François Villeroy de Galhau, Gouverneur de la Banque de France, invité d'honneur du Comité européen d'orientation de l'Institut Jacques Delors - Paris 9 décembre 2017",
+  "mots_cles": [
+   "françois villeroy de galhau",
+   "banque de france"
+  ],
+  "a_verifier": false
  }
 ]
