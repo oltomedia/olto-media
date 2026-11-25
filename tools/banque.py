@@ -11,7 +11,7 @@ def get(url):
     for k in range(3):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r: return r.read()
-        except Exception as e: err = e; time.sleep(2 + 3 * k)
+        except Exception as e: err = e; time.sleep(5 + 10 * k)
     raise err
 def api(host, **p):
     p.update(format='json', formatversion='2')
@@ -41,6 +41,8 @@ def candidates(e):
     if e['type'] != 'personne':
         d = api(host, action='query', titles=e['wiki'], prop='images', imlimit='60', redirects='1')
         out += [i['title'] for i in d['query']['pages'][0].get('images', [])]
+    d = api('commons.wikimedia.org', action='query', list='search', srsearch=e['nom'] + (' ' + e['entreprise'] if e['type'] != 'personne' else '') + ' filetype:bitmap', srnamespace='6', srlimit='15')
+    out += [x['title'] for x in d['query']['search']]
     seen = []; [seen.append(t) for t in out if t not in seen]
     return seen
 def main():
@@ -52,7 +54,7 @@ def main():
         if e['slug'] in have: continue
         got = None
         try:
-            for t in candidates(e)[:25]:
+            for t in candidates(e)[:40]:
                 name = t.split(':', 1)[-1]
                 if BAD.search(name): continue
                 if e.get('pays') == 'FR' and e['type'] != 'personne' and BUILD.search(name): continue
@@ -67,7 +69,7 @@ def main():
         idx.append({'slug': e['slug'], 'nom': e['nom'], 'type': e['type'], 'entreprise': e.get('entreprise', ''), 'indice': e.get('indice', ''),
                     'credit': f"Photo : {got['auteur']}, {got['licence']} via Wikimedia Commons", 'licence': got['licence'], 'auteur': got['auteur'],
                     'source_url': got['source_url'], 'description': got['desc'][:200], 'mots_cles': e.get('mots_cles', []), 'a_verifier': e.get('pays') == 'FR' and e['type'] != 'personne'})
-        print('OK', e['slug'], got['licence']); time.sleep(0.5)
+        print('OK', e['slug'], got['licence']); time.sleep(1.5)
     json.dump(idx, open(ip, 'w'), ensure_ascii=False, indent=1)
     json.dump(miss, open(f'{root}/manquants.json', 'w'), ensure_ascii=False, indent=1)
     print(f'TOTAL {len(idx)} images, {len(miss)} manquantes')
