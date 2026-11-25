@@ -11,6 +11,9 @@ function tallTK(svg,H){if(!H||H<=1920)return svg;const dy=Math.round((H-1920)/2)
  const FADE=(typeof window!=="undefined"&&window.TKFADE_ON);
  let inner=svg.replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'');
  if(FADE){inner=inner.replace(/<rect width="1080" height="1920" fill="[^"]+"( data-bg="1")?\/>/,'');
+  const PL=window.__PLEIN;window.__PLEIN=null;
+  if(PL&&PL.src)inner=inner.replace(/<circle[^>]*\/>/,'');
+  if(PL&&PL.src)return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="#000"/><image data-plein="1" href="${X(PL.src)}" x="0" y="0" width="1080" height="${H}" preserveAspectRatio="xMidYMid slice"/><defs><linearGradient id="tkpl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".6"/><stop offset=".16" stop-color="#000" stop-opacity=".15"/><stop offset=".34" stop-color="#000" stop-opacity=".25"/><stop offset=".55" stop-color="#05100D" stop-opacity=".72"/><stop offset=".8" stop-color="#000" stop-opacity=".93"/><stop offset="1" stop-color="#000"/></linearGradient></defs><rect width="1080" height="${H}" fill="url(#tkpl)"/><g transform="translate(0,${dy})">${inner}</g></svg>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><defs><linearGradient id="tkbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B7560"/><stop offset=".22" stop-color="#22604F"/><stop offset=".45" stop-color="#16392F"/><stop offset=".64" stop-color="#0A1A15"/><stop offset=".78" stop-color="#020504"/><stop offset="1" stop-color="#000"/></linearGradient></defs><rect width="1080" height="${H}" fill="url(#tkbg)"/><g transform="translate(0,${dy})">${inner}</g></svg>`}
  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="${col}"/><g transform="translate(0,${dy})">${inner}</g>${(typeof window!=="undefined"&&window.TKFADE_ON)?`<defs><linearGradient id="tkfb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".45" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity=".92"/></linearGradient><linearGradient id="tkft" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></linearGradient></defs><rect x="0" y="${H-560}" width="1080" height="560" fill="url(#tkfb)"/><rect x="0" y="0" width="1080" height="400" fill="url(#tkft)"/>`:""}</svg>`}
 
@@ -67,7 +70,8 @@ function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [a
  const T=(txt,sz,mx,col,f='b',lh)=>{const t=textBlock(txt,X0,y+sz*.8,sz,mx||W,col,emc,f,lh||(f==='b'?1.06:1.36));b+=t.svg;y+=t.h;return t};
  if(s.type==='cover'){head=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':''),dark,acc,X0,0);
   T(s.accroche,fit(s.accroche,W,6,128,70),W,fg);if(s.sous){y+=40;T(s.sous,44,W-20,mut,'m')}
-  if(s.photo){y+=44;b+=photoCard(s.photo,X0,y,W,440,dark);y+=480}else if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-420,y,420,330,imgs);y+=330}}
+  if(s.photo&&s.mise!=='carte'){if(typeof window!=="undefined")window.__PLEIN={src:s.photo.src};if(s.photo.credit){y+=34;T(s.photo.credit,20,W,'#D5E2DE','m')}}
+  else if(s.photo){y+=44;b+=photoCard(s.photo,X0,y,W,440,dark);y+=480}else if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-420,y,420,330,imgs);y+=330}}
  else if(s.type==='texte'){head=chip(num,dark,acc,X0,0);T(s.titre,fit(s.titre,W,4,96,60),W,fg);y+=44;T(s.texte,50,W,mut,'m');
   if(s.photo){y+=44;b+=photoCard(s.photo,X0,y,W,400,dark);y+=440}else if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-360,y,360,280,imgs);y+=280}src=s.source||''}
  else if(s.type==='chiffre'){head=chip(num,dark,acc,X0,0);const cs=fit(s.chiffre,W,1,260,110);
@@ -98,6 +102,15 @@ function slideSVG(p,s,i,n,imgs,fmt){if(fmt==='tiktok'&&s.type!=='reel'){const nt
  const H=s.type==='reel'?1920:1350;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(dark,H)}`;
  const last=i===n-1,swipe=p.format==='carrousel'&&!last?'Glisse →':'';
  if(s.type==='cover'||s.type==='reel'){const big=s.type==='reel';const maxW=936;const wp=!big&&s.photo&&s.photo.src;const size=wp?fit(s.accroche,maxW,4,104,60):fit(s.accroche,maxW,big?6:5,big?132:118,64);const tb=textBlock(s.accroche,72,0,size,maxW,fg,emc);
+  const plein=wp&&s.mise!=='carte';
+  if(plein){/* couverture « photo plein cadre » (25/11) : la photo remplit tout, voile sombre, texte en bas */
+   const pid='pl'+(++PHN);o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1350" width="1080" height="1350"><rect width="1080" height="1350" fill="#0A1412" data-bg="1"/><image data-plein="1" href="${X(s.photo.src)}" x="0" y="0" width="1080" height="1350" preserveAspectRatio="xMidYMid slice"/><defs><linearGradient id="${pid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1412" stop-opacity=".55"/><stop offset=".18" stop-color="#0A1412" stop-opacity="0"/><stop offset=".42" stop-color="#0A1412" stop-opacity=".05"/><stop offset=".68" stop-color="#0A1412" stop-opacity=".82"/><stop offset="1" stop-color="#0A1412" stop-opacity=".97"/></linearGradient></defs><rect width="1080" height="1350" fill="url(#${pid})"/>`;
+   const ps=fit(s.accroche,maxW,3,112,64);const pb=textBlock(s.accroche,72,0,ps,maxW,C.iv,acc);const sb=s.sous?textBlock(s.sous,72,0,38,880,'#D5E2DE',acc,'m',1.3):null;
+   const bottom=1190-(sb?sb.h+26:0);const py=bottom-pb.h+ps*.8;
+   o+=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':''),true,acc);
+   if(s.photo.credit)o+=`<text x="1008" y="1238" text-anchor="end" font-family="PM" font-size="16" fill="#EEF3F4" fill-opacity=".72">${X(String(s.photo.credit).slice(0,70))}</text>`;
+   o+=`<g transform="translate(0,${py-ps*.8})">${pb.svg}</g>`;if(sb)o+=`<g transform="translate(0,${bottom+26})">${sb.svg}</g>`;
+   o+=foot(true,'',swipe);return o+'</svg>'}
   const ty=big?560:wp?660+size*.8:300+size;if(wp)o+=photoCard(s.photo,72,150,936,440,dark);o+=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':big?' · vidéo':''),dark,acc);
   o+=`<g transform="translate(0,${ty})">${tb.svg}</g>`;
   if(s.sous)o+=textBlock(s.sous,72,ty+tb.h+30,40,800,mut,emc,'m',1.3).svg;
