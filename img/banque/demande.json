@@ -1,0 +1,2566 @@
+[
+ {
+  "slug": "accor",
+  "nom": "Accor",
+  "type": "entreprise",
+  "entreprise": "Accor",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "accor",
+   "accor"
+  ],
+  "wiki": "Accor",
+  "pays": "FR"
+ },
+ {
+  "slug": "air-liquide",
+  "nom": "Air Liquide",
+  "type": "entreprise",
+  "entreprise": "Air Liquide",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "air liquide",
+   "air liquide"
+  ],
+  "wiki": "Air Liquide",
+  "pays": "FR"
+ },
+ {
+  "slug": "airbus",
+  "nom": "Airbus",
+  "type": "entreprise",
+  "entreprise": "Airbus",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "airbus",
+   "airbus"
+  ],
+  "wiki": "Airbus",
+  "pays": "FR"
+ },
+ {
+  "slug": "arcelormittal",
+  "nom": "ArcelorMittal",
+  "type": "entreprise",
+  "entreprise": "ArcelorMittal",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "arcelormittal",
+   "arcelormittal"
+  ],
+  "wiki": "ArcelorMittal",
+  "pays": "FR"
+ },
+ {
+  "slug": "axa",
+  "nom": "AXA",
+  "type": "entreprise",
+  "entreprise": "AXA",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "axa",
+   "axa"
+  ],
+  "wiki": "AXA",
+  "pays": "FR"
+ },
+ {
+  "slug": "bnp-paribas",
+  "nom": "BNP Paribas",
+  "type": "entreprise",
+  "entreprise": "BNP Paribas",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "bnp paribas",
+   "bnp paribas"
+  ],
+  "wiki": "BNP Paribas",
+  "pays": "FR"
+ },
+ {
+  "slug": "bouygues",
+  "nom": "Bouygues",
+  "type": "entreprise",
+  "entreprise": "Bouygues",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "bouygues",
+   "bouygues"
+  ],
+  "wiki": "Bouygues",
+  "pays": "FR"
+ },
+ {
+  "slug": "bureau-veritas",
+  "nom": "Bureau Veritas",
+  "type": "entreprise",
+  "entreprise": "Bureau Veritas",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "bureau veritas",
+   "bureau veritas"
+  ],
+  "wiki": "Bureau Veritas",
+  "pays": "FR"
+ },
+ {
+  "slug": "capgemini",
+  "nom": "Capgemini",
+  "type": "entreprise",
+  "entreprise": "Capgemini",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "capgemini",
+   "capgemini"
+  ],
+  "wiki": "Capgemini",
+  "pays": "FR"
+ },
+ {
+  "slug": "carrefour",
+  "nom": "Carrefour",
+  "type": "entreprise",
+  "entreprise": "Carrefour",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "carrefour",
+   "carrefour"
+  ],
+  "wiki": "Carrefour",
+  "pays": "FR"
+ },
+ {
+  "slug": "credit-agricole",
+  "nom": "Crédit Agricole",
+  "type": "entreprise",
+  "entreprise": "Crédit Agricole",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "crédit agricole",
+   "crédit agricole"
+  ],
+  "wiki": "Crédit Agricole",
+  "pays": "FR"
+ },
+ {
+  "slug": "danone",
+  "nom": "Danone",
+  "type": "entreprise",
+  "entreprise": "Danone",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "danone",
+   "danone"
+  ],
+  "wiki": "Danone",
+  "pays": "FR"
+ },
+ {
+  "slug": "dassault-systemes",
+  "nom": "Dassault Systèmes",
+  "type": "entreprise",
+  "entreprise": "Dassault Systèmes",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "dassault systèmes",
+   "dassault systèmes"
+  ],
+  "wiki": "Dassault Systèmes",
+  "pays": "FR"
+ },
+ {
+  "slug": "edenred",
+  "nom": "Edenred",
+  "type": "entreprise",
+  "entreprise": "Edenred",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "edenred",
+   "edenred"
+  ],
+  "wiki": "Edenred",
+  "pays": "FR"
+ },
+ {
+  "slug": "engie",
+  "nom": "Engie",
+  "type": "entreprise",
+  "entreprise": "Engie",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "engie",
+   "engie"
+  ],
+  "wiki": "Engie",
+  "pays": "FR"
+ },
+ {
+  "slug": "essilorluxottica",
+  "nom": "EssilorLuxottica",
+  "type": "entreprise",
+  "entreprise": "EssilorLuxottica",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "essilorluxottica",
+   "essilorluxottica"
+  ],
+  "wiki": "EssilorLuxottica",
+  "pays": "FR"
+ },
+ {
+  "slug": "eurofins",
+  "nom": "Eurofins",
+  "type": "entreprise",
+  "entreprise": "Eurofins",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "eurofins",
+   "eurofins"
+  ],
+  "wiki": "Eurofins Scientific",
+  "pays": "FR"
+ },
+ {
+  "slug": "hermes",
+  "nom": "Hermès",
+  "type": "entreprise",
+  "entreprise": "Hermès",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "hermès",
+   "hermès"
+  ],
+  "wiki": "Hermès",
+  "pays": "FR"
+ },
+ {
+  "slug": "kering",
+  "nom": "Kering",
+  "type": "entreprise",
+  "entreprise": "Kering",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "kering",
+   "kering"
+  ],
+  "wiki": "Kering",
+  "pays": "FR"
+ },
+ {
+  "slug": "l-oreal",
+  "nom": "L'Oréal",
+  "type": "entreprise",
+  "entreprise": "L'Oréal",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "l'oréal",
+   "l'oréal"
+  ],
+  "wiki": "L'Oréal",
+  "pays": "FR"
+ },
+ {
+  "slug": "legrand",
+  "nom": "Legrand",
+  "type": "entreprise",
+  "entreprise": "Legrand",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "legrand",
+   "legrand"
+  ],
+  "wiki": "Legrand (company)",
+  "pays": "FR"
+ },
+ {
+  "slug": "lvmh",
+  "nom": "LVMH",
+  "type": "entreprise",
+  "entreprise": "LVMH",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "lvmh",
+   "lvmh"
+  ],
+  "wiki": "LVMH",
+  "pays": "FR"
+ },
+ {
+  "slug": "michelin",
+  "nom": "Michelin",
+  "type": "entreprise",
+  "entreprise": "Michelin",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "michelin",
+   "michelin"
+  ],
+  "wiki": "Michelin",
+  "pays": "FR"
+ },
+ {
+  "slug": "orange",
+  "nom": "Orange",
+  "type": "entreprise",
+  "entreprise": "Orange",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "orange",
+   "orange"
+  ],
+  "wiki": "Orange S.A.",
+  "pays": "FR"
+ },
+ {
+  "slug": "pernod-ricard",
+  "nom": "Pernod Ricard",
+  "type": "entreprise",
+  "entreprise": "Pernod Ricard",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "pernod ricard",
+   "pernod ricard"
+  ],
+  "wiki": "Pernod Ricard",
+  "pays": "FR"
+ },
+ {
+  "slug": "publicis",
+  "nom": "Publicis",
+  "type": "entreprise",
+  "entreprise": "Publicis",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "publicis",
+   "publicis"
+  ],
+  "wiki": "Publicis",
+  "pays": "FR"
+ },
+ {
+  "slug": "renault",
+  "nom": "Renault",
+  "type": "entreprise",
+  "entreprise": "Renault",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "renault",
+   "renault"
+  ],
+  "wiki": "Renault",
+  "pays": "FR"
+ },
+ {
+  "slug": "safran",
+  "nom": "Safran",
+  "type": "entreprise",
+  "entreprise": "Safran",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "safran",
+   "safran"
+  ],
+  "wiki": "Safran",
+  "pays": "FR"
+ },
+ {
+  "slug": "saint-gobain",
+  "nom": "Saint-Gobain",
+  "type": "entreprise",
+  "entreprise": "Saint-Gobain",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "saint-gobain",
+   "saint-gobain"
+  ],
+  "wiki": "Saint-Gobain",
+  "pays": "FR"
+ },
+ {
+  "slug": "sanofi",
+  "nom": "Sanofi",
+  "type": "entreprise",
+  "entreprise": "Sanofi",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "sanofi",
+   "sanofi"
+  ],
+  "wiki": "Sanofi",
+  "pays": "FR"
+ },
+ {
+  "slug": "schneider-electric",
+  "nom": "Schneider Electric",
+  "type": "entreprise",
+  "entreprise": "Schneider Electric",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "schneider electric",
+   "schneider electric"
+  ],
+  "wiki": "Schneider Electric",
+  "pays": "FR"
+ },
+ {
+  "slug": "societe-generale",
+  "nom": "Société Générale",
+  "type": "entreprise",
+  "entreprise": "Société Générale",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "société générale",
+   "société générale"
+  ],
+  "wiki": "Société Générale",
+  "pays": "FR"
+ },
+ {
+  "slug": "stellantis",
+  "nom": "Stellantis",
+  "type": "entreprise",
+  "entreprise": "Stellantis",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "stellantis",
+   "stellantis"
+  ],
+  "wiki": "Stellantis",
+  "pays": "FR"
+ },
+ {
+  "slug": "stmicroelectronics",
+  "nom": "STMicroelectronics",
+  "type": "entreprise",
+  "entreprise": "STMicroelectronics",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "stmicroelectronics",
+   "stmicroelectronics"
+  ],
+  "wiki": "STMicroelectronics",
+  "pays": "FR"
+ },
+ {
+  "slug": "teleperformance",
+  "nom": "Teleperformance",
+  "type": "entreprise",
+  "entreprise": "Teleperformance",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "teleperformance",
+   "teleperformance"
+  ],
+  "wiki": "Teleperformance",
+  "pays": "FR"
+ },
+ {
+  "slug": "thales",
+  "nom": "Thales",
+  "type": "entreprise",
+  "entreprise": "Thales",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "thales",
+   "thales"
+  ],
+  "wiki": "Thales Group",
+  "pays": "FR"
+ },
+ {
+  "slug": "totalenergies",
+  "nom": "TotalEnergies",
+  "type": "entreprise",
+  "entreprise": "TotalEnergies",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "totalenergies",
+   "totalenergies"
+  ],
+  "wiki": "TotalEnergies",
+  "pays": "FR"
+ },
+ {
+  "slug": "unibail-rodamco-westfield",
+  "nom": "Unibail-Rodamco-Westfield",
+  "type": "entreprise",
+  "entreprise": "Unibail-Rodamco-Westfield",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "unibail-rodamco-westfield",
+   "unibail-rodamco-westfield"
+  ],
+  "wiki": "Unibail-Rodamco-Westfield",
+  "pays": "FR"
+ },
+ {
+  "slug": "veolia",
+  "nom": "Veolia",
+  "type": "entreprise",
+  "entreprise": "Veolia",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "veolia",
+   "veolia"
+  ],
+  "wiki": "Veolia",
+  "pays": "FR"
+ },
+ {
+  "slug": "vinci",
+  "nom": "Vinci",
+  "type": "entreprise",
+  "entreprise": "Vinci",
+  "indice": "CAC 40",
+  "mots_cles": [
+   "vinci",
+   "vinci"
+  ],
+  "wiki": "Vinci SA",
+  "pays": "FR"
+ },
+ {
+  "slug": "nvidia",
+  "nom": "Nvidia",
+  "type": "entreprise",
+  "entreprise": "Nvidia",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "nvidia",
+   "nvidia"
+  ],
+  "wiki": "Nvidia"
+ },
+ {
+  "slug": "apple",
+  "nom": "Apple",
+  "type": "entreprise",
+  "entreprise": "Apple",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "apple",
+   "apple"
+  ],
+  "wiki": "Apple Inc."
+ },
+ {
+  "slug": "microsoft",
+  "nom": "Microsoft",
+  "type": "entreprise",
+  "entreprise": "Microsoft",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "microsoft",
+   "microsoft"
+  ],
+  "wiki": "Microsoft"
+ },
+ {
+  "slug": "alphabet",
+  "nom": "Alphabet",
+  "type": "entreprise",
+  "entreprise": "Alphabet",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "alphabet",
+   "alphabet"
+  ],
+  "wiki": "Alphabet Inc."
+ },
+ {
+  "slug": "google",
+  "nom": "Google",
+  "type": "entreprise",
+  "entreprise": "Google",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "google",
+   "google"
+  ],
+  "wiki": "Google"
+ },
+ {
+  "slug": "amazon",
+  "nom": "Amazon",
+  "type": "entreprise",
+  "entreprise": "Amazon",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "amazon",
+   "amazon"
+  ],
+  "wiki": "Amazon (company)"
+ },
+ {
+  "slug": "meta",
+  "nom": "Meta",
+  "type": "entreprise",
+  "entreprise": "Meta",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "meta",
+   "meta"
+  ],
+  "wiki": "Meta Platforms"
+ },
+ {
+  "slug": "tesla",
+  "nom": "Tesla",
+  "type": "entreprise",
+  "entreprise": "Tesla",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "tesla",
+   "tesla"
+  ],
+  "wiki": "Tesla, Inc."
+ },
+ {
+  "slug": "broadcom",
+  "nom": "Broadcom",
+  "type": "entreprise",
+  "entreprise": "Broadcom",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "broadcom",
+   "broadcom"
+  ],
+  "wiki": "Broadcom"
+ },
+ {
+  "slug": "amd",
+  "nom": "AMD",
+  "type": "entreprise",
+  "entreprise": "AMD",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "amd",
+   "amd"
+  ],
+  "wiki": "AMD"
+ },
+ {
+  "slug": "intel",
+  "nom": "Intel",
+  "type": "entreprise",
+  "entreprise": "Intel",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "intel",
+   "intel"
+  ],
+  "wiki": "Intel"
+ },
+ {
+  "slug": "micron",
+  "nom": "Micron",
+  "type": "entreprise",
+  "entreprise": "Micron",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "micron",
+   "micron"
+  ],
+  "wiki": "Micron Technology"
+ },
+ {
+  "slug": "dell",
+  "nom": "Dell",
+  "type": "entreprise",
+  "entreprise": "Dell",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "dell",
+   "dell"
+  ],
+  "wiki": "Dell Technologies"
+ },
+ {
+  "slug": "hpe",
+  "nom": "HPE",
+  "type": "entreprise",
+  "entreprise": "HPE",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "hpe",
+   "hpe"
+  ],
+  "wiki": "Hewlett Packard Enterprise"
+ },
+ {
+  "slug": "oracle",
+  "nom": "Oracle",
+  "type": "entreprise",
+  "entreprise": "Oracle",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "oracle",
+   "oracle"
+  ],
+  "wiki": "Oracle Corporation"
+ },
+ {
+  "slug": "netflix",
+  "nom": "Netflix",
+  "type": "entreprise",
+  "entreprise": "Netflix",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "netflix",
+   "netflix"
+  ],
+  "wiki": "Netflix"
+ },
+ {
+  "slug": "disney",
+  "nom": "Disney",
+  "type": "entreprise",
+  "entreprise": "Disney",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "disney",
+   "disney"
+  ],
+  "wiki": "The Walt Disney Company"
+ },
+ {
+  "slug": "nike",
+  "nom": "Nike",
+  "type": "entreprise",
+  "entreprise": "Nike",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "nike",
+   "nike"
+  ],
+  "wiki": "Nike, Inc."
+ },
+ {
+  "slug": "boeing",
+  "nom": "Boeing",
+  "type": "entreprise",
+  "entreprise": "Boeing",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "boeing",
+   "boeing"
+  ],
+  "wiki": "Boeing"
+ },
+ {
+  "slug": "jpmorgan",
+  "nom": "JPMorgan",
+  "type": "entreprise",
+  "entreprise": "JPMorgan",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "jpmorgan",
+   "jpmorgan"
+  ],
+  "wiki": "JPMorgan Chase"
+ },
+ {
+  "slug": "visa",
+  "nom": "Visa",
+  "type": "entreprise",
+  "entreprise": "Visa",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "visa",
+   "visa"
+  ],
+  "wiki": "Visa Inc."
+ },
+ {
+  "slug": "mastercard",
+  "nom": "Mastercard",
+  "type": "entreprise",
+  "entreprise": "Mastercard",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "mastercard",
+   "mastercard"
+  ],
+  "wiki": "Mastercard"
+ },
+ {
+  "slug": "walmart",
+  "nom": "Walmart",
+  "type": "entreprise",
+  "entreprise": "Walmart",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "walmart",
+   "walmart"
+  ],
+  "wiki": "Walmart"
+ },
+ {
+  "slug": "costco",
+  "nom": "Costco",
+  "type": "entreprise",
+  "entreprise": "Costco",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "costco",
+   "costco"
+  ],
+  "wiki": "Costco"
+ },
+ {
+  "slug": "coca-cola",
+  "nom": "Coca-Cola",
+  "type": "entreprise",
+  "entreprise": "Coca-Cola",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "coca-cola",
+   "coca-cola"
+  ],
+  "wiki": "The Coca-Cola Company"
+ },
+ {
+  "slug": "mcdonald-s",
+  "nom": "McDonald's",
+  "type": "entreprise",
+  "entreprise": "McDonald's",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "mcdonald's",
+   "mcdonald's"
+  ],
+  "wiki": "McDonald's"
+ },
+ {
+  "slug": "starbucks",
+  "nom": "Starbucks",
+  "type": "entreprise",
+  "entreprise": "Starbucks",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "starbucks",
+   "starbucks"
+  ],
+  "wiki": "Starbucks"
+ },
+ {
+  "slug": "pfizer",
+  "nom": "Pfizer",
+  "type": "entreprise",
+  "entreprise": "Pfizer",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "pfizer",
+   "pfizer"
+  ],
+  "wiki": "Pfizer"
+ },
+ {
+  "slug": "moderna",
+  "nom": "Moderna",
+  "type": "entreprise",
+  "entreprise": "Moderna",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "moderna",
+   "moderna"
+  ],
+  "wiki": "Moderna"
+ },
+ {
+  "slug": "eli-lilly",
+  "nom": "Eli Lilly",
+  "type": "entreprise",
+  "entreprise": "Eli Lilly",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "eli lilly",
+   "eli lilly"
+  ],
+  "wiki": "Eli Lilly and Company"
+ },
+ {
+  "slug": "berkshire-hathaway",
+  "nom": "Berkshire Hathaway",
+  "type": "entreprise",
+  "entreprise": "Berkshire Hathaway",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "berkshire hathaway",
+   "berkshire hathaway"
+  ],
+  "wiki": "Berkshire Hathaway"
+ },
+ {
+  "slug": "exxonmobil",
+  "nom": "ExxonMobil",
+  "type": "entreprise",
+  "entreprise": "ExxonMobil",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "exxonmobil",
+   "exxonmobil"
+  ],
+  "wiki": "ExxonMobil"
+ },
+ {
+  "slug": "chevron",
+  "nom": "Chevron",
+  "type": "entreprise",
+  "entreprise": "Chevron",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "chevron",
+   "chevron"
+  ],
+  "wiki": "Chevron Corporation"
+ },
+ {
+  "slug": "johnson-johnson",
+  "nom": "Johnson & Johnson",
+  "type": "entreprise",
+  "entreprise": "Johnson & Johnson",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "johnson & johnson",
+   "johnson & johnson"
+  ],
+  "wiki": "Johnson & Johnson"
+ },
+ {
+  "slug": "procter-gamble",
+  "nom": "Procter & Gamble",
+  "type": "entreprise",
+  "entreprise": "Procter & Gamble",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "procter & gamble",
+   "procter & gamble"
+  ],
+  "wiki": "Procter & Gamble"
+ },
+ {
+  "slug": "goldman-sachs",
+  "nom": "Goldman Sachs",
+  "type": "entreprise",
+  "entreprise": "Goldman Sachs",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "goldman sachs",
+   "goldman sachs"
+  ],
+  "wiki": "Goldman Sachs"
+ },
+ {
+  "slug": "bank-of-america",
+  "nom": "Bank of America",
+  "type": "entreprise",
+  "entreprise": "Bank of America",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "bank of america",
+   "bank of america"
+  ],
+  "wiki": "Bank of America"
+ },
+ {
+  "slug": "salesforce",
+  "nom": "Salesforce",
+  "type": "entreprise",
+  "entreprise": "Salesforce",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "salesforce",
+   "salesforce"
+  ],
+  "wiki": "Salesforce"
+ },
+ {
+  "slug": "adobe",
+  "nom": "Adobe",
+  "type": "entreprise",
+  "entreprise": "Adobe",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "adobe",
+   "adobe"
+  ],
+  "wiki": "Adobe Inc."
+ },
+ {
+  "slug": "qualcomm",
+  "nom": "Qualcomm",
+  "type": "entreprise",
+  "entreprise": "Qualcomm",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "qualcomm",
+   "qualcomm"
+  ],
+  "wiki": "Qualcomm"
+ },
+ {
+  "slug": "palantir",
+  "nom": "Palantir",
+  "type": "entreprise",
+  "entreprise": "Palantir",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "palantir",
+   "palantir"
+  ],
+  "wiki": "Palantir Technologies"
+ },
+ {
+  "slug": "super-micro",
+  "nom": "Super Micro",
+  "type": "entreprise",
+  "entreprise": "Super Micro",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "super micro",
+   "super micro"
+  ],
+  "wiki": "Supermicro"
+ },
+ {
+  "slug": "crowdstrike",
+  "nom": "CrowdStrike",
+  "type": "entreprise",
+  "entreprise": "CrowdStrike",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "crowdstrike",
+   "crowdstrike"
+  ],
+  "wiki": "CrowdStrike"
+ },
+ {
+  "slug": "dollar-tree",
+  "nom": "Dollar Tree",
+  "type": "entreprise",
+  "entreprise": "Dollar Tree",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "dollar tree",
+   "dollar tree"
+  ],
+  "wiki": "Dollar Tree"
+ },
+ {
+  "slug": "analog-devices",
+  "nom": "Analog Devices",
+  "type": "entreprise",
+  "entreprise": "Analog Devices",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "analog devices",
+   "analog devices"
+  ],
+  "wiki": "Analog Devices"
+ },
+ {
+  "slug": "texas-instruments",
+  "nom": "Texas Instruments",
+  "type": "entreprise",
+  "entreprise": "Texas Instruments",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "texas instruments",
+   "texas instruments"
+  ],
+  "wiki": "Texas Instruments"
+ },
+ {
+  "slug": "paypal",
+  "nom": "PayPal",
+  "type": "entreprise",
+  "entreprise": "PayPal",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "paypal",
+   "paypal"
+  ],
+  "wiki": "PayPal"
+ },
+ {
+  "slug": "uber",
+  "nom": "Uber",
+  "type": "entreprise",
+  "entreprise": "Uber",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "uber",
+   "uber"
+  ],
+  "wiki": "Uber"
+ },
+ {
+  "slug": "airbnb",
+  "nom": "Airbnb",
+  "type": "entreprise",
+  "entreprise": "Airbnb",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "airbnb",
+   "airbnb"
+  ],
+  "wiki": "Airbnb"
+ },
+ {
+  "slug": "unitedhealth",
+  "nom": "UnitedHealth",
+  "type": "entreprise",
+  "entreprise": "UnitedHealth",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "unitedhealth",
+   "unitedhealth"
+  ],
+  "wiki": "UnitedHealth Group"
+ },
+ {
+  "slug": "home-depot",
+  "nom": "Home Depot",
+  "type": "entreprise",
+  "entreprise": "Home Depot",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "home depot",
+   "home depot"
+  ],
+  "wiki": "The Home Depot"
+ },
+ {
+  "slug": "ford",
+  "nom": "Ford",
+  "type": "entreprise",
+  "entreprise": "Ford",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "ford",
+   "ford"
+  ],
+  "wiki": "Ford Motor Company"
+ },
+ {
+  "slug": "general-motors",
+  "nom": "General Motors",
+  "type": "entreprise",
+  "entreprise": "General Motors",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "general motors",
+   "general motors"
+  ],
+  "wiki": "General Motors"
+ },
+ {
+  "slug": "ibm",
+  "nom": "IBM",
+  "type": "entreprise",
+  "entreprise": "IBM",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "ibm",
+   "ibm"
+  ],
+  "wiki": "IBM"
+ },
+ {
+  "slug": "cisco",
+  "nom": "Cisco",
+  "type": "entreprise",
+  "entreprise": "Cisco",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "cisco",
+   "cisco"
+  ],
+  "wiki": "Cisco"
+ },
+ {
+  "slug": "caterpillar",
+  "nom": "Caterpillar",
+  "type": "entreprise",
+  "entreprise": "Caterpillar",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "caterpillar",
+   "caterpillar"
+  ],
+  "wiki": "Caterpillar Inc."
+ },
+ {
+  "slug": "lockheed-martin",
+  "nom": "Lockheed Martin",
+  "type": "entreprise",
+  "entreprise": "Lockheed Martin",
+  "indice": "S&P 500",
+  "mots_cles": [
+   "lockheed martin",
+   "lockheed martin"
+  ],
+  "wiki": "Lockheed Martin"
+ },
+ {
+  "slug": "spotify",
+  "nom": "Spotify",
+  "type": "entreprise",
+  "entreprise": "Spotify",
+  "indice": "",
+  "mots_cles": [
+   "spotify",
+   "spotify"
+  ],
+  "wiki": "Spotify"
+ },
+ {
+  "slug": "novo-nordisk",
+  "nom": "Novo Nordisk",
+  "type": "entreprise",
+  "entreprise": "Novo Nordisk",
+  "indice": "",
+  "mots_cles": [
+   "novo nordisk",
+   "novo nordisk"
+  ],
+  "wiki": "Novo Nordisk"
+ },
+ {
+  "slug": "asml",
+  "nom": "ASML",
+  "type": "entreprise",
+  "entreprise": "ASML",
+  "indice": "",
+  "mots_cles": [
+   "asml",
+   "asml"
+  ],
+  "wiki": "ASML Holding"
+ },
+ {
+  "slug": "sap",
+  "nom": "SAP",
+  "type": "entreprise",
+  "entreprise": "SAP",
+  "indice": "",
+  "mots_cles": [
+   "sap",
+   "sap"
+  ],
+  "wiki": "SAP"
+ },
+ {
+  "slug": "toyota",
+  "nom": "Toyota",
+  "type": "entreprise",
+  "entreprise": "Toyota",
+  "indice": "",
+  "mots_cles": [
+   "toyota",
+   "toyota"
+  ],
+  "wiki": "Toyota"
+ },
+ {
+  "slug": "samsung",
+  "nom": "Samsung",
+  "type": "entreprise",
+  "entreprise": "Samsung",
+  "indice": "",
+  "mots_cles": [
+   "samsung",
+   "samsung"
+  ],
+  "wiki": "Samsung Electronics"
+ },
+ {
+  "slug": "tsmc",
+  "nom": "TSMC",
+  "type": "entreprise",
+  "entreprise": "TSMC",
+  "indice": "",
+  "mots_cles": [
+   "tsmc",
+   "tsmc"
+  ],
+  "wiki": "TSMC"
+ },
+ {
+  "slug": "openai",
+  "nom": "OpenAI",
+  "type": "entreprise",
+  "entreprise": "OpenAI",
+  "indice": "",
+  "mots_cles": [
+   "openai",
+   "openai"
+  ],
+  "wiki": "OpenAI"
+ },
+ {
+  "slug": "shein",
+  "nom": "Shein",
+  "type": "entreprise",
+  "entreprise": "Shein",
+  "indice": "",
+  "mots_cles": [
+   "shein",
+   "shein"
+  ],
+  "wiki": "Shein"
+ },
+ {
+  "slug": "temu",
+  "nom": "Temu",
+  "type": "entreprise",
+  "entreprise": "Temu",
+  "indice": "",
+  "mots_cles": [
+   "temu",
+   "temu"
+  ],
+  "wiki": "Temu"
+ },
+ {
+  "slug": "rockstar-games",
+  "nom": "Rockstar Games",
+  "type": "entreprise",
+  "entreprise": "Rockstar Games",
+  "indice": "",
+  "mots_cles": [
+   "rockstar games",
+   "rockstar games"
+  ],
+  "wiki": "Rockstar Games"
+ },
+ {
+  "slug": "playstation",
+  "nom": "PlayStation",
+  "type": "entreprise",
+  "entreprise": "PlayStation",
+  "indice": "",
+  "mots_cles": [
+   "playstation",
+   "playstation"
+  ],
+  "wiki": "PlayStation 5"
+ },
+ {
+  "slug": "volkswagen",
+  "nom": "Volkswagen",
+  "type": "entreprise",
+  "entreprise": "Volkswagen",
+  "indice": "",
+  "mots_cles": [
+   "volkswagen",
+   "volkswagen"
+  ],
+  "wiki": "Volkswagen"
+ },
+ {
+  "slug": "byd",
+  "nom": "BYD",
+  "type": "entreprise",
+  "entreprise": "BYD",
+  "indice": "",
+  "mots_cles": [
+   "byd",
+   "byd"
+  ],
+  "wiki": "BYD Auto"
+ },
+ {
+  "slug": "ryanair",
+  "nom": "Ryanair",
+  "type": "entreprise",
+  "entreprise": "Ryanair",
+  "indice": "",
+  "mots_cles": [
+   "ryanair",
+   "ryanair"
+  ],
+  "wiki": "Ryanair"
+ },
+ {
+  "slug": "ikea",
+  "nom": "Ikea",
+  "type": "entreprise",
+  "entreprise": "Ikea",
+  "indice": "",
+  "mots_cles": [
+   "ikea",
+   "ikea"
+  ],
+  "wiki": "IKEA"
+ },
+ {
+  "slug": "e-leclerc",
+  "nom": "E.Leclerc",
+  "type": "entreprise",
+  "entreprise": "E.Leclerc",
+  "indice": "",
+  "mots_cles": [
+   "e.leclerc",
+   "e.leclerc"
+  ],
+  "wiki": "E.Leclerc",
+  "pays": "FR"
+ },
+ {
+  "slug": "sncf",
+  "nom": "SNCF",
+  "type": "entreprise",
+  "entreprise": "SNCF",
+  "indice": "",
+  "mots_cles": [
+   "sncf",
+   "sncf"
+  ],
+  "wiki": "SNCF",
+  "pays": "FR"
+ },
+ {
+  "slug": "free",
+  "nom": "Free",
+  "type": "entreprise",
+  "entreprise": "Free",
+  "indice": "",
+  "mots_cles": [
+   "free",
+   "free"
+  ],
+  "wiki": "Free (ISP)",
+  "pays": "FR"
+ },
+ {
+  "slug": "edf",
+  "nom": "EDF",
+  "type": "entreprise",
+  "entreprise": "EDF",
+  "indice": "",
+  "mots_cles": [
+   "edf",
+   "edf"
+  ],
+  "wiki": "Électricité de France",
+  "pays": "FR"
+ },
+ {
+  "slug": "la-poste",
+  "nom": "La Poste",
+  "type": "entreprise",
+  "entreprise": "La Poste",
+  "indice": "",
+  "mots_cles": [
+   "la poste",
+   "la poste"
+  ],
+  "wiki": "La Poste (France)",
+  "pays": "FR"
+ },
+ {
+  "slug": "decathlon",
+  "nom": "Decathlon",
+  "type": "entreprise",
+  "entreprise": "Decathlon",
+  "indice": "",
+  "mots_cles": [
+   "decathlon",
+   "decathlon"
+  ],
+  "wiki": "Decathlon",
+  "pays": "FR"
+ },
+ {
+  "slug": "lidl",
+  "nom": "Lidl",
+  "type": "entreprise",
+  "entreprise": "Lidl",
+  "indice": "",
+  "mots_cles": [
+   "lidl",
+   "lidl"
+  ],
+  "wiki": "Lidl",
+  "pays": "FR"
+ },
+ {
+  "slug": "intermarche",
+  "nom": "Intermarché",
+  "type": "entreprise",
+  "entreprise": "Intermarché",
+  "indice": "",
+  "mots_cles": [
+   "intermarché",
+   "intermarché"
+  ],
+  "wiki": "Les Mousquetaires",
+  "pays": "FR"
+ },
+ {
+  "slug": "jensen-huang",
+  "nom": "Jensen Huang",
+  "type": "personne",
+  "entreprise": "Nvidia",
+  "indice": "",
+  "mots_cles": [
+   "jensen huang",
+   "nvidia"
+  ],
+  "wiki": "Jensen Huang"
+ },
+ {
+  "slug": "tim-cook",
+  "nom": "Tim Cook",
+  "type": "personne",
+  "entreprise": "Apple",
+  "indice": "",
+  "mots_cles": [
+   "tim cook",
+   "apple"
+  ],
+  "wiki": "Tim Cook"
+ },
+ {
+  "slug": "satya-nadella",
+  "nom": "Satya Nadella",
+  "type": "personne",
+  "entreprise": "Microsoft",
+  "indice": "",
+  "mots_cles": [
+   "satya nadella",
+   "microsoft"
+  ],
+  "wiki": "Satya Nadella"
+ },
+ {
+  "slug": "sundar-pichai",
+  "nom": "Sundar Pichai",
+  "type": "personne",
+  "entreprise": "Alphabet",
+  "indice": "",
+  "mots_cles": [
+   "sundar pichai",
+   "alphabet"
+  ],
+  "wiki": "Sundar Pichai"
+ },
+ {
+  "slug": "andy-jassy",
+  "nom": "Andy Jassy",
+  "type": "personne",
+  "entreprise": "Amazon",
+  "indice": "",
+  "mots_cles": [
+   "andy jassy",
+   "amazon"
+  ],
+  "wiki": "Andy Jassy"
+ },
+ {
+  "slug": "mark-zuckerberg",
+  "nom": "Mark Zuckerberg",
+  "type": "personne",
+  "entreprise": "Meta",
+  "indice": "",
+  "mots_cles": [
+   "mark zuckerberg",
+   "meta"
+  ],
+  "wiki": "Mark Zuckerberg"
+ },
+ {
+  "slug": "elon-musk",
+  "nom": "Elon Musk",
+  "type": "personne",
+  "entreprise": "Tesla",
+  "indice": "",
+  "mots_cles": [
+   "elon musk",
+   "tesla"
+  ],
+  "wiki": "Elon Musk"
+ },
+ {
+  "slug": "hock-tan",
+  "nom": "Hock Tan",
+  "type": "personne",
+  "entreprise": "Broadcom",
+  "indice": "",
+  "mots_cles": [
+   "hock tan",
+   "broadcom"
+  ],
+  "wiki": "Hock Tan"
+ },
+ {
+  "slug": "lisa-su",
+  "nom": "Lisa Su",
+  "type": "personne",
+  "entreprise": "AMD",
+  "indice": "",
+  "mots_cles": [
+   "lisa su",
+   "amd"
+  ],
+  "wiki": "Lisa Su"
+ },
+ {
+  "slug": "lip-bu-tan",
+  "nom": "Lip-Bu Tan",
+  "type": "personne",
+  "entreprise": "Intel",
+  "indice": "",
+  "mots_cles": [
+   "lip-bu tan",
+   "intel"
+  ],
+  "wiki": "Lip-Bu Tan"
+ },
+ {
+  "slug": "sanjay-mehrotra",
+  "nom": "Sanjay Mehrotra",
+  "type": "personne",
+  "entreprise": "Micron",
+  "indice": "",
+  "mots_cles": [
+   "sanjay mehrotra",
+   "micron"
+  ],
+  "wiki": "Sanjay Mehrotra"
+ },
+ {
+  "slug": "michael-dell",
+  "nom": "Michael Dell",
+  "type": "personne",
+  "entreprise": "Dell",
+  "indice": "",
+  "mots_cles": [
+   "michael dell",
+   "dell"
+  ],
+  "wiki": "Michael Dell"
+ },
+ {
+  "slug": "antonio-neri",
+  "nom": "Antonio Neri",
+  "type": "personne",
+  "entreprise": "HPE",
+  "indice": "",
+  "mots_cles": [
+   "antonio neri",
+   "hpe"
+  ],
+  "wiki": "Antonio Neri"
+ },
+ {
+  "slug": "larry-ellison",
+  "nom": "Larry Ellison",
+  "type": "personne",
+  "entreprise": "Oracle",
+  "indice": "",
+  "mots_cles": [
+   "larry ellison",
+   "oracle"
+  ],
+  "wiki": "Larry Ellison"
+ },
+ {
+  "slug": "ted-sarandos",
+  "nom": "Ted Sarandos",
+  "type": "personne",
+  "entreprise": "Netflix",
+  "indice": "",
+  "mots_cles": [
+   "ted sarandos",
+   "netflix"
+  ],
+  "wiki": "Ted Sarandos"
+ },
+ {
+  "slug": "bob-iger",
+  "nom": "Bob Iger",
+  "type": "personne",
+  "entreprise": "Disney",
+  "indice": "",
+  "mots_cles": [
+   "bob iger",
+   "disney"
+  ],
+  "wiki": "Bob Iger"
+ },
+ {
+  "slug": "jamie-dimon",
+  "nom": "Jamie Dimon",
+  "type": "personne",
+  "entreprise": "JPMorgan",
+  "indice": "",
+  "mots_cles": [
+   "jamie dimon",
+   "jpmorgan"
+  ],
+  "wiki": "Jamie Dimon"
+ },
+ {
+  "slug": "warren-buffett",
+  "nom": "Warren Buffett",
+  "type": "personne",
+  "entreprise": "Berkshire Hathaway",
+  "indice": "",
+  "mots_cles": [
+   "warren buffett",
+   "berkshire hathaway"
+  ],
+  "wiki": "Warren Buffett"
+ },
+ {
+  "slug": "greg-abel",
+  "nom": "Greg Abel",
+  "type": "personne",
+  "entreprise": "Berkshire Hathaway",
+  "indice": "",
+  "mots_cles": [
+   "greg abel",
+   "berkshire hathaway"
+  ],
+  "wiki": "Greg Abel"
+ },
+ {
+  "slug": "sam-altman",
+  "nom": "Sam Altman",
+  "type": "personne",
+  "entreprise": "OpenAI",
+  "indice": "",
+  "mots_cles": [
+   "sam altman",
+   "openai"
+  ],
+  "wiki": "Sam Altman"
+ },
+ {
+  "slug": "jeff-bezos",
+  "nom": "Jeff Bezos",
+  "type": "personne",
+  "entreprise": "Amazon",
+  "indice": "",
+  "mots_cles": [
+   "jeff bezos",
+   "amazon"
+  ],
+  "wiki": "Jeff Bezos"
+ },
+ {
+  "slug": "bill-gates",
+  "nom": "Bill Gates",
+  "type": "personne",
+  "entreprise": "Microsoft",
+  "indice": "",
+  "mots_cles": [
+   "bill gates",
+   "microsoft"
+  ],
+  "wiki": "Bill Gates"
+ },
+ {
+  "slug": "larry-page",
+  "nom": "Larry Page",
+  "type": "personne",
+  "entreprise": "Alphabet",
+  "indice": "",
+  "mots_cles": [
+   "larry page",
+   "alphabet"
+  ],
+  "wiki": "Larry Page"
+ },
+ {
+  "slug": "sergey-brin",
+  "nom": "Sergey Brin",
+  "type": "personne",
+  "entreprise": "Alphabet",
+  "indice": "",
+  "mots_cles": [
+   "sergey brin",
+   "alphabet"
+  ],
+  "wiki": "Sergey Brin"
+ },
+ {
+  "slug": "daniel-ek",
+  "nom": "Daniel Ek",
+  "type": "personne",
+  "entreprise": "Spotify",
+  "indice": "",
+  "mots_cles": [
+   "daniel ek",
+   "spotify"
+  ],
+  "wiki": "Daniel Ek"
+ },
+ {
+  "slug": "brian-chesky",
+  "nom": "Brian Chesky",
+  "type": "personne",
+  "entreprise": "Airbnb",
+  "indice": "",
+  "mots_cles": [
+   "brian chesky",
+   "airbnb"
+  ],
+  "wiki": "Brian Chesky"
+ },
+ {
+  "slug": "dara-khosrowshahi",
+  "nom": "Dara Khosrowshahi",
+  "type": "personne",
+  "entreprise": "Uber",
+  "indice": "",
+  "mots_cles": [
+   "dara khosrowshahi",
+   "uber"
+  ],
+  "wiki": "Dara Khosrowshahi"
+ },
+ {
+  "slug": "reed-hastings",
+  "nom": "Reed Hastings",
+  "type": "personne",
+  "entreprise": "Netflix",
+  "indice": "",
+  "mots_cles": [
+   "reed hastings",
+   "netflix"
+  ],
+  "wiki": "Reed Hastings"
+ },
+ {
+  "slug": "marc-benioff",
+  "nom": "Marc Benioff",
+  "type": "personne",
+  "entreprise": "Salesforce",
+  "indice": "",
+  "mots_cles": [
+   "marc benioff",
+   "salesforce"
+  ],
+  "wiki": "Marc Benioff"
+ },
+ {
+  "slug": "alex-karp",
+  "nom": "Alex Karp",
+  "type": "personne",
+  "entreprise": "Palantir",
+  "indice": "",
+  "mots_cles": [
+   "alex karp",
+   "palantir"
+  ],
+  "wiki": "Alex Karp"
+ },
+ {
+  "slug": "ray-dalio",
+  "nom": "Ray Dalio",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "ray dalio"
+  ],
+  "wiki": "Ray Dalio"
+ },
+ {
+  "slug": "cathie-wood",
+  "nom": "Cathie Wood",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "cathie wood"
+  ],
+  "wiki": "Cathie Wood"
+ },
+ {
+  "slug": "bernard-arnault",
+  "nom": "Bernard Arnault",
+  "type": "personne",
+  "entreprise": "LVMH",
+  "indice": "",
+  "mots_cles": [
+   "bernard arnault",
+   "lvmh"
+  ],
+  "wiki": "Bernard Arnault"
+ },
+ {
+  "slug": "patrick-pouyanne",
+  "nom": "Patrick Pouyanné",
+  "type": "personne",
+  "entreprise": "TotalEnergies",
+  "indice": "",
+  "mots_cles": [
+   "patrick pouyanné",
+   "totalenergies"
+  ],
+  "wiki": "Patrick Pouyanné"
+ },
+ {
+  "slug": "paul-hudson",
+  "nom": "Paul Hudson",
+  "type": "personne",
+  "entreprise": "Sanofi",
+  "indice": "",
+  "mots_cles": [
+   "paul hudson",
+   "sanofi"
+  ],
+  "wiki": "Paul Hudson (businessman)"
+ },
+ {
+  "slug": "guillaume-faury",
+  "nom": "Guillaume Faury",
+  "type": "personne",
+  "entreprise": "Airbus",
+  "indice": "",
+  "mots_cles": [
+   "guillaume faury",
+   "airbus"
+  ],
+  "wiki": "Guillaume Faury"
+ },
+ {
+  "slug": "xavier-niel",
+  "nom": "Xavier Niel",
+  "type": "personne",
+  "entreprise": "Free",
+  "indice": "",
+  "mots_cles": [
+   "xavier niel",
+   "free"
+  ],
+  "wiki": "Xavier Niel"
+ },
+ {
+  "slug": "nicolas-hieronimus",
+  "nom": "Nicolas Hieronimus",
+  "type": "personne",
+  "entreprise": "L'Oréal",
+  "indice": "",
+  "mots_cles": [
+   "nicolas hieronimus",
+   "l'oréal"
+  ],
+  "wiki": "Nicolas Hieronimus"
+ },
+ {
+  "slug": "luca-de-meo",
+  "nom": "Luca de Meo",
+  "type": "personne",
+  "entreprise": "Renault",
+  "indice": "",
+  "mots_cles": [
+   "luca de meo",
+   "renault"
+  ],
+  "wiki": "Luca de Meo"
+ },
+ {
+  "slug": "christel-heydemann",
+  "nom": "Christel Heydemann",
+  "type": "personne",
+  "entreprise": "Orange",
+  "indice": "",
+  "mots_cles": [
+   "christel heydemann",
+   "orange"
+  ],
+  "wiki": "Christel Heydemann"
+ },
+ {
+  "slug": "florent-menegaux",
+  "nom": "Florent Menegaux",
+  "type": "personne",
+  "entreprise": "Michelin",
+  "indice": "",
+  "mots_cles": [
+   "florent menegaux",
+   "michelin"
+  ],
+  "wiki": "Florent Menegaux"
+ },
+ {
+  "slug": "michel-edouard-leclerc",
+  "nom": "Michel-Édouard Leclerc",
+  "type": "personne",
+  "entreprise": "E.Leclerc",
+  "indice": "",
+  "mots_cles": [
+   "michel-édouard leclerc",
+   "e.leclerc"
+  ],
+  "wiki": "Michel-Édouard Leclerc"
+ },
+ {
+  "slug": "alexandre-bompard",
+  "nom": "Alexandre Bompard",
+  "type": "personne",
+  "entreprise": "Carrefour",
+  "indice": "",
+  "mots_cles": [
+   "alexandre bompard",
+   "carrefour"
+  ],
+  "wiki": "Alexandre Bompard"
+ },
+ {
+  "slug": "francois-henri-pinault",
+  "nom": "François-Henri Pinault",
+  "type": "personne",
+  "entreprise": "Kering",
+  "indice": "",
+  "mots_cles": [
+   "françois-henri pinault",
+   "kering"
+  ],
+  "wiki": "François-Henri Pinault"
+ },
+ {
+  "slug": "vincent-bollore",
+  "nom": "Vincent Bolloré",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "vincent bolloré"
+  ],
+  "wiki": "Vincent Bolloré"
+ },
+ {
+  "slug": "martin-bouygues",
+  "nom": "Martin Bouygues",
+  "type": "personne",
+  "entreprise": "Bouygues",
+  "indice": "",
+  "mots_cles": [
+   "martin bouygues",
+   "bouygues"
+  ],
+  "wiki": "Martin Bouygues"
+ },
+ {
+  "slug": "christine-lagarde",
+  "nom": "Christine Lagarde",
+  "type": "personne",
+  "entreprise": "BCE",
+  "indice": "",
+  "mots_cles": [
+   "christine lagarde",
+   "bce"
+  ],
+  "wiki": "Christine Lagarde"
+ },
+ {
+  "slug": "jerome-powell",
+  "nom": "Jerome Powell",
+  "type": "personne",
+  "entreprise": "Fed",
+  "indice": "",
+  "mots_cles": [
+   "jerome powell",
+   "fed"
+  ],
+  "wiki": "Jerome Powell"
+ },
+ {
+  "slug": "francois-villeroy-de-galhau",
+  "nom": "François Villeroy de Galhau",
+  "type": "personne",
+  "entreprise": "Banque de France",
+  "indice": "",
+  "mots_cles": [
+   "françois villeroy de galhau",
+   "banque de france"
+  ],
+  "wiki": "François Villeroy de Galhau"
+ },
+ {
+  "slug": "emmanuel-macron",
+  "nom": "Emmanuel Macron",
+  "type": "personne",
+  "entreprise": "Élysée",
+  "indice": "",
+  "mots_cles": [
+   "emmanuel macron",
+   "élysée"
+  ],
+  "wiki": "Emmanuel Macron"
+ },
+ {
+  "slug": "ursula-von-der-leyen",
+  "nom": "Ursula von der Leyen",
+  "type": "personne",
+  "entreprise": "Commission européenne",
+  "indice": "",
+  "mots_cles": [
+   "ursula von der leyen",
+   "commission européenne"
+  ],
+  "wiki": "Ursula von der Leyen"
+ },
+ {
+  "slug": "donald-trump",
+  "nom": "Donald Trump",
+  "type": "personne",
+  "entreprise": "Maison-Blanche",
+  "indice": "",
+  "mots_cles": [
+   "donald trump",
+   "maison-blanche"
+  ],
+  "wiki": "Donald Trump"
+ },
+ {
+  "slug": "scott-bessent",
+  "nom": "Scott Bessent",
+  "type": "personne",
+  "entreprise": "Trésor américain",
+  "indice": "",
+  "mots_cles": [
+   "scott bessent",
+   "trésor américain"
+  ],
+  "wiki": "Scott Bessent"
+ },
+ {
+  "slug": "kristalina-georgieva",
+  "nom": "Kristalina Georgieva",
+  "type": "personne",
+  "entreprise": "FMI",
+  "indice": "",
+  "mots_cles": [
+   "kristalina georgieva",
+   "fmi"
+  ],
+  "wiki": "Kristalina Georgieva"
+ },
+ {
+  "slug": "bruno-le-maire",
+  "nom": "Bruno Le Maire",
+  "type": "personne",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "bruno le maire"
+  ],
+  "wiki": "Bruno Le Maire"
+ },
+ {
+  "slug": "bce",
+  "nom": "BCE",
+  "type": "institution",
+  "entreprise": "BCE",
+  "indice": "",
+  "mots_cles": [
+   "bce",
+   "bce"
+  ],
+  "wiki": "European Central Bank"
+ },
+ {
+  "slug": "fed",
+  "nom": "Fed",
+  "type": "institution",
+  "entreprise": "Fed",
+  "indice": "",
+  "mots_cles": [
+   "fed",
+   "fed"
+  ],
+  "wiki": "Federal Reserve"
+ },
+ {
+  "slug": "banque-de-france",
+  "nom": "Banque de France",
+  "type": "institution",
+  "entreprise": "Banque de France",
+  "indice": "",
+  "mots_cles": [
+   "banque de france",
+   "banque de france"
+  ],
+  "wiki": "Banque de France"
+ },
+ {
+  "slug": "wall-street",
+  "nom": "Wall Street",
+  "type": "institution",
+  "entreprise": "Wall Street",
+  "indice": "",
+  "mots_cles": [
+   "wall street",
+   "wall street"
+  ],
+  "wiki": "Wall Street"
+ },
+ {
+  "slug": "new-york-stock-exchange",
+  "nom": "New York Stock Exchange",
+  "type": "institution",
+  "entreprise": "New York Stock Exchange",
+  "indice": "",
+  "mots_cles": [
+   "new york stock exchange",
+   "new york stock exchange"
+  ],
+  "wiki": "New York Stock Exchange"
+ },
+ {
+  "slug": "nasdaq",
+  "nom": "Nasdaq",
+  "type": "institution",
+  "entreprise": "Nasdaq",
+  "indice": "",
+  "mots_cles": [
+   "nasdaq",
+   "nasdaq"
+  ],
+  "wiki": "Nasdaq"
+ },
+ {
+  "slug": "bourse-de-paris",
+  "nom": "Bourse de Paris",
+  "type": "institution",
+  "entreprise": "Bourse de Paris",
+  "indice": "",
+  "mots_cles": [
+   "bourse de paris",
+   "bourse de paris"
+  ],
+  "wiki": "Palais Brongniart"
+ },
+ {
+  "slug": "fmi",
+  "nom": "FMI",
+  "type": "institution",
+  "entreprise": "FMI",
+  "indice": "",
+  "mots_cles": [
+   "fmi",
+   "fmi"
+  ],
+  "wiki": "International Monetary Fund"
+ },
+ {
+  "slug": "assemblee-nationale",
+  "nom": "Assemblée nationale",
+  "type": "institution",
+  "entreprise": "Assemblée nationale",
+  "indice": "",
+  "mots_cles": [
+   "assemblée nationale",
+   "assemblée nationale"
+  ],
+  "wiki": "National Assembly (France)"
+ },
+ {
+  "slug": "billets-en-euros",
+  "nom": "Billets en euros",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "billets en euros",
+   "euro banknotes"
+  ],
+  "commons": "euro banknotes"
+ },
+ {
+  "slug": "pieces-en-euros",
+  "nom": "Pièces en euros",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "pièces en euros",
+   "euro coins"
+  ],
+  "commons": "euro coins"
+ },
+ {
+  "slug": "carte-bancaire",
+  "nom": "Carte bancaire",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "carte bancaire",
+   "credit card payment"
+  ],
+  "commons": "credit card payment"
+ },
+ {
+  "slug": "terminal-de-paiement",
+  "nom": "Terminal de paiement",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "terminal de paiement",
+   "payment terminal contactless"
+  ],
+  "commons": "payment terminal contactless"
+ },
+ {
+  "slug": "pompe-a-essence",
+  "nom": "Pompe à essence",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "pompe à essence",
+   "fuel pump nozzle"
+  ],
+  "commons": "fuel pump nozzle"
+ },
+ {
+  "slug": "station-service",
+  "nom": "Station-service",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "station-service",
+   "petrol station prices"
+  ],
+  "commons": "petrol station prices"
+ },
+ {
+  "slug": "caddie",
+  "nom": "Caddie",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "caddie",
+   "shopping cart supermarket"
+  ],
+  "commons": "shopping cart supermarket"
+ },
+ {
+  "slug": "rayon-de-supermarche",
+  "nom": "Rayon de supermarché",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "rayon de supermarché",
+   "supermarket aisle"
+  ],
+  "commons": "supermarket aisle"
+ },
+ {
+  "slug": "compteur-electrique",
+  "nom": "Compteur électrique",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "compteur électrique",
+   "electricity meter"
+  ],
+  "commons": "electricity meter"
+ },
+ {
+  "slug": "plaque-de-cuisson-gaz",
+  "nom": "Plaque de cuisson gaz",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "plaque de cuisson gaz",
+   "gas stove flame"
+  ],
+  "commons": "gas stove flame"
+ },
+ {
+  "slug": "chantier",
+  "nom": "Chantier",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "chantier",
+   "construction site crane"
+  ],
+  "commons": "construction site crane"
+ },
+ {
+  "slug": "cles-de-maison",
+  "nom": "Clés de maison",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "clés de maison",
+   "house keys"
+  ],
+  "commons": "house keys"
+ },
+ {
+  "slug": "tirelire",
+  "nom": "Tirelire",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "tirelire",
+   "piggy bank"
+  ],
+  "commons": "piggy bank"
+ },
+ {
+  "slug": "ecran-de-bourse",
+  "nom": "Écran de Bourse",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "écran de bourse",
+   "stock ticker screen"
+  ],
+  "commons": "stock ticker screen"
+ },
+ {
+  "slug": "calculatrice-et-factures",
+  "nom": "Calculatrice et factures",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "calculatrice et factures",
+   "calculator bills"
+  ],
+  "commons": "calculator bills"
+ },
+ {
+  "slug": "smartphone-banque",
+  "nom": "Smartphone banque",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "smartphone banque",
+   "smartphone banking app"
+  ],
+  "commons": "smartphone banking app"
+ },
+ {
+  "slug": "distributeur-de-billets",
+  "nom": "Distributeur de billets",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "distributeur de billets",
+   "ATM cash machine"
+  ],
+  "commons": "ATM cash machine"
+ },
+ {
+  "slug": "lingots-d-or",
+  "nom": "Lingots d'or",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "lingots d'or",
+   "gold bars"
+  ],
+  "commons": "gold bars"
+ },
+ {
+  "slug": "data-center",
+  "nom": "Data center",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "data center",
+   "data center servers"
+  ],
+  "commons": "data center servers"
+ },
+ {
+  "slug": "puce-electronique",
+  "nom": "Puce électronique",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "puce électronique",
+   "computer chip wafer"
+  ],
+  "commons": "computer chip wafer"
+ },
+ {
+  "slug": "voiture-electrique-en-charge",
+  "nom": "Voiture électrique en charge",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "voiture électrique en charge",
+   "electric car charging"
+  ],
+  "commons": "electric car charging"
+ },
+ {
+  "slug": "avion-de-ligne",
+  "nom": "Avion de ligne",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "avion de ligne",
+   "airliner takeoff"
+  ],
+  "commons": "airliner takeoff"
+ },
+ {
+  "slug": "panneaux-solaires",
+  "nom": "Panneaux solaires",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "panneaux solaires",
+   "solar panels"
+  ],
+  "commons": "solar panels"
+ },
+ {
+  "slug": "eolienne",
+  "nom": "Éolienne",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "éolienne",
+   "wind turbine"
+  ],
+  "commons": "wind turbine"
+ },
+ {
+  "slug": "colis-livraison",
+  "nom": "Colis livraison",
+  "type": "generique",
+  "entreprise": "",
+  "indice": "",
+  "mots_cles": [
+   "colis livraison",
+   "parcel delivery boxes"
+  ],
+  "commons": "parcel delivery boxes"
+ }
+]
