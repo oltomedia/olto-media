@@ -251,7 +251,8 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?
  if(a.impact){const kb=textBlock(a.impact,X0+48,y+40+108,tk?34:38,MW-96,C.iv,C.ja,'b',1.25);const bh=kb.h+100;
   o+=`<rect x="${X0}" y="${y+40}" width="${MW}" height="${bh}" rx="28" fill="rgba(238,243,244,.06)" stroke="${C.pl}" stroke-width="2"/><rect x="${X0}" y="${y+40}" width="10" height="${bh}" rx="5" fill="${C.ja}"/>`;
   o+=`<text x="${X0+48}" y="${y+40+52}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`+kb.svg;y+=40+bh}
- o=head+`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`;
+ {const av=(FY-100)-T0,hh=y-T0;/* trop haut : on réduit le bloc au lieu de déborder sur le pied de page (25/11) */
+ o=head+(hh>av?`<g transform="translate(${X0},${T0}) scale(${(av/hh).toFixed(4)}) translate(${-X0},${-T0})">${o}</g>`:`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`);}
  o+=`<g transform="translate(${X0},${FY}) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;
  o+=`<text x="${X0+MW}" y="${FY+8}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(a.source||'').slice(0,52))}</text>`;
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Contenu pédagogique, pas un conseil.</text>`;
