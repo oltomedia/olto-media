@@ -29,7 +29,7 @@ function fitTK(svg,box){box=box||TKBOX;const host=document.createElement('div');
   const g=document.createElementNS('http://www.w3.org/2000/svg','g');[...root.childNodes].forEach(n=>{if(n.nodeType===1&&(n.getAttribute('data-bg')||n.tagName==='defs'))return;g.appendChild(n)});root.appendChild(g);
   g.querySelectorAll('[data-bg]').forEach(n=>n.remove());
   let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;g.querySelectorAll('text,image,rect,path,line,circle,ellipse,polygon,polyline').forEach(e=>{const b=e.getBoundingClientRect();if(!b.width&&!b.height)return;x0=Math.min(x0,(b.left-o.left)*k);y0=Math.min(y0,(b.top-o.top)*k);x1=Math.max(x1,(b.right-o.left)*k);y1=Math.max(y1,(b.bottom-o.top)*k)});
-  if(x1<=x0)return svg;const bw=x1-x0,bh=y1-y0,W=box.x1-box.x0,H=box.y1-box.y0;const s=Math.min(W/bw,H/bh,box.max);
+  if(x1<=x0)return svg;const bw=x1-x0,bh=y1-y0,W=box.x1-box.x0,H=box.y1-box.y0;const s=Math.min(W/bw,H/bh,box.max);if(typeof window!=='undefined')window.__TKFIT={sw:Math.min(W/bw,box.max),sh:H/bh};
   const tx=box.x0+(W-bw*s)/2,ty=box.y0+(H-bh*s)/2;g.setAttribute('transform',`translate(${tx.toFixed(1)},${ty.toFixed(1)}) scale(${s.toFixed(4)}) translate(${(-x0).toFixed(1)},${(-y0).toFixed(1)})`);
   return new XMLSerializer().serializeToString(root).replace(/ style="width: 1080px;"/,'')}finally{host.remove()}}
 const TK={x:-20,y:300,s:.93};// zone visible TikTok (photo, mesurée sur iPhone) : x 40-920, y 310-1620
@@ -64,7 +64,7 @@ function img(name,x,y,w,h,imgs){const src=imgs&&imgs[name];if(!src)return '';ret
 // TikTok : mise en page native (colonne étroite, gros textes), empilée de haut en bas ; fitTK l'agrandit ensuite pour remplir la zone visible.
 function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [acc,accD]=RUB[rub]||[C.ja,C.jd];
  const dark=true;/* TikTok : tout en sombre (dégradé noir natif, décision du 24/11) */const fg=dark?C.iv:C.in,mut=dark?C.pm:C.mu,emc=dark?acc:accD;
- const W=760,HT=1130,X0=0;const card=dark?'rgba(238,243,244,.06)':'#fff',strk=dark?C.pl:C.ln;
+ const W=(typeof window!=='undefined'&&window.__TKW)||760,HT=1130,X0=0;const card=dark?'rgba(238,243,244,.06)':'#fff',strk=dark?C.pl:C.ln;
  const last=i===n-1,swipe=p.format==='carrousel'&&!last?'Glisse →':'';let head='',b='',y=0,src='';
  const num=String(i).padStart(2,'0')+' / '+String(n-1).padStart(2,'0');
  const T=(txt,sz,mx,col,f='b',lh)=>{const t=textBlock(txt,X0,y+sz*.8,sz,mx||W,col,emc,f,lh||(f==='b'?1.06:1.36));b+=t.svg;y+=t.h;return t};
@@ -214,7 +214,7 @@ function uneSVG(st,fmt){st=st||{};const u=st.une||{};const H=1920;const down=u.s
  return o+'</svg>'}
 
 // story « Le mot du jour » 1080x1920 (fond ivoire, contraste avec le Top 5 sombre)
-function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=tk;const fg=tk?C.iv:C.in,mut=tk?C.pm:C.mu,emc=tk?C.ja:C.jd;const X0=tk?60:72,MW=tk?740:936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(dk,H)}`;
+function motSVG(st,imgs,fmt){st=st||{};const m=st.mot||{};const H=1920;const tk=fmt==='tiktok';const dk=tk;const fg=tk?C.iv:C.in,mut=tk?C.pm:C.mu,emc=tk?C.ja:C.jd;const X0=tk?60:72,MW=tk?((typeof window!=='undefined'&&window.__TKW)||740):936,T0=tk?330:250,FY=tk?1570:1702;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(dk,H)}`;
  o+=chip('Le mot du jour',false,C.ja,X0,T0);const head=o;o='';
  const terme=String(m.terme||'');const ts=fit(terme,MW,3,tk?128:132,64,'s');const tb=textBlock('*'+terme+'*',X0,T0+130+ts*.9,ts,MW,fg,emc,'b',1.0);o+=tb.svg;
  let y=T0+130+ts*.9+(tb.lines-1)*ts+60;
@@ -259,7 +259,17 @@ function storyTK(st,side){st=st||{};const up=side!=='baisses';const H=1920;const
 
 // Story « L'actu argent » : une info du jour qui touche le porte-monnaie (Instagram 1080x1920 ; TikTok : même image, zone visible respectée)
 // a = {titre, chiffre?, label?, texte, impact, source}
-function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';const X0=tk?60:72,MW=tk?740:936,T0=tk?330:250,FY=tk?1570:1702;const H=1920;
+function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';
+ /* 26/11 : TikTok = même mise en page que « la une » du Top 5 (bloc compact, texte large, sans carte ni pied de page) */
+ if(tk){const W=760;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(true,1920)}`;let y=0;
+  o+=chip("L'actu argent",true,C.sig,0,0);y=110;
+  if(a.titre){const ts=fit(a.titre,W,3,104,64);const tb=textBlock(a.titre,0,y+ts*.8,ts,W,C.iv,C.ja);o+=tb.svg;y+=tb.h+50}
+  if(a.chiffre){const cs=fit(a.chiffre,W,1,120,72);y+=cs*.78;o+=`<text x="0" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${C.ja}">${X(a.chiffre)}</text>`;y+=24;
+   if(a.label){const lb=textBlock(a.label,0,y+34,34,W,'#D5E2DE',C.ja,'m',1.3);o+=lb.svg;y+=lb.h+20}}
+  if(a.texte){const d=textBlock(a.texte,0,y+50,34,W,'#D5E2DE',C.ja,'m',1.36);o+=d.svg;y+=d.h+40}
+  if(a.impact){o+=`<rect x="0" y="${y+14}" width="8" height="10" fill="none"/><text x="0" y="${y+40}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`;const kb=textBlock(a.impact,0,y+40+56,40,W,C.iv,C.ja,'b',1.2);o+=kb.svg;y+=40+kb.h+40}
+  o+=`<text x="0" y="${y+30}" font-family="PM" font-size="20" fill="#D5E2DE">${X(String(a.source||'').slice(0,60))} · Contenu pédagogique, pas un conseil.</text>`;
+  return o+'</svg>'}const X0=tk?60:72,MW=tk?((typeof window!=='undefined'&&window.__TKW)||740):936,T0=tk?330:250,FY=tk?1570:1702;const H=1920;
  let o=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}${tk?TKFADE:''}`;
  o+=chip("L'actu argent",true,C.sig,X0,T0);const head=o;o='';
  const ts=fit(a.titre||'',MW,4,tk?84:92,56);const tb=textBlock(a.titre||'',X0,T0+130+ts*.85,ts,MW,C.iv,C.ja);o+=tb.svg;let y=T0+130+ts*.85+(tb.lines-1)*ts*1.04+80;
