@@ -276,9 +276,7 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';
  if(a.chiffre){const cs=fit(a.chiffre,MW,1,tk?190:210,100);y+=cs*.8;o+=`<text x="${X0}" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${C.ja}">${X(a.chiffre)}</text>`;y+=40;
   if(a.label){const lb=textBlock(a.label,X0,y+30,tk?32:36,MW,C.pm,C.ja,'m',1.3);o+=lb.svg;y+=lb.h+30}}
  if(a.texte){const d=textBlock(a.texte,X0,y+50,tk?36:40,MW,C.iv,C.ja,'m',1.36);o+=d.svg;y+=d.h+50}
- if(a.impact){const kb=textBlock(a.impact,X0+48,y+40+108,tk?34:38,MW-96,C.iv,C.ja,'b',1.25);const bh=kb.h+100;
-  o+=`<rect x="${X0}" y="${y+40}" width="${MW}" height="${bh}" rx="28" fill="rgba(238,243,244,.06)" stroke="${C.pl}" stroke-width="2"/><rect x="${X0}" y="${y+40}" width="10" height="${bh}" rx="5" fill="${C.ja}"/>`;
-  o+=`<text x="${X0+48}" y="${y+40+52}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`+kb.svg;y+=40+bh}
+ if(a.impact){/* 26/11 : plus de carte, même style que TikTok et la une */o+=`<text x="${X0}" y="${y+70}" font-family="PM" font-size="24" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`;const kb=textBlock(a.impact,X0,y+70+62,44,MW,C.iv,C.ja,'b',1.2);o+=kb.svg;y+=70+kb.h+30}
  {const av=(FY-100)-T0,hh=y-T0;/* trop haut : on réduit le bloc au lieu de déborder sur le pied de page (25/11) */
  o=head+(hh>av?`<g transform="translate(${X0},${T0}) scale(${(av/hh).toFixed(4)}) translate(${-X0},${-T0})">${o}</g>`:`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`);}
  o+=`<g transform="translate(${X0},${FY}) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;
