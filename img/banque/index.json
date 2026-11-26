@@ -2874,5 +2874,408 @@
   ],
   "a_verifier": false,
   "statut": "ok"
+ },
+ {
+  "slug": "hp-inc",
+  "nom": "HP Inc.",
+  "type": "entreprise",
+  "entreprise": "HP Inc.",
+  "indice": "S&P 500",
+  "credit": "Photo : Liauzh, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Liauzh",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3A2025_Japan_GP_-_Ferrari_-_Charles_Leclerc_-_FP1.jpg",
+  "description": "2025 Japan GP - Ferrari - Charles Leclerc - FP1",
+  "mots_cles": [
+   "hp inc."
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "charter-communications",
+  "nom": "Charter Communications",
+  "type": "entreprise",
+  "entreprise": "Charter Communications",
+  "indice": "S&P 500",
+  "credit": "Photo : Bull-Doser at English Wikipedia, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "Bull-Doser at English Wikipedia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AFord_E-Series_Bright_House_Networks.JPG",
+  "description": "Ford E-Series photographed in Florida, USA despite being a vehicle of Bright House Networks.",
+  "mots_cles": [
+   "charter communications"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "axon",
+  "nom": "Axon",
+  "type": "entreprise",
+  "entreprise": "Axon",
+  "indice": "S&P 500",
+  "credit": "Photo : Paul M Jenkins , Kevin J Bender, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "Paul M Jenkins , Kevin J Bender",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAxon_AIS_Prot.jpg",
+  "description": "Figura 2: Componentes moleculares del AIS.  El segmento inicial del axón está formado por la proteína de andamiaje anquirina-G, que se une a canales iónicos (Na V 1, subunidades β de Na V , K V 7), mo",
+  "mots_cles": [
+   "axon"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "cdw",
+  "nom": "CDW",
+  "type": "entreprise",
+  "entreprise": "CDW",
+  "indice": "S&P 500",
+  "credit": "Photo : Raysonho @ Open Grid Scheduler / Grid Engine, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Raysonho @ Open Grid Scheduler / Grid Engine",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACDWChicago.jpg",
+  "description": "CDW in Chicago - Address: 120 S Riverside Plaza, Chicago, IL 60606, USA",
+  "mots_cles": [
+   "cdw"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "lam-research",
+  "nom": "Lam Research",
+  "type": "entreprise",
+  "entreprise": "Lam Research",
+  "indice": "S&P 500",
+  "credit": "Photo : Gpkp, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Gpkp",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABagmane_Tech_Park%2C_Bangalore_%282024%29_61.jpg",
+  "description": "Lam Research  Bagmane Tech Park, Byrasandra, C. V. Raman Nagar Post, Bangalore 560093",
+  "mots_cles": [
+   "lam research"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "jacobs",
+  "nom": "Jacobs",
+  "type": "entreprise",
+  "entreprise": "Jacobs",
+  "indice": "S&P 500",
+  "credit": "Photo : Shaggylawn65, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Shaggylawn65",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHarwoodCenterbuildingDallas.jpg",
+  "description": "South facade of the Harwood Center building in downtown Dallas",
+  "mots_cles": [
+   "jacobs"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "applied-materials",
+  "nom": "Applied Materials",
+  "type": "entreprise",
+  "entreprise": "Applied Materials",
+  "indice": "S&P 500",
+  "credit": "Photo : en:User:Paul.h, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "en:User:Paul.h",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASF_From_Marin_Highlands3.jpg",
+  "description": "San Francisco from en:Marin Headlands",
+  "mots_cles": [
+   "applied materials"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "kla",
+  "nom": "KLA",
+  "type": "entreprise",
+  "entreprise": "KLA",
+  "indice": "S&P 500",
+  "credit": "Photo : DontCallMeLateForDinner, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "DontCallMeLateForDinner",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AKLA_Corporation_Ann_Arbor_Township_Office.jpg",
+  "description": "View from the street of the KLA Corporation office in Ann Arbor Township, Michigan",
+  "mots_cles": [
+   "kla"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "bloom-energy",
+  "nom": "Bloom Energy",
+  "type": "entreprise",
+  "entreprise": "Bloom Energy",
+  "indice": "S&P 500",
+  "credit": "Photo : Bloom Energy, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Bloom Energy",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ABloom_Energy_Servers_at_eBay_HQ_-_4405533596.jpg",
+  "description": "Bloom Energy Servers at eBay, Photo credit: Jakub Mosur",
+  "mots_cles": [
+   "bloom energy"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "monolithic-power",
+  "nom": "Monolithic Power",
+  "type": "entreprise",
+  "entreprise": "Monolithic Power",
+  "indice": "S&P 500",
+  "credit": "Photo : Readyforspring, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Readyforspring",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMPS_MPM3695-100_Image.jpg",
+  "description": "MPS's MPM3695-100 – A power module with a PMBus interface",
+  "mots_cles": [
+   "monolithic power"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "costar-group",
+  "nom": "CoStar Group",
+  "type": "entreprise",
+  "entreprise": "CoStar Group",
+  "indice": "S&P 500",
+  "credit": "Photo : Gian Lorenzo Ferretti, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Gian Lorenzo Ferretti",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ACoStar_Group_HQ_in_Arlington%2C_VA.jpg",
+  "description": "Photo of CoStar Group Headquarters",
+  "mots_cles": [
+   "costar group"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "elevance-health",
+  "nom": "Elevance Health",
+  "type": "entreprise",
+  "entreprise": "Elevance Health",
+  "indice": "S&P 500",
+  "credit": "Photo : Rodhullandemu, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Rodhullandemu",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAnthem_of_the_Seas_%28ship%2C_2015%29_at_Liverpool_2021-6.jpg",
+  "description": "Side view of Anthem of the Seas at Liverpool Cruise Terminal.",
+  "mots_cles": [
+   "elevance health"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "monster-beverage",
+  "nom": "Monster Beverage",
+  "type": "entreprise",
+  "entreprise": "Monster Beverage",
+  "indice": "S&P 500",
+  "credit": "Photo : Coolcaesar, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Coolcaesar",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMonster_Beverage_Headquarters.jpg",
+  "description": "The headquarters of Monster Beverage Corporation in Corona, California. Photographed by user Coolcaesar on June 18, 2022.",
+  "mots_cles": [
+   "monster beverage"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "international-paper",
+  "nom": "International Paper",
+  "type": "entreprise",
+  "entreprise": "International Paper",
+  "indice": "S&P 500",
+  "credit": "Photo : Billy Hathorn, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Billy Hathorn",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AInternational_Paper_Co.%2C_Cullen%2C_LA_IMG_5138.JPG",
+  "description": "I took photo of International Paper Co. facility in Cullen, LA, with Canon camera.",
+  "mots_cles": [
+   "international paper"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "tyson-foods",
+  "nom": "Tyson Foods",
+  "type": "entreprise",
+  "entreprise": "Tyson Foods",
+  "indice": "S&P 500",
+  "credit": "Photo : Brandonrush, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "Brandonrush",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ATyson_World_Headquarters.jpg",
+  "description": "World headquarters of Tyson Foods, Inc. 2200 Don Tyson Pkwy, Springdale, Arkansas",
+  "mots_cles": [
+   "tyson foods"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "constellation-brands",
+  "nom": "Constellation Brands",
+  "type": "entreprise",
+  "entreprise": "Constellation Brands",
+  "indice": "S&P 500",
+  "credit": "Photo : DanielPenfield, CC BY-SA 3.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "auteur": "DanielPenfield",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AConstellation_Brands_headquarters.jpg",
+  "description": "en:Constellation Brands headquarters in en:Victor, New York",
+  "mots_cles": [
+   "constellation brands"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "salesforce-marc",
+  "nom": "Salesforce Marc",
+  "type": "entreprise",
+  "entreprise": "Salesforce Marc",
+  "indice": "S&P 500",
+  "credit": "Photo : Dead.rabbit, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Dead.rabbit",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASalesforce_Tower_from_Salesforce_Park.jpg",
+  "description": "Salesforce Tower from Salesforce Park",
+  "mots_cles": [
+   "salesforce marc"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "arm",
+  "nom": "Arm",
+  "type": "entreprise",
+  "entreprise": "Arm",
+  "indice": "S&P 500",
+  "credit": "Photo : Original uploader was Yesme@ at vi.wikipedia, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Original uploader was Yesme@ at vi.wikipedia",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AARM-Cambridge.jpg",
+  "description": "Photo of building in Cambridge, UK for computer-related company ARM Cambridge of ARM Ltd. (formerly Advanced RISC Machines Limited).",
+  "mots_cles": [
+   "arm"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "snowflake",
+  "nom": "Snowflake",
+  "type": "entreprise",
+  "entreprise": "Snowflake",
+  "indice": "S&P 500",
+  "credit": "Photo : Raysonho @ Open Grid Scheduler / Scalable Grid Engine, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3ASnowflakeBooth.jpg",
+  "description": "Snowflake booth",
+  "mots_cles": [
+   "snowflake"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "servicenow",
+  "nom": "ServiceNow",
+  "type": "entreprise",
+  "entreprise": "ServiceNow",
+  "indice": "S&P 500",
+  "credit": "Photo : Donny Gonzo, CC0 via Wikimedia Commons",
+  "licence": "CC0",
+  "auteur": "Donny Gonzo",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AServiceNowGlobalHQ.jpg",
+  "description": "Service Now Global HQ",
+  "mots_cles": [
+   "servicenow"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "merck",
+  "nom": "Merck",
+  "type": "entreprise",
+  "entreprise": "Merck",
+  "indice": "S&P 500",
+  "credit": "Photo : Montgomery County Planning Commission, CC BY-SA 2.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "auteur": "Montgomery County Planning Commission",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMerck_office_Upper_Gwynedd_Township_Montgomery_County.jpg",
+  "description": "The offices of Merck, located in Upper Gwynedd Township, Montgomery County, Pennsylvania.",
+  "mots_cles": [
+   "merck"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "abbvie",
+  "nom": "AbbVie",
+  "type": "entreprise",
+  "entreprise": "AbbVie",
+  "indice": "S&P 500",
+  "credit": "Photo : LittleT889, CC BY 4.0 via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "auteur": "LittleT889",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AAbbVie.jpg",
+  "description": "AbbVie Headquarters",
+  "mots_cles": [
+   "abbvie"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "michael-dell",
+  "nom": "Michael Dell",
+  "type": "personne",
+  "entreprise": "Dell",
+  "indice": "",
+  "credit": "Photo : Village Global, CC BY 2.0 via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "auteur": "Village Global",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AMichael_Dell_%2852548152888%29.jpg",
+  "description": "The Grove 2021",
+  "mots_cles": [
+   "michael dell",
+   "dell"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "hock-tan",
+  "nom": "Hock Tan",
+  "type": "personne",
+  "entreprise": "Broadcom",
+  "indice": "",
+  "credit": "Photo : SwarmCheng, CC BY-SA 4.0 via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "SwarmCheng",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AChong_Hock_Tong_Temple_19.jpg",
+  "description": "Manila Chinese Cemetery  Chong Hock Tong Temple Built in1878s - reconstructed by craftsmen and artisans from Taiwan, its lateral belfries appended at each end,  reconstructed as an all-stone edifice b",
+  "mots_cles": [
+   "hock tan",
+   "broadcom"
+  ],
+  "a_verifier": false
+ },
+ {
+  "slug": "lip-bu-tan",
+  "nom": "Lip-Bu Tan",
+  "type": "personne",
+  "entreprise": "Intel",
+  "indice": "",
+  "credit": "Photo : United States Department of Commerce, Public domain via Wikimedia Commons",
+  "licence": "Public domain",
+  "auteur": "United States Department of Commerce",
+  "source_url": "https://commons.wikimedia.org/wiki/File%3AHoward_Lutnick_with_Intel_CEO_Lip-Bu_Tan_%282025%29.jpg",
+  "description": "United States Commerce Secretary Howard Lutnick with Intel CEO Lip-Bu Tan.",
+  "mots_cles": [
+   "lip-bu tan",
+   "intel"
+  ],
+  "a_verifier": false
  }
 ]
