@@ -1983,17 +1983,6 @@
   ]
  },
  {
-  "slug": "axon",
-  "nom": "Axon",
-  "type": "entreprise",
-  "entreprise": "Axon",
-  "indice": "S&P 500",
-  "wiki": "Axon Enterprise",
-  "mots_cles": [
-   "axon"
-  ]
- },
- {
   "slug": "cdw",
   "nom": "CDW",
   "type": "entreprise",
@@ -2024,17 +2013,6 @@
   "wiki": "Jacobs Solutions",
   "mots_cles": [
    "jacobs"
-  ]
- },
- {
-  "slug": "applied-materials",
-  "nom": "Applied Materials",
-  "type": "entreprise",
-  "entreprise": "Applied Materials",
-  "indice": "S&P 500",
-  "wiki": "Applied Materials",
-  "mots_cles": [
-   "applied materials"
   ]
  },
  {
@@ -2093,17 +2071,6 @@
   ]
  },
  {
-  "slug": "elevance-health",
-  "nom": "Elevance Health",
-  "type": "entreprise",
-  "entreprise": "Elevance Health",
-  "indice": "S&P 500",
-  "wiki": "Elevance Health",
-  "mots_cles": [
-   "elevance health"
-  ]
- },
- {
   "slug": "monster-beverage",
   "nom": "Monster Beverage",
   "type": "entreprise",
@@ -2123,17 +2090,6 @@
   "wiki": "International Paper",
   "mots_cles": [
    "international paper"
-  ]
- },
- {
-  "slug": "tyson-foods",
-  "nom": "Tyson Foods",
-  "type": "entreprise",
-  "entreprise": "Tyson Foods",
-  "indice": "S&P 500",
-  "wiki": "Tyson Foods",
-  "mots_cles": [
-   "tyson foods"
   ]
  },
  {
@@ -2214,17 +2170,6 @@
   ]
  },
  {
-  "slug": "abbvie",
-  "nom": "AbbVie",
-  "type": "entreprise",
-  "entreprise": "AbbVie",
-  "indice": "S&P 500",
-  "wiki": "AbbVie",
-  "mots_cles": [
-   "abbvie"
-  ]
- },
- {
   "slug": "michael-dell",
   "nom": "Michael Dell",
   "type": "personne",
@@ -2233,17 +2178,6 @@
   "mots_cles": [
    "michael dell",
    "dell"
-  ]
- },
- {
-  "slug": "hock-tan",
-  "nom": "Hock Tan",
-  "type": "personne",
-  "entreprise": "Broadcom",
-  "commons": "Hock Tan",
-  "mots_cles": [
-   "hock tan",
-   "broadcom"
   ]
  },
  {
