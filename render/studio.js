@@ -179,20 +179,34 @@ function storySVG(st){st=st||{};const H=1920;let o=`<svg xmlns="http://www.w3.or
 
 // story « La une du soir » 1080x1920 (décision du 24/11) : la photo de la valeur n°1 du jour (ou de son dirigeant), avant le Top 5.
 // st.une = {photo:{src,credit}, titre?, sens?:'hausse'|'baisse'} ; nom/var/raison pris dans hausses[0] (ou baisses[0]).
-function uneSVG(st){st=st||{};const u=st.une||{};const H=1920;const down=u.sens==='baisse';const r=((down?st.baisses:st.hausses)||[])[0]||{};const col=down?C.sig:C.ja;
- let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}`;
+function uneSVG(st,fmt){st=st||{};const u=st.une||{};const H=1920;const down=u.sens==='baisse';const r=((down?st.baisses:st.hausses)||[])[0]||{};const col=down?C.sig:C.ja;
+ const tk=fmt&&String(fmt).startsWith('tiktok');const ph=u.photo||{};
+ /* 26/11 : « la une » en photo plein cadre (comme la couverture Nvidia) */
+ if(tk){if(typeof window!=="undefined"&&ph.src)window.__PLEIN={src:ph.src};
+  const W=760;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(true,1920)}`;let y=0;
+  o+=chip('Le récap Bourse · '+(st.jour||''),true,col,0,0);y=110;
+  if(u.titre){const ts=fit(u.titre,W,3,104,64);const tb=textBlock(u.titre,0,y+ts*.8,ts,W,C.iv,col);o+=tb.svg;y+=tb.h+50}
+  const nm=String(r.nom||'');o+=`<text x="0" y="${y+60}" font-family="PJ" font-weight="800" font-size="${fit(nm,420,1,64,40)}" fill="${C.iv}">${X(nm)}</text><text x="${W}" y="${y+80}" text-anchor="end" font-family="PJ" font-weight="800" font-size="112" letter-spacing="-4" fill="${col}">${X(r.var||'')}</text>`;y+=120;
+  if(r.raison){o+=`<text x="0" y="${y+20}" font-family="PJ" font-weight="500" font-size="36" fill="#D5E2DE">${X(String(r.raison).slice(0,48))}</text>`;y+=50}
+  o+=`<text x="0" y="${y+60}" font-family="PJ" font-weight="700" font-size="40" fill="${C.iv}">Le Top 5 complet, glisse <tspan fill="${col}">→</tspan></text>`;y+=100;
+  if(ph.credit)o+=`<text x="0" y="${y+10}" font-family="PM" font-size="20" fill="#D5E2DE">${X(String(ph.credit).slice(0,70))}</text>`;
+  return o+'</svg>'}
+ const pid='un'+(++PHN);
+ let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 ${H}" width="1080" height="${H}"><rect width="1080" height="${H}" fill="#0A1412" data-bg="1"/>`;
+ if(ph.src)o+=`<image data-plein="1" href="${X(ph.src)}" x="0" y="0" width="1080" height="${H}" preserveAspectRatio="xMidYMid slice"/>`;
+ o+=`<defs><linearGradient id="${pid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1412" stop-opacity=".6"/><stop offset=".18" stop-color="#0A1412" stop-opacity=".1"/><stop offset=".4" stop-color="#0A1412" stop-opacity=".15"/><stop offset=".62" stop-color="#0A1412" stop-opacity=".85"/><stop offset="1" stop-color="#0A1412" stop-opacity=".98"/></linearGradient></defs><rect width="1080" height="${H}" fill="url(#${pid})"/>`;
  o+=chip('Le récap Bourse · '+(st.jour||''),true,col,72,250);
- o+=photoCard(u.photo,72,330,936,700,true);
- let y=1120;
- if(u.titre){const ts=fit(u.titre,936,2,84,56);const tb=textBlock(u.titre,72,y+ts*.8,ts,936,C.iv,col);o+=tb.svg;y+=tb.h+40}
  const nm=String(r.nom||'');const ns=fit(nm,560,1,64,40);
- o+=`<text x="72" y="${y+60}" font-family="PJ" font-weight="800" font-size="${ns}" fill="${C.iv}">${X(nm)}</text>`;
- o+=`<text x="1008" y="${y+90}" text-anchor="end" font-family="PJ" font-weight="800" font-size="120" letter-spacing="-4" fill="${col}">${X(r.var||'')}</text>`;
- y+=130;if(r.raison){o+=`<text x="72" y="${y+20}" font-family="PJ" font-weight="500" font-size="34" fill="${C.pm}">${X(String(r.raison).slice(0,48))}</text>`;y+=40}
- o+=`<text x="72" y="${Math.max(y+80,1560)}" font-family="PJ" font-weight="700" font-size="40" fill="${C.iv}">Le Top 5 complet, juste après <tspan fill="${col}">→</tspan></text>`;
+ let y=1560;/* on empile depuis le bas */
+ const cta=`<text x="72" y="1640" font-family="PJ" font-weight="700" font-size="40" fill="${C.iv}">Le Top 5 complet, juste après <tspan fill="${col}">→</tspan></text>`;
+ let blk='';if(r.raison){blk=`<text x="72" y="1560" font-family="PJ" font-weight="500" font-size="34" fill="#D5E2DE">${X(String(r.raison).slice(0,48))}</text>`;y=1500}
+ blk+=`<text x="72" y="${y}" font-family="PJ" font-weight="800" font-size="${ns}" fill="${C.iv}">${X(nm)}</text><text x="1008" y="${y+12}" text-anchor="end" font-family="PJ" font-weight="800" font-size="130" letter-spacing="-4" fill="${col}">${X(r.var||'')}</text>`;y-=150;
+ if(u.titre){const ts=fit(u.titre,936,3,104,64);const tb=textBlock(u.titre,72,0,ts,936,C.iv,col);o+=`<g transform="translate(0,${y-tb.h+ts*.8})">${tb.svg}</g>`}
+ o+=blk+cta;
  o+=`<g transform="translate(72,1702) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;
- o+=`<text x="1008" y="1710" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(st.source||'').slice(0,64))}</text>`;
- o+=`<text x="1008" y="1738" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Pas un conseil en investissement.</text>`;
+ o+=`<text x="1008" y="1700" text-anchor="end" font-family="PM" font-size="17" fill="#D5E2DE">${X(String(ph.credit||'').slice(0,70))}</text>`;
+ o+=`<text x="1008" y="1724" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(st.source||'').slice(0,64))}</text>`;
+ o+=`<text x="1008" y="1748" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Pas un conseil en investissement.</text>`;
  return o+'</svg>'}
 
 // story « Le mot du jour » 1080x1920 (fond ivoire, contraste avec le Top 5 sombre)
