@@ -69,7 +69,7 @@ function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [a
  const num=String(i).padStart(2,'0')+' / '+String(n-1).padStart(2,'0');
  const T=(txt,sz,mx,col,f='b',lh)=>{const t=textBlock(txt,X0,y+sz*.8,sz,mx||W,col,emc,f,lh||(f==='b'?1.06:1.36));b+=t.svg;y+=t.h;return t};
  if(s.type==='cover'){head=chip((p.rubrique||'')+(p.format==='carrousel'?' · carrousel':''),dark,acc,X0,0);
-  T(s.accroche,fit(s.accroche,W,6,128,70),W,fg);if(s.sous){y+=40;T(s.sous,44,W-20,mut,'m')}
+  const pl=s.photo&&s.mise!=='carte';T(s.accroche,pl?fit(s.accroche,W,4,112,64):fit(s.accroche,W,6,128,70),W,fg);if(s.sous){y+=pl?30:40;T(s.sous,pl?38:44,W-20,pl?'#D5E2DE':mut,'m')}
   if(s.photo&&s.mise!=='carte'){if(typeof window!=="undefined")window.__PLEIN={src:s.photo.src};if(s.photo.credit){y+=34;T(s.photo.credit,20,W,'#D5E2DE','m')}}
   else if(s.photo){y+=44;b+=photoCard(s.photo,X0,y,W,440,dark);y+=480}else if(s.objet&&OBJ.includes(s.objet)){y+=40;b+=img(s.objet,W-420,y,420,330,imgs);y+=330}}
  else if(s.type==='texte'){head=chip(num,dark,acc,X0,0);T(s.titre,fit(s.titre,W,4,96,60),W,fg);y+=44;T(s.texte,50,W,mut,'m');
@@ -88,6 +88,10 @@ function slideTK(p,s,i,n,imgs){const rub=(p.rubrique||'').toLowerCase();const [a
  else if(s.type==='cta'){head=chip('Olto',dark,acc,X0,0);/* TikTok : la dernière slide appelle à s'abonner (décision du 24/11), pas au lien en bio */const tt=s.titreTK||'*Abonne-toi* pour comprendre ton argent.';T(tt,fit(tt,W,4,112,64),W,fg);y+=44;
   T(s.texteTK||((s.texte&&s.texte.includes('?'))?s.texte:'5 infos argent par semaine, chiffres sourcés, zéro promesse.'),44,W,mut,'m');y+=40;b+=img(s.objet||'coins',W-400,y,400,300,imgs);y+=300}
  else return null;
+ // 26/11 : couverture photo plein cadre = même mise en page que « la une » du Top 5 (bloc compact, texte large)
+ if(s.type==='cover'&&typeof window!=='undefined'&&window.__PLEIN){let g=`<g transform="translate(0,110)">${b}</g>`;const yy=110+y+70;
+  if(swipe)g+=`<text x="${X0}" y="${yy}" font-family="PJ" font-weight="700" font-size="40" fill="${C.iv}">${X(swipe.replace(' →',''))} <tspan fill="${acc}">→</tspan></text>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(dark,1920)}${head}${g}</svg>`}
  // chip en haut, pied en bas, contenu centré entre les deux
  const top=56+70,fy=Math.max(HT,top+y+120);const off=top+Math.max(0,(fy-90-top-y)/2);
  let f=`<g transform="translate(${X0},${fy-36}) scale(.24)">${LOGO(fg,C.ja)}</g>`;
