@@ -1,0 +1,81 @@
+{
+ "_note": "Modèle du récap Bourse de la semaine (carrousel du samedi). Remplacer TOUTES les valeurs d'exemple par les vraies données sourcées. Rendu : python3 render/render.py post <ce json> <dossier>",
+ "rubrique": "Bourse",
+ "slides": [
+  {
+   "type": "cover",
+   "chip": "Le récap Bourse · semaine du 23 au 27 novembre",
+   "accroche": "Stellantis a pris *+14 %* en 5 jours.",
+   "sous": "Les plus fortes hausses et baisses de la semaine, CAC 40 et S&P 500.",
+   "photo": {
+    "src": "img/banque/stellantis.jpg",
+    "credit": "Photo : Matti Blume, CC BY-SA 4.0 via Wikimedia Commons"
+   }
+  },
+  {
+   "type": "recap",
+   "titre": "Les 3 plus fortes *hausses*.",
+   "items": [
+    {
+     "chiffre": "+14,2 %",
+     "label": "Stellantis : rebond du secteur auto"
+    },
+    {
+     "chiffre": "+9,8 %",
+     "label": "Exemple B : raison en une ligne"
+    },
+    {
+     "chiffre": "+7,1 %",
+     "label": "Exemple C : raison en une ligne"
+    }
+   ],
+   "source": "Boursorama, Zonebourse · clôtures du 20/11 au 27/11",
+   "ton": "bourse"
+  },
+  {
+   "type": "recap",
+   "titre": "Les 3 plus fortes *baisses*.",
+   "items": [
+    {
+     "chiffre": "−11,4 %",
+     "label": "Exemple D : raison en une ligne"
+    },
+    {
+     "chiffre": "−8,0 %",
+     "label": "Exemple E : raison en une ligne"
+    },
+    {
+     "chiffre": "−6,3 %",
+     "label": "Exemple F : raison en une ligne"
+    }
+   ],
+   "source": "Boursorama, Zonebourse · clôtures du 20/11 au 27/11",
+   "ton": "bourse"
+  },
+  {
+   "type": "recap",
+   "titre": "Les *indices* sur la semaine.",
+   "items": [
+    {
+     "chiffre": "+1,2 %",
+     "label": "CAC 40"
+    },
+    {
+     "chiffre": "+0,8 %",
+     "label": "S&P 500"
+    },
+    {
+     "chiffre": "−0,4 %",
+     "label": "Nasdaq 100"
+    }
+   ],
+   "source": "Boursorama · clôtures du 20/11 au 27/11",
+   "ton": "bourse"
+  },
+  {
+   "type": "cta",
+   "titre": "Chaque soir de semaine, le *Top 5* en story.",
+   "texte": "Abonne-toi pour ne rien rater. Pas un conseil en investissement."
+  }
+ ]
+}
