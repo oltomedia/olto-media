@@ -1959,5 +1959,302 @@
    "wind turbine"
   ],
   "commons": "wind turbine"
+ },
+ {
+  "slug": "hp-inc",
+  "nom": "HP Inc.",
+  "type": "entreprise",
+  "entreprise": "HP Inc.",
+  "indice": "S&P 500",
+  "wiki": "HP Inc.",
+  "mots_cles": [
+   "hp inc."
+  ]
+ },
+ {
+  "slug": "charter-communications",
+  "nom": "Charter Communications",
+  "type": "entreprise",
+  "entreprise": "Charter Communications",
+  "indice": "S&P 500",
+  "wiki": "Charter Communications",
+  "mots_cles": [
+   "charter communications"
+  ]
+ },
+ {
+  "slug": "axon",
+  "nom": "Axon",
+  "type": "entreprise",
+  "entreprise": "Axon",
+  "indice": "S&P 500",
+  "wiki": "Axon Enterprise",
+  "mots_cles": [
+   "axon"
+  ]
+ },
+ {
+  "slug": "cdw",
+  "nom": "CDW",
+  "type": "entreprise",
+  "entreprise": "CDW",
+  "indice": "S&P 500",
+  "wiki": "CDW",
+  "mots_cles": [
+   "cdw"
+  ]
+ },
+ {
+  "slug": "lam-research",
+  "nom": "Lam Research",
+  "type": "entreprise",
+  "entreprise": "Lam Research",
+  "indice": "S&P 500",
+  "wiki": "Lam Research",
+  "mots_cles": [
+   "lam research"
+  ]
+ },
+ {
+  "slug": "jacobs",
+  "nom": "Jacobs",
+  "type": "entreprise",
+  "entreprise": "Jacobs",
+  "indice": "S&P 500",
+  "wiki": "Jacobs Solutions",
+  "mots_cles": [
+   "jacobs"
+  ]
+ },
+ {
+  "slug": "applied-materials",
+  "nom": "Applied Materials",
+  "type": "entreprise",
+  "entreprise": "Applied Materials",
+  "indice": "S&P 500",
+  "wiki": "Applied Materials",
+  "mots_cles": [
+   "applied materials"
+  ]
+ },
+ {
+  "slug": "kla",
+  "nom": "KLA",
+  "type": "entreprise",
+  "entreprise": "KLA",
+  "indice": "S&P 500",
+  "wiki": "KLA Corporation",
+  "mots_cles": [
+   "kla"
+  ]
+ },
+ {
+  "slug": "lumentum",
+  "nom": "Lumentum",
+  "type": "entreprise",
+  "entreprise": "Lumentum",
+  "indice": "S&P 500",
+  "wiki": "Lumentum",
+  "mots_cles": [
+   "lumentum"
+  ]
+ },
+ {
+  "slug": "bloom-energy",
+  "nom": "Bloom Energy",
+  "type": "entreprise",
+  "entreprise": "Bloom Energy",
+  "indice": "S&P 500",
+  "wiki": "Bloom Energy",
+  "mots_cles": [
+   "bloom energy"
+  ]
+ },
+ {
+  "slug": "monolithic-power",
+  "nom": "Monolithic Power",
+  "type": "entreprise",
+  "entreprise": "Monolithic Power",
+  "indice": "S&P 500",
+  "wiki": "Monolithic Power Systems",
+  "mots_cles": [
+   "monolithic power"
+  ]
+ },
+ {
+  "slug": "costar-group",
+  "nom": "CoStar Group",
+  "type": "entreprise",
+  "entreprise": "CoStar Group",
+  "indice": "S&P 500",
+  "wiki": "CoStar Group",
+  "mots_cles": [
+   "costar group"
+  ]
+ },
+ {
+  "slug": "elevance-health",
+  "nom": "Elevance Health",
+  "type": "entreprise",
+  "entreprise": "Elevance Health",
+  "indice": "S&P 500",
+  "wiki": "Elevance Health",
+  "mots_cles": [
+   "elevance health"
+  ]
+ },
+ {
+  "slug": "monster-beverage",
+  "nom": "Monster Beverage",
+  "type": "entreprise",
+  "entreprise": "Monster Beverage",
+  "indice": "S&P 500",
+  "wiki": "Monster Beverage",
+  "mots_cles": [
+   "monster beverage"
+  ]
+ },
+ {
+  "slug": "international-paper",
+  "nom": "International Paper",
+  "type": "entreprise",
+  "entreprise": "International Paper",
+  "indice": "S&P 500",
+  "wiki": "International Paper",
+  "mots_cles": [
+   "international paper"
+  ]
+ },
+ {
+  "slug": "tyson-foods",
+  "nom": "Tyson Foods",
+  "type": "entreprise",
+  "entreprise": "Tyson Foods",
+  "indice": "S&P 500",
+  "wiki": "Tyson Foods",
+  "mots_cles": [
+   "tyson foods"
+  ]
+ },
+ {
+  "slug": "constellation-brands",
+  "nom": "Constellation Brands",
+  "type": "entreprise",
+  "entreprise": "Constellation Brands",
+  "indice": "S&P 500",
+  "wiki": "Constellation Brands",
+  "mots_cles": [
+   "constellation brands"
+  ]
+ },
+ {
+  "slug": "zscaler",
+  "nom": "Zscaler",
+  "type": "entreprise",
+  "entreprise": "Zscaler",
+  "indice": "S&P 500",
+  "wiki": "Zscaler",
+  "mots_cles": [
+   "zscaler"
+  ]
+ },
+ {
+  "slug": "salesforce-marc",
+  "nom": "Salesforce Marc",
+  "type": "entreprise",
+  "entreprise": "Salesforce Marc",
+  "indice": "S&P 500",
+  "wiki": "Salesforce Tower",
+  "mots_cles": [
+   "salesforce marc"
+  ]
+ },
+ {
+  "slug": "arm",
+  "nom": "Arm",
+  "type": "entreprise",
+  "entreprise": "Arm",
+  "indice": "S&P 500",
+  "wiki": "Arm Holdings",
+  "mots_cles": [
+   "arm"
+  ]
+ },
+ {
+  "slug": "snowflake",
+  "nom": "Snowflake",
+  "type": "entreprise",
+  "entreprise": "Snowflake",
+  "indice": "S&P 500",
+  "wiki": "Snowflake Inc.",
+  "mots_cles": [
+   "snowflake"
+  ]
+ },
+ {
+  "slug": "servicenow",
+  "nom": "ServiceNow",
+  "type": "entreprise",
+  "entreprise": "ServiceNow",
+  "indice": "S&P 500",
+  "wiki": "ServiceNow",
+  "mots_cles": [
+   "servicenow"
+  ]
+ },
+ {
+  "slug": "merck",
+  "nom": "Merck",
+  "type": "entreprise",
+  "entreprise": "Merck",
+  "indice": "S&P 500",
+  "wiki": "Merck & Co.",
+  "mots_cles": [
+   "merck"
+  ]
+ },
+ {
+  "slug": "abbvie",
+  "nom": "AbbVie",
+  "type": "entreprise",
+  "entreprise": "AbbVie",
+  "indice": "S&P 500",
+  "wiki": "AbbVie",
+  "mots_cles": [
+   "abbvie"
+  ]
+ },
+ {
+  "slug": "michael-dell",
+  "nom": "Michael Dell",
+  "type": "personne",
+  "entreprise": "Dell",
+  "commons": "Michael Dell",
+  "mots_cles": [
+   "michael dell",
+   "dell"
+  ]
+ },
+ {
+  "slug": "hock-tan",
+  "nom": "Hock Tan",
+  "type": "personne",
+  "entreprise": "Broadcom",
+  "commons": "Hock Tan",
+  "mots_cles": [
+   "hock tan",
+   "broadcom"
+  ]
+ },
+ {
+  "slug": "lip-bu-tan",
+  "nom": "Lip-Bu Tan",
+  "type": "personne",
+  "entreprise": "Intel",
+  "commons": "Lip-Bu Tan",
+  "mots_cles": [
+   "lip-bu tan",
+   "intel"
+  ]
  }
 ]
