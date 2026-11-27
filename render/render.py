@@ -21,6 +21,7 @@ def inline_photos(data):
     items += [sc for sc in ((data.get('reel') or {}).get('scenes') or []) if isinstance(sc, dict) and sc.get('src')]
     st = data.get('story') if isinstance(data.get('story'), dict) else data
     items += [((st.get('une') or {}).get('photo'))] if isinstance(st, dict) else []
+    items += [((data.get('actu') or {}).get('photo'))] if isinstance(data.get('actu'), dict) else []
     for ph in items:
         if not ph or not ph.get('src') or str(ph['src']).startswith(('data:', 'http')): continue
         p = (HERE.parent / ph['src']).resolve()

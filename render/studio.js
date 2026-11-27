@@ -262,15 +262,18 @@ function storyTK(st,side){st=st||{};const up=side!=='baisses';const H=1920;const
 function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';
  /* 26/11 : TikTok = même mise en page que « la une » du Top 5 (bloc compact, texte large, sans carte ni pied de page) */
  if(tk){const W=760;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(true,1920)}`;let y=0;
+  const ph=a.photo||{};if(ph.src&&typeof window!=='undefined')window.__PLEIN={src:ph.src};
   o+=chip("L'actu argent",true,C.sig,0,0);y=110;
   if(a.titre){const ts=fit(a.titre,W,3,104,64);const tb=textBlock(a.titre,0,y+ts*.8,ts,W,C.iv,C.ja);o+=tb.svg;y+=tb.h+50}
   if(a.chiffre){const cs=fit(a.chiffre,W,1,120,72);y+=cs*.78;o+=`<text x="0" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${/^[−-]/.test(String(a.chiffre))?C.sig:C.ja}">${X(a.chiffre)}</text>`;y+=24;
    if(a.label){const lb=textBlock(a.label,0,y+34,34,W,'#D5E2DE',C.ja,'m',1.3);o+=lb.svg;y+=lb.h+20}}
-  if(a.texte){const d=textBlock(a.texte,0,y+50,34,W,'#D5E2DE',C.ja,'m',1.36);o+=d.svg;y+=d.h+40}
+  if(a.texte&&!ph.src){/* avec photo : le détail passe dans la légende */const d=textBlock(a.texte,0,y+50,34,W,'#D5E2DE',C.ja,'m',1.36);o+=d.svg;y+=d.h+40}
   if(a.impact){o+=`<rect x="0" y="${y+14}" width="8" height="10" fill="none"/><text x="0" y="${y+40}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`;const kb=textBlock(a.impact,0,y+40+56,40,W,C.iv,C.ja,'b',1.2);o+=kb.svg;y+=40+kb.h+40}
-  o+=`<text x="0" y="${y+30}" font-family="PM" font-size="20" fill="#D5E2DE">${X(String(a.source||'').slice(0,60))} · Contenu pédagogique, pas un conseil.</text>`;
+  o+=`<text x="0" y="${y+30}" font-family="PM" font-size="20" fill="#D5E2DE">${X(String(a.source||'').slice(0,52))}</text><text x="0" y="${y+60}" font-family="PM" font-size="20" fill="#D5E2DE">Contenu pédagogique, pas un conseil.</text>`;y+=30;
+  if(ph.credit)o+=`<text x="0" y="${y+62}" font-family="PM" font-size="17" fill="#D5E2DE">${X(String(ph.credit).slice(0,62))}</text>`;
   return o+'</svg>'}const X0=tk?60:72,MW=tk?((typeof window!=='undefined'&&window.__TKW)||740):936,T0=tk?330:250,FY=tk?1570:1702;const H=1920;
  let o=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}${tk?TKFADE:''}`;
+ const PH=(a.photo&&a.photo.src)?a.photo:null;if(PH&&!tk){const gid='ap'+(++PHN);o+=`<image data-plein="1" href="${X(PH.src)}" x="0" y="0" width="1080" height="${H}" preserveAspectRatio="xMidYMid slice"/><defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1412" stop-opacity=".6"/><stop offset=".2" stop-color="#0A1412" stop-opacity=".15"/><stop offset=".38" stop-color="#0A1412" stop-opacity=".55"/><stop offset=".55" stop-color="#0A1412" stop-opacity=".92"/><stop offset="1" stop-color="#0A1412" stop-opacity=".98"/></linearGradient></defs><rect width="1080" height="${H}" fill="url(#${gid})"/>`}
  o+=chip("L'actu argent",true,C.sig,X0,T0);const head=o;o='';
  const ts=fit(a.titre||'',MW,4,tk?84:92,56);const tb=textBlock(a.titre||'',X0,T0+130+ts*.85,ts,MW,C.iv,C.ja);o+=tb.svg;let y=T0+130+ts*.85+(tb.lines-1)*ts*1.04+80;
  if(a.chiffre){const cs=fit(a.chiffre,MW,1,tk?190:210,100);y+=cs*.8;o+=`<text x="${X0}" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${/^[−-]/.test(String(a.chiffre))?C.sig:C.ja}">${X(a.chiffre)}</text>`;y+=40;
@@ -278,8 +281,8 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';
  if(a.texte){const d=textBlock(a.texte,X0,y+50,tk?36:40,MW,C.iv,C.ja,'m',1.36);o+=d.svg;y+=d.h+50}
  if(a.impact){/* 26/11 : plus de carte, même style que TikTok et la une */o+=`<text x="${X0}" y="${y+70}" font-family="PM" font-size="24" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`;const kb=textBlock(a.impact,X0,y+70+62,44,MW,C.iv,C.ja,'b',1.2);o+=kb.svg;y+=70+kb.h+30}
  {const av=(FY-100)-T0,hh=y-T0;/* trop haut : on réduit le bloc au lieu de déborder sur le pied de page (25/11) */
- o=head+(hh>av?`<g transform="translate(${X0},${T0}) scale(${(av/hh).toFixed(4)}) translate(${-X0},${-T0})">${o}</g>`:`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`);}
- o+=`<g transform="translate(${X0},${FY}) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;
+ o=head+(PH&&hh<=av?`<g transform="translate(0,${Math.round((FY-90)-y)})">${o}</g>`:hh>av?`<g transform="translate(${X0},${T0}) scale(${(av/hh).toFixed(4)}) translate(${-X0},${-T0})">${o}</g>`:`<g transform="translate(0,${Math.max(0,Math.round(((FY-70)-y)/2))})">${o}</g>`);}
+ o+=`<g transform="translate(${X0},${FY}) scale(.24)">${LOGO(C.iv,C.ja)}</g>`;if(PH&&PH.credit)o+=`<text x="${X0+MW}" y="${FY-20}" text-anchor="end" font-family="PM" font-size="17" fill="#D5E2DE">${X(String(PH.credit).slice(0,70))}</text>`;
  o+=`<text x="${X0+MW}" y="${FY+8}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">${X(String(a.source||'').slice(0,52))}</text>`;
  o+=`<text x="${X0+MW}" y="${FY+36}" text-anchor="end" font-family="PM" font-size="19" fill="${C.pm}">Contenu pédagogique, pas un conseil.</text>`;
  return o+'</svg>'}
