@@ -264,7 +264,7 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';
  if(tk){const W=760;let o=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1920" width="1080" height="1920">${bg(true,1920)}`;let y=0;
   o+=chip("L'actu argent",true,C.sig,0,0);y=110;
   if(a.titre){const ts=fit(a.titre,W,3,104,64);const tb=textBlock(a.titre,0,y+ts*.8,ts,W,C.iv,C.ja);o+=tb.svg;y+=tb.h+50}
-  if(a.chiffre){const cs=fit(a.chiffre,W,1,120,72);y+=cs*.78;o+=`<text x="0" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${C.ja}">${X(a.chiffre)}</text>`;y+=24;
+  if(a.chiffre){const cs=fit(a.chiffre,W,1,120,72);y+=cs*.78;o+=`<text x="0" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${/^[−-]/.test(String(a.chiffre))?C.sig:C.ja}">${X(a.chiffre)}</text>`;y+=24;
    if(a.label){const lb=textBlock(a.label,0,y+34,34,W,'#D5E2DE',C.ja,'m',1.3);o+=lb.svg;y+=lb.h+20}}
   if(a.texte){const d=textBlock(a.texte,0,y+50,34,W,'#D5E2DE',C.ja,'m',1.36);o+=d.svg;y+=d.h+40}
   if(a.impact){o+=`<rect x="0" y="${y+14}" width="8" height="10" fill="none"/><text x="0" y="${y+40}" font-family="PM" font-size="22" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`;const kb=textBlock(a.impact,0,y+40+56,40,W,C.iv,C.ja,'b',1.2);o+=kb.svg;y+=40+kb.h+40}
@@ -273,7 +273,7 @@ function actuSVG(a,fmt){a=a||{};const tk=fmt==='tiktok';
  let o=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 ${H}" width="1080" height="${H}">${bg(true,H)}${tk?TKFADE:''}`;
  o+=chip("L'actu argent",true,C.sig,X0,T0);const head=o;o='';
  const ts=fit(a.titre||'',MW,4,tk?84:92,56);const tb=textBlock(a.titre||'',X0,T0+130+ts*.85,ts,MW,C.iv,C.ja);o+=tb.svg;let y=T0+130+ts*.85+(tb.lines-1)*ts*1.04+80;
- if(a.chiffre){const cs=fit(a.chiffre,MW,1,tk?190:210,100);y+=cs*.8;o+=`<text x="${X0}" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${C.ja}">${X(a.chiffre)}</text>`;y+=40;
+ if(a.chiffre){const cs=fit(a.chiffre,MW,1,tk?190:210,100);y+=cs*.8;o+=`<text x="${X0}" y="${y}" font-family="PJ" font-weight="800" font-size="${cs}" letter-spacing="${-cs*.04}" fill="${/^[−-]/.test(String(a.chiffre))?C.sig:C.ja}">${X(a.chiffre)}</text>`;y+=40;
   if(a.label){const lb=textBlock(a.label,X0,y+30,tk?32:36,MW,C.pm,C.ja,'m',1.3);o+=lb.svg;y+=lb.h+30}}
  if(a.texte){const d=textBlock(a.texte,X0,y+50,tk?36:40,MW,C.iv,C.ja,'m',1.36);o+=d.svg;y+=d.h+50}
  if(a.impact){/* 26/11 : plus de carte, même style que TikTok et la une */o+=`<text x="${X0}" y="${y+70}" font-family="PM" font-size="24" letter-spacing="2" fill="${C.ja}">CE QUE ÇA CHANGE POUR TOI</text>`;const kb=textBlock(a.impact,X0,y+70+62,44,MW,C.iv,C.ja,'b',1.2);o+=kb.svg;y+=70+kb.h+30}
