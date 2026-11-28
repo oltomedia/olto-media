@@ -1,0 +1,83 @@
+{
+ "rubrique": "Bourse",
+ "formatOlto": "recap",
+ "reaction": "Surprise : Axon, inconnue en France, fait mieux que Nvidia sur la semaine.",
+ "slides": [
+  {
+   "type": "cover",
+   "chip": "Le récap Bourse · semaine du 23 au 27 novembre",
+   "accroche": "Axon a pris *+24,8 %* en 4 séances.",
+   "sous": "Les plus fortes hausses et baisses de la semaine, CAC 40 et S&P 500.",
+   "photo": {
+    "src": "img/banque/ecran-de-bourse.jpg",
+    "credit": "Photo : ehnmark, CC BY 2.0 via Wikimedia Commons"
+   }
+  },
+  {
+   "type": "recap",
+   "titre": "Les 3 plus fortes *hausses*.",
+   "items": [
+    {
+     "chiffre": "+24,8 %",
+     "label": "Axon (S&P 500) : pas d'explication officielle"
+    },
+    {
+     "chiffre": "+20,0 %",
+     "label": "Palantir (S&P 500) : pas d'explication officielle"
+    },
+    {
+     "chiffre": "+19,9 %",
+     "label": "Nvidia (S&P 500) : Jensen Huang redevient PDG"
+    }
+   ],
+   "source": "Glass Desk, Tastylive · 4 séances US",
+   "ton": "bourse"
+  },
+  {
+   "type": "recap",
+   "titre": "Les 3 plus fortes *baisses*.",
+   "items": [
+    {
+     "chiffre": "−6,2 %",
+     "label": "West Pharmaceutical (S&P 500) : pas d'explication officielle"
+    },
+    {
+     "chiffre": "−5,3 %",
+     "label": "CrowdStrike (S&P 500) : craintes sur le rachat de Zscaler"
+    },
+    {
+     "chiffre": "−5,1 %",
+     "label": "J.M. Smucker (S&P 500) : ventes en baisse au trimestre"
+    }
+   ],
+   "source": "Myweeklystock, MarketScreener · 4 séances US",
+   "ton": "bourse"
+  },
+  {
+   "type": "recap",
+   "titre": "Les *indices* sur la semaine.",
+   "items": [
+    {
+     "chiffre": "+2,9 %",
+     "label": "CAC 40 (5 séances)"
+    },
+    {
+     "chiffre": "+5,6 %",
+     "label": "S&P 500 (4 séances)"
+    },
+    {
+     "chiffre": "+6,8 %",
+     "label": "Nasdaq 100 (4 séances)"
+    }
+   ],
+   "source": "BFM Bourse, Glass Desk · 20/11→27/11",
+   "ton": "bourse"
+  },
+  {
+   "type": "cta",
+   "titre": "Chaque soir de semaine, le *Top 5* en story.",
+   "texte": "Abonne-toi pour ne rien rater. Pas un conseil en investissement."
+  }
+ ],
+ "format": "carrousel"
+}
